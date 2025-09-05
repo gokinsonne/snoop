@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /play
+Disallow: /demo
+Disallow: /bonus
+Disallow: /app
+Disallow: /download-vpn
+Disallow: /demo
+
+
+
+Sitemap: https://snoopdoggdollar.org/sitemap.xml
