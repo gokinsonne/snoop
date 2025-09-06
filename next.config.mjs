@@ -9,8 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
-async redirects() {
+
+  async redirects() {
     return [
       {
         source: "/play",
@@ -41,5 +41,4 @@ async redirects() {
   },
 };
 
-
-export default nextConfig
+export default nextConfig;
