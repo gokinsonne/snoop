@@ -70,6 +70,19 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
+<link
+  rel="preload"
+  href="/fonts/lapsus.woff2"
+  as="font"
+  type="font/woff2"
+  crossOrigin="anonymous"
+/>
+
+  <link rel="preconnect" href="https://boost.bgaming-network.com" />
+  <link rel="preconnect" href="https://replays.bgaming-network.com" />
+  <link rel="preconnect" href="https://brush.bgaming-network.com" />
+  <link rel="preconnect" href="https://cdn.bgaming-network.com" />
+
       </head>
       <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={<div>Loading.</div>}>{children}</Suspense>

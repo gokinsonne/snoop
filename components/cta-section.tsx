@@ -76,14 +76,16 @@ export function CTASection({ locale }: CTASectionProps) {
               <Link href="/play">{content.playButton}</Link>
             </Button>
 
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="border-2 border-gold text-gold hover:bg-gold hover:text-background font-bold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto bg-transparent"
-            >
-              <Link href="/app">{content.downloadButton}</Link>
-            </Button>
+<Button
+  asChild
+  variant="outline"
+  size="lg"
+  className="border-2 border-gold text-gold bg-black/40 hover:bg-gold  font-bold px-8 py-4 text-lg rounded-full"
+>
+  <Link href="/app">{content.downloadButton}</Link>
+</Button>
+
+
           </div>
         </div>
       </div>

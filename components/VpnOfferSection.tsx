@@ -10,13 +10,13 @@ export default function VpnOfferSection({ offer }: { offer: LocaleContent["vpnOf
         {/* Лого: не даём распирать контейнер */}
         <div className="w-[160px] md:w-[200px] shrink-0 rounded-xl overflow-hidden">
           <Image
+            loading="lazy"
             src={offer.logo}
             alt="VPN Logo"
             width={200}
             height={200}
             sizes="(max-width: 768px) 160px, 200px"
             className="h-auto w-full object-contain"
-            priority
           />
         </div>
 

@@ -74,6 +74,7 @@ export function GameStatsSection() {
                       <td className="py-3 px-4 text-2xl">
                         {isImg(item.symbol) ? (
                           <Image
+                            loading="lazy"
                             src={item.symbol}
                             alt={item.description}
                             width={64}

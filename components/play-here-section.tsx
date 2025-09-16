@@ -76,7 +76,7 @@ export function PlayHereSection({ locale = "en" }: PlayHereSectionProps) {
 
           <div className="mb-6">
             <img
-              src="/snoop-dogg-with-money-and-gold-chains-hip-hop-styl.jpg"
+              src="/snoop-dogg-with-money-and-gold-chains-hip-hop-styl.webp"
               alt="Snoop Dogg Dollars Bonus"
               className="mx-auto rounded-lg shadow-lg"
             />

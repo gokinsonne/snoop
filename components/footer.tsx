@@ -58,13 +58,13 @@ export function Footer({ content, locale }: FooterProps) {
                 <img src="/mastercard.svg" alt="Mastercard" className="h-8" />
               </div>
               <div className="bg-white rounded-lg p-3 shadow-md">
-                <img src="/visa-logo-generic.png" alt="Visa" className="h-8" />
+                <img src="/vissa.svg" alt="Visa" className="h-8" />
               </div>
               <div className="bg-white rounded-lg p-3 shadow-md">
-                <img src="/bit.png" alt="Bitcoin" className="h-8" />
+                <img src="/bitt.svg" alt="Bitcoin" className="h-8" />
               </div>
               <div className="bg-white rounded-lg p-3 shadow-md">
-                <img src="/ethereum-logo.png" alt="Ethereum" className="h-8" />
+                <img src="/eu.svg" alt="Ethereum" className="h-8" />
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ export function Footer({ content, locale }: FooterProps) {
       className="hover:scale-105 transition-transform"
     >
       <img
-        src="/1win.png"
+        src="/1w.svg"
         alt="1WIN"
         className="h-12 w-auto drop-shadow-lg"
       />
@@ -92,7 +92,7 @@ export function Footer({ content, locale }: FooterProps) {
 
     {/* PIN-UP */}
     <a
-      href="https://dudaray.com"
+      href="https://dudaray.kz"
       target="_blank"
       rel="noopener noreferrer"
       className="hover:scale-105 transition-transform"
