@@ -264,7 +264,7 @@ export default function RootLayout({
               url: "https://snoopdoggdollar.org",
               image: "https://snoopdoggdollar.org/og-image.jpg",
               description:
-                "Snoop Dogg Dollars — эксклюзивный хип-хоп слот с фриспинами, бонусами без депозита, множителями до x1000 и высоким RTP. Демо-режим, реальные выигрыши и уникальная атмосфера рэп-культуры.",
+                "Snoop Dogg Dollars — exclusive hip-hop slot with free spins, no deposit bonuses, multipliers up to x1000, and high RTP. Demo mode, real winnings, and a unique atmosphere of rap culture.",
               brand: {
                 "@type": "Brand",
                 name: "Snoop Dogg Dollars"
