@@ -226,13 +226,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Snoop Dogg Dollars",
-              url: "https://snoopdoggdollar.org",
-              logo: "https://snoopdoggdollar.org/og-image.jpg",
-              sameAs: [
+              "name": "Snoop Dogg Dollars",
+              "url": "https://snoopdoggdollar.org",
+              "logo": "https://snoopdoggdollar.org/logo.png",
+              "sameAs": [
                 "https://www.instagram.com/snoopdogg",
-                "https://twitter.com/SnoopDogg",
-                "https://www.youtube.com/user/snoopdogg"
+                "https://twitter.com/snoopdogg",
+                "https://www.youtube.com/user/westfesttv"
               ]
             })
           }}
@@ -243,12 +243,11 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Snoop Dogg Dollars",
-              url: "https://snoopdoggdollar.org",
-              potentialAction: {
+              "name": "Snoop Dogg Dollars",
+              "url": "https://snoopdoggdollar.org/",
+              "potentialAction": {
                 "@type": "SearchAction",
-                target:
-                  "https://snoopdoggdollar.org/search?q={search_term_string}",
+                "target": "https://snoopdoggdollar.org/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })
@@ -260,20 +259,42 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
-              name: "Snoop Dogg Dollars Slot",
-              url: "https://snoopdoggdollar.org",
-              image: "https://snoopdoggdollar.org/og-image.jpg",
-              description:
-                "Snoop Dogg Dollars — exclusive hip-hop slot with free spins, no deposit bonuses, multipliers up to x1000, and high RTP. Demo mode, real winnings, and a unique atmosphere of rap culture.",
-              brand: {
+              "name": "Snoop Dogg Dollars Slot",
+              "image": "https://snoopdoggdollar.org/og-image.jpg",
+              "description": "Spin the reels with Snoop Dogg Dollars – hip-hop slot with free spins, x1000 multipliers, jackpots and nonstop action.",
+              "brand": {
                 "@type": "Brand",
-                name: "Snoop Dogg Dollars"
+                "name": "Snoop Dogg Dollars"
               },
-              aggregateRating: {
+              "aggregateRating": {
                 "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "627"
+                "ratingValue": "4.9",
+                "reviewCount": "1421"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://snoopdoggdollar.org"
               }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://snoopdoggdollar.org/"
+                }
+              ]
             })
           }}
         />
