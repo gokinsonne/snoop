@@ -159,12 +159,9 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // G-3CVZMLWDXD
-
   return (
     <html lang="en" className="dark">
       <head>
-        {/* твои теги — НЕ трогаю */}
         <link rel="alternate" hrefLang="en" href="https://snoopdoggdollar.org/en" />
         <link rel="alternate" hrefLang="tr" href="https://snoopdoggdollar.org/tr" />
         <link rel="alternate" hrefLang="pt" href="https://snoopdoggdollar.org/pt" />
@@ -183,30 +180,52 @@ export default function RootLayout({
         <Suspense fallback={<div>Loading.</div>}>{children}</Suspense>
         <Analytics />
 
-        {/* GA4 — загрузка и инициализация */}
-        {GA_ID ? (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                // Включаем авто-отправку первого page_view
-                gtag('config', '${GA_ID}');
-              `}
-            </Script>
-            {/* SPA-переходы */}
-            <GA gaId={GA_ID} />
-          </>
-        ) : (
-          <Script id="ga-warn" strategy="afterInteractive">
-            {`console.warn('GA: NEXT_PUBLIC_GA_ID не задан');`}
-          </Script>
-        )}
+        {/* === GA4: loader === */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID ?? "G-3CVZMLWDXD"}`}
+          strategy="afterInteractive"
+        />
+        {/* === GA4: init (шлёт первый page_view) === */}
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            (function(gaId){
+              if(!gaId) { console.warn('GA: нет NEXT_PUBLIC_GA_ID'); return; }
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){ dataLayer.push(arguments); }
+              window.gtag = window.gtag || gtag;
+              gtag('js', new Date());
+              gtag('config', gaId); // первый page_view автоматически
+            })('${process.env.NEXT_PUBLIC_GA_ID ?? "G-3CVZMLWDXD"}');
+          `}
+        </Script>
+        {/* === GA4: SPA-трекинг без хуков/компонентов === */}
+        <Script id="ga-spa" strategy="afterInteractive">
+          {`
+            (function(){
+              var send = function(){
+                if (typeof window.gtag !== 'function') return;
+                window.gtag('event','page_view',{
+                  page_location: location.href,
+                  page_path: location.pathname + location.search,
+                  page_title: document.title
+                });
+              };
+              // обёртка для pushState/replaceState
+              var wrap = function(type){
+                var orig = history[type];
+                return function(){
+                  var rv = orig.apply(this, arguments);
+                  window.dispatchEvent(new Event('routechange'));
+                  return rv;
+                };
+              };
+              history.pushState = wrap('pushState');
+              history.replaceState = wrap('replaceState');
+              window.addEventListener('popstate', function(){ window.dispatchEvent(new Event('routechange')); });
+              window.addEventListener('routechange', send);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );
