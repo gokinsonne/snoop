@@ -4,6 +4,8 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import Script from "next/script"
+import GA from "@/components/ga-tracker"
 import "./globals.css"
 
 
@@ -52,9 +54,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // например: G-3CVZMLWDXD
+
   return (
     <html lang="en" className="dark">
       <head>
@@ -70,11 +72,31 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
+
+        {GA_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}', { send_page_view: false });
+              `}
+            </Script>
+          </>
+        ) : null}
       </head>
+
       <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={<div>Loading.</div>}>{children}</Suspense>
         <Analytics />
+        {/* Отправка page_view при SPA-навигации */}
+        {GA_ID ? <GA gaId={GA_ID} /> : null}
       </body>
     </html>
-  )
+  );
 }
