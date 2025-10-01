@@ -159,55 +159,31 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // например: G-3CVZMLWDXD
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // G-3CVZMLWDXD
 
   return (
     <html lang="en" className="dark">
       <head>
-        <link
-          rel="alternate"
-          hrefLang="en"
-          href="https://snoopdoggdollar.org/en"
-        />
-        <link
-          rel="alternate"
-          hrefLang="tr"
-          href="https://snoopdoggdollar.org/tr"
-        />
-        <link
-          rel="alternate"
-          hrefLang="pt"
-          href="https://snoopdoggdollar.org/pt"
-        />
-        <link
-          rel="alternate"
-          hrefLang="fr"
-          href="https://snoopdoggdollar.org/fr"
-        />
-        <link
-          rel="alternate"
-          hrefLang="en-ie"
-          href="https://snoopdoggdollar.org/ie"
-        />
-        <link
-          rel="alternate"
-          hrefLang="hi-in"
-          href="https://snoopdoggdollar.org/in"
-        />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://snoopdoggdollar.org"
-        />
+        {/* твои теги — НЕ трогаю */}
+        <link rel="alternate" hrefLang="en" href="https://snoopdoggdollar.org/en" />
+        <link rel="alternate" hrefLang="tr" href="https://snoopdoggdollar.org/tr" />
+        <link rel="alternate" hrefLang="pt" href="https://snoopdoggdollar.org/pt" />
+        <link rel="alternate" hrefLang="fr" href="https://snoopdoggdollar.org/fr" />
+        <link rel="alternate" hrefLang="en-ie" href="https://snoopdoggdollar.org/ie" />
+        <link rel="alternate" hrefLang="hi-in" href="https://snoopdoggdollar.org/in" />
+        <link rel="alternate" hrefLang="x-default" href="https://snoopdoggdollar.org" />
         <link rel="canonical" href="https://snoopdoggdollar.org" />
         <meta name="theme-color" content="#000000" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
+      </head>
 
+      <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
+        <Suspense fallback={<div>Loading.</div>}>{children}</Suspense>
+        <Analytics />
+
+        {/* GA4 — загрузка и инициализация */}
         {GA_ID ? (
           <>
             <Script
@@ -219,18 +195,18 @@ export default function RootLayout({
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${GA_ID}', { send_page_view: false });
+                // Включаем авто-отправку первого page_view
+                gtag('config', '${GA_ID}');
               `}
             </Script>
+            {/* SPA-переходы */}
+            <GA gaId={GA_ID} />
           </>
-        ) : null}
-      </head>
-
-      <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
-        <Suspense fallback={<div>Loading.</div>}>{children}</Suspense>
-        <Analytics />
-        {/* Отправка page_view при SPA-навигации */}
-        {GA_ID ? <GA gaId={GA_ID} /> : null}
+        ) : (
+          <Script id="ga-warn" strategy="afterInteractive">
+            {`console.warn('GA: NEXT_PUBLIC_GA_ID не задан');`}
+          </Script>
+        )}
       </body>
     </html>
   );
