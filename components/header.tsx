@@ -33,7 +33,8 @@ export function Header({ content, locale, onLocaleChange }: HeaderProps) {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 shrink-0">
             <Image
-              src="/snoop-dogg-dollars-logo-gold-hip-hop-style.png"
+
+              src="/logosnoop.webp"
               alt="Snoop Dogg Dollars Logo"
               width={120}
               height={30}

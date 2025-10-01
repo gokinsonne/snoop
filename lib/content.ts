@@ -89,13 +89,13 @@ export const gameStats: GameStats = {
 }
 
 export const payoutTable: PayoutSymbol[] = [
-  { symbol: "/boom.png", payout: "10x – 50x", description: "Destroy - Highest payout" },
+  { symbol: "/boom.webp", payout: "10x – 50x", description: "Destroy - Highest payout" },
   { symbol: "/girl.webp", payout: "2.5x – 25x", description: "Purple Dog - Second highest" },
   { symbol: "/predator.webp", payout: "2x – 15x", description: "Green Dog - Medium tier" },
   { symbol: "/man.webp", payout: "1.5x – 12x", description: "Red Dog - Lower medium" },
   { symbol: "/blue.webp", payout: "1x – 10x", description: "Blue - Lower tier" },
   { symbol: "/green.webp", payout: "0.8x – 8x", description: "Green - High-paying fruit" },
-  { symbol: "/purpure.png", payout: "0.5x – 5x", description: "Purple - Common low payout" },
+  { symbol: "/purpure.webp", payout: "0.5x – 5x", description: "Purple - Common low payout" },
   { symbol: "/Heart.webp", payout: "0.4x – 2x", description: "Red - Lowest value fruit" },
 ]
 
@@ -132,32 +132,32 @@ export const content: Record<string, LocaleContent> = {
         {
           title: "Mega Jackpot",
           description: "50.000x'e kadar kazanç! Snoop Dogg'un özel jackpot sistemi ile milyonlarca kazanın!",
-          icon: "/mega.png",
+          icon: "/mega.webp",
         },
         {
           title: "Bonus Turları",
           description: "25 ücretsiz spin + 5x çarpan! Hip-hop ritmi ile kazançlarınızı katlayın!",
-          icon: "/bonus.png",
+          icon: "/bonus.webp",
         },
         {
           title: "Wild Semboller",
           description: "Snoop Dogg wild sembolleri tüm makaraları kaplar ve büyük kazançlar getirir!",
-          icon: "/wild.png",
+          icon: "/wild.webp",
         },
         {
           title: "Scatter Bonusu",
           description: "3 scatter ile bonus oyunu! Snoop'un stüdyosunda özel ödüller kazanın!",
-          icon: "/Scatter.png",
+          icon: "/Scatter.webp",
         },
         {
           title: "Günlük Turnuvalar",
           description: "Her gün yeni turnuvalar! Liderlik tablosunda zirvede yer alın!",
-          icon: "/tourn.png",
+          icon: "/tourn.webp",
         },
         {
           title: "VIP Program",
           description: "Özel VIP avantajları, kişisel hesap yöneticisi ve premium bonuslar!",
-          icon: "/VIP.png",
+          icon: "/VIP.webp",
         },
       ],
     },
@@ -207,7 +207,7 @@ export const content: Record<string, LocaleContent> = {
   title: "Sitemize erişimde sorun mu yaşıyorsunuz?",
   description: "Eğer web sitemiz açılmıyorsa, güvenilir ortağımız NordVPN'i indirin ve oyuna geri dönün.",
   button: "NordVPN'i İndir",
-  logo: "/nordvpn-logo.png",
+  logo: "/nordvpn-logo.webp",
   url: "/download-vpn"
 }
   },
@@ -232,32 +232,32 @@ export const content: Record<string, LocaleContent> = {
         {
           title: "Mega Jackpot",
           description: "Win up to 50,000x your stake! Snoop Dogg's exclusive jackpot system for millions in winnings!",
-          icon: "/mega.png",
+          icon: "/mega.webp",
         },
         {
           title: "Bonus Rounds",
           description: "25 free spins + 5x multiplier! Multiply your wins with hip-hop rhythm!",
-          icon: "/bonus.png",
+          icon: "/bonus.webp",
         },
         {
           title: "Wild Symbols",
           description: "Snoop Dogg wild symbols cover entire reels and bring massive wins!",
-          icon: "/wild.png",
+          icon: "/wild.webp",
         },
         {
           title: "Scatter Bonus",
           description: "3 scatters trigger bonus game! Win exclusive rewards in Snoop's studio!",
-          icon: "/Scatter.png",
+          icon: "/Scatter.webp",
         },
         {
           title: "Daily Tournaments",
           description: "New tournaments every day! Climb to the top of the leaderboard!",
-          icon: "/tourn.png",
+          icon: "/tourn.webp",
         },
         {
           title: "VIP Program",
           description: "Exclusive VIP benefits, personal account manager and premium bonuses!",
-          icon: "/VIP.png",
+          icon: "/VIP.webp",
         },
       ],
     },
@@ -307,7 +307,7 @@ vpnOffer: {
     title: "Having trouble accessing our site?",
     description: "If our website doesn’t open for you, download VPN from our trusted partner NordVPN and get back in the game.",
     button: "Download NordVPN",
-    logo: "/nordvpn-logo.png",
+    logo: "/nordvpn-logo.webp",
     url: "/download-vpn"
   },
 
@@ -333,32 +333,32 @@ vpnOffer: {
         {
           title: "Mega Jackpot",
           description: "Ganhe até 50.000x a sua aposta! Sistema exclusivo de jackpot do Snoop Dogg!",
-          icon: "/mega.png",
+          icon: "/mega.webp",
         },
         {
           title: "Rondas Bónus",
           description: "25 spins grátis + multiplicador 5x! Multiplique os seus ganhos com ritmo hip-hop!",
-          icon: "/bonus.png",
+          icon: "/bonus.webp",
         },
         {
           title: "Símbolos Wild",
           description: "Símbolos wild do Snoop Dogg cobrem rolos inteiros e trazem vitórias massivas!",
-          icon: "/wild.png",
+          icon: "/wild.webp",
         },
         {
           title: "Bónus Scatter",
           description: "3 scatters ativam o jogo bónus! Ganhe recompensas exclusivas no estúdio do Snoop!",
-          icon: "/Scatter.png",
+          icon: "/Scatter.webp",
         },
         {
           title: "Torneios Diários",
           description: "Novos torneios todos os dias! Suba ao topo da tabela de líderes!",
-          icon: "/tourn.png",
+          icon: "/tourn.webp",
         },
         {
           title: "Programa VIP",
           description: "Benefícios VIP exclusivos, gestor de conta pessoal e bónus premium!",
-          icon: "/VIP.png",
+          icon: "/VIP.webp",
         },
       ],
     },
@@ -408,7 +408,7 @@ vpnOffer: {
   title: "Está com dificuldades para acessar nosso site?",
   description: "Se o nosso site não abrir para você, baixe a VPN do nosso parceiro confiável NordVPN e volte ao jogo.",
   button: "Baixar NordVPN",
-  logo: "/nordvpn-logo.png",
+  logo: "/nordvpn-logo.webp",
   url: "/download-vpn"
 }
   },
@@ -433,33 +433,33 @@ vpnOffer: {
         {
           title: "Méga Jackpot",
           description: "Gagnez jusqu'à 50 000x votre mise! Système de jackpot exclusif de Snoop Dogg!",
-          icon: "/mega.png",
+          icon: "/mega.webp",
         },
         {
           title: "Tours Bonus",
           description: "25 tours gratuits + multiplicateur 5x! Multipliez vos gains avec le rythme hip-hop!",
-          icon: "/bonus.png",
+          icon: "/bonus.webp",
         },
         {
           title: "Symboles Wild",
           description: "Les symboles wild de Snoop Dogg couvrent des rouleaux entiers et apportent des gains massifs!",
-          icon: "/wild.png",
+          icon: "/wild.webp",
         },
         {
           title: "Bonus Scatter",
           description:
             "3 scatters déclenchent le jeu bonus! Gagnez des récompenses exclusives dans le studio de Snoop!",
-          icon: "/Scatter.png",
+          icon: "/Scatter.webp",
         },
         {
           title: "Tournois Quotidiens",
           description: "Nouveaux tournois chaque jour! Grimpez au sommet du classement!",
-          icon: "/tourn.png",
+          icon: "/tourn.webp",
         },
         {
           title: "Programme VIP",
           description: "Avantages VIP exclusifs, gestionnaire de compte personnel et bonus premium!",
-          icon: "/VIP.png",
+          icon: "/VIP.webp",
         },
       ],
     },
@@ -509,7 +509,7 @@ vpnOffer: {
   title: "Des difficultés à accéder à notre site ?",
   description: "Si notre site ne s’ouvre pas pour vous, téléchargez le VPN de notre partenaire de confiance NordVPN et revenez dans le jeu.",
   button: "Télécharger NordVPN",
-  logo: "/nordvpn-logo.png",
+  logo: "/nordvpn-logo.webp",
   url: "/download-vpn"
 }
   },
@@ -534,32 +534,32 @@ vpnOffer: {
         {
           title: "Mega Jackpot",
           description: "Win up to 50,000x your stake! Snoop Dogg's exclusive jackpot system for millions in winnings!",
-          icon: "/mega.png",
+          icon: "/mega.webp",
         },
         {
           title: "Bonus Rounds",
           description: "25 free spins + 5x multiplier! Multiply your wins with hip-hop rhythm!",
-          icon: "/bonus.png",
+          icon: "/bonus.webp",
         },
         {
           title: "Wild Symbols",
           description: "Snoop Dogg wild symbols cover entire reels and bring massive wins!",
-          icon: "/wild.png",
+          icon: "/wild.webp",
         },
         {
           title: "Scatter Bonus",
           description: "3 scatters trigger bonus game! Win exclusive rewards in Snoop's studio!",
-          icon: "/Scatter.png",
+          icon: "/Scatter.webp",
         },
         {
           title: "Daily Tournaments",
           description: "New tournaments every day! Climb to the top of the leaderboard!",
-          icon: "/tourn.png",
+          icon: "/tourn.webp",
         },
         {
           title: "VIP Program",
           description: "Exclusive VIP benefits, personal account manager and premium bonuses!",
-          icon: "/VIP.png",
+          icon: "/VIP.webp",
         },
       ],
     },
@@ -609,7 +609,7 @@ vpnOffer: {
     title: "Having trouble accessing our site?",
     description: "If our website doesn’t open for you, download VPN from our trusted partner NordVPN and get back in the game.",
     button: "Download NordVPN",
-    logo: "/nordvpn-logo.png",
+    logo: "/nordvpn-logo.webp",
     url: "/download-vpn"
   },
   },
@@ -634,32 +634,32 @@ vpnOffer: {
         {
           title: "मेगा जैकपॉट",
           description: "अपनी हिस्सेदारी का 50,000x तक जीतें! Snoop Dogg का विशेष जैकपॉट सिस्टम!",
-          icon: "/mega.png",
+          icon: "/mega.webp",
         },
         {
           title: "बोनस राउंड",
           description: "25 मुफ्त स्पिन + 5x गुणक! हिप-हॉप रिदम के साथ अपनी जीत बढ़ाएं!",
-          icon: "/bonus.png",
+          icon: "/bonus.webp",
         },
         {
           title: "वाइल्ड सिंबल",
           description: "Snoop Dogg वाइल्ड सिंबल पूरी रील को कवर करते हैं और बड़ी जीत लाते हैं!",
-          icon: "/wild.png",
+          icon: "/wild.webp",
         },
         {
           title: "स्कैटर बोनस",
           description: "3 स्कैटर बोनस गेम ट्रिगर करते हैं! Snoop के स्टूडियो में विशेष पुरस्कार जीतें!",
-          icon: "/Scatter.png",
+          icon: "/Scatter.webp",
         },
         {
           title: "दैनिक टूर्नामेंट",
           description: "हर दिन नए टूर्नामेंट! लीडरबोर्ड के शीर्ष पर चढ़ें!",
-          icon: "/tourn.png",
+          icon: "/tourn.webp",
         },
         {
           title: "VIP प्रोग्राम",
           description: "विशेष VIP लाभ, व्यक्तिगत खाता प्रबंधक और प्रीमियम बोनस!",
-          icon: "/VIP.png",
+          icon: "/VIP.webp",
         },
       ],
     },
@@ -707,7 +707,7 @@ vpnOffer: {
   title: "क्या हमारी साइट खोलने में परेशानी हो रही है?",
   description: "अगर हमारी वेबसाइट आपके लिए नहीं खुल रही है, तो हमारे भरोसेमंद पार्टनर NordVPN को डाउनलोड करें और फिर से गेम में लौट आएं।",
   button: "NordVPN डाउनलोड करें",
-  logo: "/nordvpn-logo.png",
+  logo: "/nordvpn-logo.webp",
   url: "/download-vpn"
 },
   },
