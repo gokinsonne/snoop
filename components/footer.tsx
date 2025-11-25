@@ -78,17 +78,12 @@ export function Footer({ content, locale }: FooterProps) {
   <div className="flex flex-wrap justify-center items-center gap-6">
     {/* 1WIN */}
     <a
-      href="https://1win.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-105 transition-transform"
-    >
-      <img
-        src="/1w.svg"
-        alt="1WIN"
-        className="h-12 w-auto drop-shadow-lg"
-      />
-    </a>
+  href="https://chicken-road-2.pk"
+  target="_blank"
+  class="hover:scale-105 transition-transform"
+>
+  Play Chicken Road 2 slot in Pakistan
+</a>
 
     {/* PIN-UP */}
     <a
