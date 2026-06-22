@@ -18,16 +18,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/demo",
-        destination: "https://lkhv.pro/581ee4",
-        permanent: true,
-      },
-      {
-        source: "/bonus",
-        destination: "https://lkhv.pro/581ee4",
-        permanent: true,
-      },
-      {
         source: "/app",
         destination: "https://lkhv.pro/581ee4",
         permanent: true,
