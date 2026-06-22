@@ -249,7 +249,7 @@ export default function ReviewPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://1win.com?ref=HOLY1WIN"
+                href="https://lkhv.pro/581ee4"
                 rel="nofollow noopener sponsored"
                 className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors"
               >

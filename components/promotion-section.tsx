@@ -35,7 +35,7 @@
 //                     <div className="text-sm text-muted-foreground mb-2">
 //                       FREE SPIN BONUS
 //                     </div>
-//                     <div className="text-lg font-bold text-primary">HOLY1WIN</div>
+//                     <div className="text-lg font-bold text-primary">1WIN BONUS</div>
 //                     <div className="text-sm text-muted-foreground mb-2">
 //                       EXCLUSIVE FOR NEW PLAYERS
 //                     </div>
@@ -202,7 +202,7 @@ export function PromotionSection({ content }: PromotionSectionProps) {
                     <div className="text-sm text-muted-foreground mb-2">
                       FREE SPIN BONUS
                     </div>
-                    <div className="text-lg font-bold text-primary">HOLY1WIN</div>
+                    <div className="text-lg font-bold text-primary">1WIN BONUS</div>
                     <div className="text-sm text-muted-foreground mb-2">
                       EXCLUSIVE FOR NEW PLAYERS
                     </div>

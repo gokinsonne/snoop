@@ -76,14 +76,17 @@ export function Footer({ content, locale }: FooterProps) {
   </h4>
 
   <div className="flex flex-wrap justify-center items-center gap-6">
-    {/* 1WIN Affiliate */}
     <a
       href="https://lkhv.pro/581ee4"
       target="_blank"
       rel="noopener noreferrer sponsored"
       className="hover:scale-105 transition-transform"
     >
-      <span className="text-primary font-bold text-lg">Play at 1WIN →</span>
+      <img
+        src="/1w.svg"
+        alt="1WIN Casino"
+        className="h-12 w-auto drop-shadow-lg"
+      />
     </a>
   </div>
           </div>
