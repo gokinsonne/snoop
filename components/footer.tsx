@@ -1,124 +1,110 @@
 import Link from "next/link"
-import type { LocaleContent } from "@/lib/content"
 
-interface FooterProps {
-  content: LocaleContent["footer"]
-  locale: string
-}
+export function Footer() {
+  const guideLinks = [
+    { href: "/review", label: "Full Review" },
+    { href: "/how-to-play", label: "How to Play" },
+    { href: "/strategy", label: "Strategy" },
+    { href: "/demo", label: "Demo" },
+    { href: "/casinos", label: "Where to Play" },
+    { href: "/bonus", label: "Bonus" },
+    { href: "/faq", label: "FAQ" },
+    { href: "/mobile", label: "Mobile" },
+    { href: "/rtp", label: "RTP" },
+  ]
 
-export function Footer({ content, locale }: FooterProps) {
-  const partnerContent = {
-    tr: {
-      partnersTitle: "Güvenilir Partnerler",
-      paymentMethods: "Ödeme Yöntemleri",
-      casinoPartners: "Casino Partnerleri",
-    },
-    en: {
-      partnersTitle: "Trusted Partners",
-      paymentMethods: "Payment Methods",
-      casinoPartners: "Casino Partners",
-    },
-    pt: {
-      partnersTitle: "Parceiros Confiáveis",
-      paymentMethods: "Métodos de Pagamento",
-      casinoPartners: "Parceiros de Casino",
-    },
-    fr: {
-      partnersTitle: "Partenaires de Confiance",
-      paymentMethods: "Méthodes de Paiement",
-      casinoPartners: "Partenaires Casino",
-    },
-    ie: {
-      partnersTitle: "Trusted Partners",
-      paymentMethods: "Payment Methods",
-      casinoPartners: "Casino Partners",
-    },
-    in: {
-      partnersTitle: "विश्वसनीय साझेदार",
-      paymentMethods: "भुगतान के तरीके",
-      casinoPartners: "कैसीनो साझेदार",
-    },
-  }
-
-  const localPartnerContent = partnerContent[locale as keyof typeof partnerContent] || partnerContent.en
+  const legalLinks = [
+    { href: "/privacy-policy", label: "Privacy Policy" },
+    { href: "/terms-of-service", label: "Terms of Service" },
+    { href: "/responsible-gaming", label: "Responsible Gaming" },
+    { href: "/sitemap", label: "Sitemap" },
+  ]
 
   return (
     <footer className="bg-card border-t border-primary/20 py-12 px-4">
       <div className="container mx-auto max-w-6xl">
+        {/* Popular Guides */}
         <div className="mb-8">
-          <h3 className="text-xl font-bold text-center mb-6 text-primary">{localPartnerContent.partnersTitle}</h3>
-
-          {/* Payment Methods */}
-          <div className="mb-6">
-            <h4 className="text-lg font-semibold text-center mb-4 text-foreground">
-              {localPartnerContent.paymentMethods}
-            </h4>
-            <div className="flex flex-wrap justify-center items-center gap-6">
-              <div className="bg-white rounded-lg p-3 shadow-md">
-                <img src="/mastercard.svg" alt="Mastercard" className="h-8" />
-              </div>
-              <div className="bg-white rounded-lg p-3 shadow-md">
-                <img src="/vissa.svg" alt="Visa" className="h-8" />
-              </div>
-              <div className="bg-white rounded-lg p-3 shadow-md">
-                <img src="/bitt.svg" alt="Bitcoin" className="h-8" />
-              </div>
-              <div className="bg-white rounded-lg p-3 shadow-md">
-                <img src="/eu.svg" alt="Ethereum" className="h-8" />
-              </div>
-            </div>
-          </div>
-
-          {/* Casino Partners */}
-<div className="mb-6">
-  <h4 className="text-lg font-semibold text-center mb-4 text-foreground">
-    {localPartnerContent.casinoPartners}
-  </h4>
-
-  <div className="flex flex-wrap justify-center items-center gap-6">
-    <a
-      href="https://lkhv.pro/581ee4"
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-      className="hover:scale-105 transition-transform"
-    >
-      <img
-        src="/1w.svg"
-        alt="1WIN Casino"
-        className="h-12 w-auto drop-shadow-lg"
-      />
-    </a>
-  </div>
+          <h3 className="text-xl font-bold text-center mb-6 text-primary">Popular Guides</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 mb-8">
+            {guideLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-muted-foreground hover:text-primary transition-colors text-center py-2"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 border-t border-primary/20 pt-8">
-          <div className="text-center md:text-left">
-            <p className="text-muted-foreground text-sm">{content.copyright}</p>
-          </div>
+        {/* Payment Methods & Partners */}
+        <div className="mb-8 border-t border-primary/20 pt-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Payment Methods */}
+            <div>
+              <h4 className="text-lg font-semibold text-center mb-4 text-foreground">Payment Methods</h4>
+              <div className="flex flex-wrap justify-center items-center gap-4">
+                <div className="bg-white rounded-lg p-2 shadow-md">
+                  <img src="/mastercard.svg" alt="Mastercard" className="h-6" />
+                </div>
+                <div className="bg-white rounded-lg p-2 shadow-md">
+                  <img src="/vissa.svg" alt="Visa" className="h-6" />
+                </div>
+                <div className="bg-white rounded-lg p-2 shadow-md">
+                  <img src="/bitt.svg" alt="Bitcoin" className="h-6" />
+                </div>
+                <div className="bg-white rounded-lg p-2 shadow-md">
+                  <img src="/eu.svg" alt="Ethereum" className="h-6" />
+                </div>
+              </div>
+            </div>
 
-          <div className="flex flex-wrap justify-center md:justify-end gap-6">
-            <Link href="#terms" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-              {content.terms}
-            </Link>
-            <Link href="#privacy" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-              {content.privacy}
-            </Link>
-            <Link href="#support" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-              {content.support}
-            </Link>
+            {/* Partner */}
+            <div>
+              <h4 className="text-lg font-semibold text-center mb-4 text-foreground">Partner</h4>
+              <div className="flex justify-center">
+                <a
+                  href="https://lkhv.pro/581ee4"
+                  target="_blank"
+                  rel="noopener noreferrer sponsored"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img src="/1w.svg" alt="1WIN Casino" className="h-10 w-auto drop-shadow-lg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Legal & Copyright */}
+        <div className="border-t border-primary/20 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-center md:text-left">
+              <p className="text-muted-foreground text-sm">
+                © 2025 SnoopDoggDollar.org. All rights reserved. 18+ | Responsible Gaming
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              {legalLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-muted-foreground hover:text-primary text-xs transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Responsible Gaming Notice */}
         <div className="mt-6 pt-6 border-t border-primary/20 text-center">
           <p className="text-xs text-muted-foreground">
-            {locale === "tr" && "18+ | Sorumlu Oyun | Kumar bağımlılığı yapabilir"}
-            {locale === "en" && "18+ | Responsible Gaming | Gambling can be addictive"}
-            {locale === "pt" && "18+ | Jogo Responsável | O jogo pode causar dependência"}
-            {locale === "fr" && "18+ | Jeu Responsable | Le jeu peut créer une dépendance"}
-            {locale === "ie" && "18+ | Responsible Gaming | Gambling can be addictive"}
-            {locale === "in" && "18+ | जिम्मेदार गेमिंग | जुआ लत लगा सकता है"}
+            18+ | Responsible Gaming | Gambling can be addictive. Please play responsibly.
           </p>
         </div>
       </div>

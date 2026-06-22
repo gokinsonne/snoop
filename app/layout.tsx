@@ -1,142 +1,46 @@
-// import type React from "react"
-// import type { Metadata } from "next"
-// import { GeistSans } from "geist/font/sans"
-// import { GeistMono } from "geist/font/mono"
-// import { Analytics } from "@vercel/analytics/next"
-// import { Suspense } from "react"
-// import "./globals.css"
-
-
-// export const metadata: Metadata = {
-//   title: "Snoop Dogg Dollars - Hip-Hop Slot Game | Big Wins",
-//   description: "Play the exclusive Snoop Dogg hip-hop slot — free spins, no deposit bonus, huge jackpots and x1000 multipliers! Spin wild reels, buy bonus rounds, test demo mode or hit real money wins. High RTP, max win potential and nonstop action — the ultimate hip-hop casino experience with Snoop Dogg. Claim your bonus and start winning big now!",
-//   keywords: "snoop dogg, slot game, casino, jackpot, hip-hop, online casino, big wins, snoop dogg dollars",
-//   generator: "Snoop Dogg Dollars",
-//   viewport: "width=device-width, initial-scale=1",
-//   robots: "index, follow",
-//   alternates: {
-//     canonical: "https://snoopdoggdollar.org",
-//     languages: {
-//       "en-US": "https://snoopdoggdollar.org/en",
-//       "tr-TR": "https://snoopdoggdollar.org/tr",
-//       "pt-PT": "https://snoopdoggdollar.org/pt",
-//       "fr-FR": "https://snoopdoggdollar.org/fr",
-//       "en-IE": "https://snoopdoggdollar.org/ie",
-//       "hi-IN": "https://snoopdoggdollar.org/in",
-//     },
-//   },
-//   openGraph: {
-//     title: "Snoop Dogg Dollars - Hip-Hop Slot Game",
-//     description: "Win big with the King of Hip-Hop!",
-//     type: "website",
-//     locale: "en_US",
-//     alternateLocale: ["tr_TR", "pt_PT", "fr_FR", "en_IE", "hi_IN"],
-//     url: "https://snoopdoggdollar.org",
-//     siteName: "Snoop Dogg Dollars",
-//     images: [
-//       {
-//         url: "https://snoopdoggdollar.org/og-image.jpg",
-//         width: 1200,
-//         height: 630,
-//         alt: "Snoop Dogg Dollars Slot Game",
-//       },
-//     ],
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "Snoop Dogg Dollars - Hip-Hop Slot Game",
-//     description: "Win big with Snoop Dogg! The ultimate hip-hop slot experience.",
-//     images: ["https://snoopdoggdollar.org/og-image.jpg"],
-//   },
-// }
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode
-// }>) {
-//   return (
-//     <html lang="en" className="dark">
-//       <head>
-//         <link rel="alternate" hrefLang="en" href="https://snoopdoggdollar.org/en" />
-//         <link rel="alternate" hrefLang="tr" href="https://snoopdoggdollar.org/tr" />
-//         <link rel="alternate" hrefLang="pt" href="https://snoopdoggdollar.org/pt" />
-//         <link rel="alternate" hrefLang="fr" href="https://snoopdoggdollar.org/fr" />
-//         <link rel="alternate" hrefLang="en-ie" href="https://snoopdoggdollar.org/ie" />
-//         <link rel="alternate" hrefLang="hi-in" href="https://snoopdoggdollar.org/in" />
-//         <link rel="alternate" hrefLang="x-default" href="https://snoopdoggdollar.org" />
-//         <link rel="canonical" href="https://snoopdoggdollar.org" />
-//         <meta name="theme-color" content="#000000" />
-//         <meta name="apple-mobile-web-app-capable" content="yes" />
-//         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-//         <meta name="format-detection" content="telephone=no" />
-        
-// <link
-//   rel="preload"
-//   href="/fonts/lapsus.woff2"
-//   as="font"
-//   type="font/woff2"
-//   crossOrigin="anonymous"
-// />
-
-//   <link rel="preconnect" href="https://boost.bgaming-network.com" />
-//   <link rel="preconnect" href="https://replays.bgaming-network.com" />
-//   <link rel="preconnect" href="https://brush.bgaming-network.com" />
-//   <link rel="preconnect" href="https://cdn.bgaming-network.com" />
-
-  
-
-//       </head>
-//       <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
-//         <Suspense fallback={<div>Loading.</div>}>{children}</Suspense>
-//         <Analytics />
-//       </body>
-//     </html>
-//   )
-// }
-
-
-
-
-
-
-
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import Script from "next/script"
-import GA from "@/components/ga-tracker"
 import "./globals.css"
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#000000",
+}
+
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars - Hip-Hop Slot Game | Big Wins",
+  title: "Snoop Dogg Dollars Slot | Play Demo, Review & Strategy 2025",
   description:
-    "Play the exclusive Snoop Dogg hip-hop slot — free spins, no deposit bonus, huge jackpots and x1000 multipliers! Spin wild reels, buy bonus rounds, test demo mode or hit real money wins. High RTP, max win potential and nonstop action — the ultimate hip-hop casino experience with Snoop Dogg. Claim your bonus and start winning big now!",
-  keywords:
-    "snoop dogg, slot game, casino, jackpot, hip-hop, online casino, big wins, snoop dogg dollars",
-  generator: "Snoop Dogg Dollars",
-  viewport: "width=device-width, initial-scale=1",
+    "Snoop Dogg Dollars by BGaming — 97% RTP, 10,000x max win, cluster pays. Play free demo, read the full review, learn winning strategy, and claim 200% bonus + 100 free spins at 1WIN.",
+  keywords: [
+    "snoop dogg dollars",
+    "snoop dogg dollars slot",
+    "snoop dogg dollars demo",
+    "snoop dogg dollars review",
+    "snoop dogg dollars rtp",
+    "snoop dogg dollars strategy",
+    "snoop dogg dollars bonus",
+    "snoop dogg dollars free spins",
+    "bgaming snoop dogg dollars",
+    "play snoop dogg dollars",
+  ],
+  generator: "Next.js",
   robots: "index, follow",
   alternates: {
     canonical: "https://snoopdoggdollar.org",
-    languages: {
-      "en-US": "https://snoopdoggdollar.org/en",
-      "tr-TR": "https://snoopdoggdollar.org/tr",
-      "pt-PT": "https://snoopdoggdollar.org/pt",
-      "fr-FR": "https://snoopdoggdollar.org/fr",
-      "en-IE": "https://snoopdoggdollar.org/ie",
-      "hi-IN": "https://snoopdoggdollar.org/in"
-    }
   },
   openGraph: {
-    title: "Snoop Dogg Dollars - Hip-Hop Slot Game",
-    description: "Win big with the King of Hip-Hop!",
+    title: "Snoop Dogg Dollars Slot | 97% RTP & 10,000x Max Win",
+    description: "Play the Snoop Dogg Dollars slot by BGaming. Free demo, full review, strategy guide, and 200% bonus at 1WIN.",
     type: "website",
     locale: "en_US",
-    alternateLocale: ["tr_TR", "pt_PT", "fr_FR", "en_IE", "hi_IN"],
     url: "https://snoopdoggdollar.org",
     siteName: "Snoop Dogg Dollars",
     images: [
@@ -144,16 +48,21 @@ export const metadata: Metadata = {
         url: "https://snoopdoggdollar.org/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Snoop Dogg Dollars Slot Game"
-      }
-    ]
+        alt: "Snoop Dogg Dollars Slot by BGaming",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Snoop Dogg Dollars - Hip-Hop Slot Game",
-    description: "Win big with Snoop Dogg! The ultimate hip-hop slot experience.",
-    images: ["https://snoopdoggdollar.org/og-image.jpg"]
-  }
+    title: "Snoop Dogg Dollars Slot | 97% RTP",
+    description: "Play Snoop Dogg Dollars by BGaming. Free demo, review, strategy & 200% bonus at 1WIN.",
+    images: ["https://snoopdoggdollar.org/og-image.jpg"],
+  },
+  authors: [{ name: "Snoop Dogg Dollars" }],
+  publisher: "Snoop Dogg Dollars",
+  verification: {
+    google: "your-google-verification-code",
+  },
 }
 
 export default function RootLayout({
@@ -162,43 +71,40 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="alternate" hrefLang="en" href="https://snoopdoggdollar.org/en" />
-        <link rel="alternate" hrefLang="tr" href="https://snoopdoggdollar.org/tr" />
-        <link rel="alternate" hrefLang="pt" href="https://snoopdoggdollar.org/pt" />
-        <link rel="alternate" hrefLang="fr" href="https://snoopdoggdollar.org/fr" />
-        <link rel="alternate" hrefLang="en-ie" href="https://snoopdoggdollar.org/ie" />
-        <link rel="alternate" hrefLang="hi-in" href="https://snoopdoggdollar.org/in" />
-        <link rel="alternate" hrefLang="x-default" href="https://snoopdoggdollar.org" />
+        <link rel="preconnect" href="https://boost.bgaming-network.com" />
+        <link rel="preconnect" href="https://replays.bgaming-network.com" />
+        <link rel="preconnect" href="https://brush.bgaming-network.com" />
+        <link rel="preconnect" href="https://cdn.bgaming-network.com" />
         <link rel="canonical" href="https://snoopdoggdollar.org" />
-        <meta name="theme-color" content="#000000" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
       </head>
 
       <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
-        <Suspense fallback={<div>Loading.</div>}>{children}</Suspense>
+        <Suspense fallback={<div className="min-h-screen bg-black flex items-center justify-center text-white">Loading...</div>}>
+          <Header />
+          <div className="pt-14">{children}</div>
+          <Footer />
+        </Suspense>
         <Analytics />
 
-        {/* === GA4: loader === */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID ?? "G-3CVZMLWDXD"}`}
           strategy="afterInteractive"
         />
-        {/* === GA4: init (шлёт первый page_view) === */}
         <Script id="ga-init" strategy="afterInteractive">
           {`
             (function(gaId){
-              if(!gaId) { console.warn('GA: нет NEXT_PUBLIC_GA_ID'); return; }
+              if(!gaId) { console.warn('GA: no NEXT_PUBLIC_GA_ID'); return; }
               window.dataLayer = window.dataLayer || [];
               function gtag(){ dataLayer.push(arguments); }
               window.gtag = window.gtag || gtag;
               gtag('js', new Date());
-              gtag('config', gaId); // первый page_view автоматически
+              gtag('config', gaId);
             })('${process.env.NEXT_PUBLIC_GA_ID ?? "G-3CVZMLWDXD"}');
           `}
         </Script>
-        {/* === GA4: SPA-трекинг без хуков/компонентов === */}
         <Script id="ga-spa" strategy="afterInteractive">
           {`
             (function(){
@@ -210,7 +116,6 @@ export default function RootLayout({
                   page_title: document.title
                 });
               };
-              // обёртка для pushState/replaceState
               var wrap = function(type){
                 var orig = history[type];
                 return function(){
