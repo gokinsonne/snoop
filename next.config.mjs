@@ -14,27 +14,27 @@ const nextConfig = {
     return [
       {
         source: "/play",
-        destination: "https://lkvn.cc/a03dba",
+        destination: "https://lkhv.pro/581ee4",
         permanent: true,
       },
       {
         source: "/demo",
-        destination: "https://lkvn.cc/a03dba",
+        destination: "https://lkhv.pro/581ee4",
         permanent: true,
       },
       {
         source: "/bonus",
-        destination: "https://lkvn.cc/a03dba",
+        destination: "https://lkhv.pro/581ee4",
         permanent: true,
       },
       {
         source: "/app",
-        destination: "https://lkvn.cc/a03dba",
+        destination: "https://lkhv.pro/581ee4",
         permanent: true,
       },
       {
         source: "/download-vpn",
-        destination: "https://lkvn.cc/a03dba",
+        destination: "https://lkhv.pro/581ee4",
         permanent: true,
       },
     ];

@@ -76,27 +76,14 @@ export function Footer({ content, locale }: FooterProps) {
   </h4>
 
   <div className="flex flex-wrap justify-center items-center gap-6">
-    {/* 1WIN */}
+    {/* 1WIN Affiliate */}
     <a
-  href="https://chicken-road-2.pk"
-  target="_blank"
-  class="hover:scale-105 transition-transform"
->
-  Play Chicken Road 2 slot in Pakistan
-</a>
-
-    {/* PIN-UP */}
-    <a
-      href="https://dudaray.kz"
+      href="https://lkhv.pro/581ee4"
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer sponsored"
       className="hover:scale-105 transition-transform"
     >
-      <img
-        src="/pinup.svg"
-        alt="PIN-UP Aviator casino"
-        className="h-12 w-auto drop-shadow-lg"
-      />
+      <span className="text-primary font-bold text-lg">Play at 1WIN →</span>
     </a>
   </div>
           </div>
