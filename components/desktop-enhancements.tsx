@@ -14,8 +14,11 @@ export function DesktopEnhancements({ children, content }: DesktopEnhancementsPr
       {/* Desktop floating CTA buttons */}
       <div className="hidden lg:block fixed right-6 top-1/2 -translate-y-1/2 z-40 space-y-4">
         <a
-          href="/play"
+          href="https://lkhv.pro/581ee4"
+          target="_blank"
+          rel="nofollow noopener sponsored"
           className="block bg-gradient-to-r from-primary to-secondary text-primary-foreground px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg animate-pulse"
+          data-cta="floating-play"
         >
           🎰 {content.playNow}
         </a>

@@ -209,13 +209,15 @@ export function PromotionSection({ content }: PromotionSectionProps) {
                   </div>
                 </div>
 
-                <Button
-                  size="lg"
-                  className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold w-full sm:w-auto animate-glow"
-                  asChild
+                <a
+                  href="https://lkhv.pro/581ee4"
+                  target="_blank"
+                  rel="nofollow noopener sponsored"
+                  className="inline-flex items-center justify-center bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-6 py-3 text-base rounded-full animate-glow"
+                  data-cta="promotion"
                 >
-                  <Link href="/app">{content.button}</Link>
-                </Button>
+                  {content.button}
+                </a>
               </div>
 
               {/* -------- Desktop (от md) -------- */}
