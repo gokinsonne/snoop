@@ -4,12 +4,12 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreDuringBuildErrors: true,
   },
   images: {
     unoptimized: true,
   },
-
+  trailingSlash: true,
   async redirects() {
     return [
       {
