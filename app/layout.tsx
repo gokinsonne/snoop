@@ -16,9 +16,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Slot | Play Demo, Review & Strategy 2025",
+  title: "Snoop Dogg Dollars Slot | 97% RTP, 10,000x Win & Free Demo 2025",
   description:
-    "Snoop Dogg Dollars by BGaming — 97% RTP, 10,000x max win, cluster pays. Play free demo, read the full review, learn winning strategy, and claim 200% bonus + 100 free spins at 1WIN.",
+    "Play Snoop Dogg Dollars by BGaming — 97% RTP, 10,000x max win, free demo. Read review, learn strategy, claim 200% bonus + 100 free spins at 1WIN.",
   keywords: [
     "snoop dogg dollars",
     "snoop dogg dollars slot",
