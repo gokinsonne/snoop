@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
   title: "Terms of Service | Snoop Dogg Dollars",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Script from "next/script"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars RTP | 97% Explained & Compared 2025",
@@ -42,6 +43,11 @@ export default function RtpPage() {
           mainEntityOfPage: { "@type": "WebPage", "@id": "https://snoopdoggdollar.org/rtp" },
         })}
       </Script>
+
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: "RTP", url: "https://snoopdoggdollar.org/rtp" }
+      ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">

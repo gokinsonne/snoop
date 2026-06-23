@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 import Script from "next/script"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars FAQ | RTP, Volatility, Bonus Buy & Free Spins",
+  title: "Snoop Dogg Dollars FAQ | RTP, Bonus Buy, Free Spins & Mobile",
   description:
-    "Got questions about Snoop Dogg Dollars? Find answers about RTP, volatility, bonus buy, free spins, mobile play, and where to play for real money.",
+    "Answers to all Snoop Dogg Dollars questions. RTP, volatility, bonus buy, free spins, mobile play. Play with 200% bonus at 1WIN.",
   keywords: [
     "snoop dogg dollars faq",
     "snoop dogg dollars questions",
@@ -87,6 +88,11 @@ export default function FAQPage() {
           })),
         })}
       </Script>
+
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: "FAQ", url: "https://snoopdoggdollar.org/faq" }
+      ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
         <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">

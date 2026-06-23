@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Script from "next/script"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
   title: "Play Snoop Dogg Dollars in India | UPI, Paytm & 1WIN 2025",
@@ -38,6 +39,11 @@ export default function PlayInIndiaPage() {
           datePublished: "2025-06-22",
         })}
       </Script>
+
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: "Play in India", url: "https://snoopdoggdollar.org/play-in-india" }
+      ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">

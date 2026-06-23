@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Script from "next/script"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars Bonus | 200% + 100 Free Spins at 1WIN 2025",
@@ -40,6 +41,11 @@ export default function BonusPage() {
           seller: { "@type": "Organization", name: "1WIN" },
         })}
       </Script>
+
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: "Bonus", url: "https://snoopdoggdollar.org/bonus" }
+      ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">

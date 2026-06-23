@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 import Script from "next/script"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Where to Play Snoop Dogg Dollars | Best Casinos & Bonuses 2025",
+  title: "Where to Play Snoop Dogg Dollars | 1WIN Bonus 200% + 100 FS",
   description:
-    "Find the best casinos to play Snoop Dogg Dollars. Compare bonuses, RTP, and withdrawal speed. 1WIN offers 200% bonus + 100 free spins. Start winning today.",
+    "Find the best casino to play Snoop Dogg Dollars. 1WIN offers 200% bonus + 100 free spins, verified 97% RTP, and fast withdrawals. Start now.",
   keywords: [
     "where to play snoop dogg dollars",
     "snoop dogg dollars casino",
@@ -65,6 +66,11 @@ export default function CasinosPage() {
           })),
         })}
       </Script>
+
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: "Casinos", url: "https://snoopdoggdollar.org/casinos" }
+      ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Script from "next/script"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturesSection } from "@/components/features-section"
 import { PromotionSection } from "@/components/promotion-section"
@@ -83,6 +84,10 @@ export default function HomePage() {
       <Script id="faq-schema" type="application/ld+json">
         {JSON.stringify(faqSchema)}
       </Script>
+
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" }
+      ]} />
 
       <DesktopEnhancements content={content.header}>
         <div className="min-h-screen bg-background">

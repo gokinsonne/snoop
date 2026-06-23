@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 import Script from "next/script"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Demo | Play Free (No Download, No Registration)",
+  title: "Snoop Dogg Dollars Demo | Play Free (No Registration, 97% RTP)",
   description:
-    "Play Snoop Dogg Dollars demo for free. No download, no registration. Same 97% RTP, all features including Snoop Spin and Bonus Buy. Try before playing real money at 1WIN.",
+    "Play Snoop Dogg Dollars demo for free. No download, no registration. Same 97% RTP, all features. Try before playing real money at 1WIN.",
   keywords: [
     "snoop dogg dollars demo",
     "snoop dogg dollars free play",
@@ -52,6 +53,11 @@ export default function DemoPage() {
           },
         })}
       </Script>
+
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: "Demo", url: "https://snoopdoggdollar.org/demo" }
+      ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
