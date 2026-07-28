@@ -1,0 +1,31 @@
+{
+  "title": "Snoop Dogg Dollars feature-cost normalization",
+  "currency": "stake currency",
+  "formulas": {
+    "snoop_spin": "base_bet * 20",
+    "bonus_buy_100x": "base_bet * 100",
+    "bonus_buy_200x": "base_bet * 200",
+    "bonus_buy_400x": "base_bet * 400",
+    "bonus_buy_800x": "base_bet * 800",
+    "theoretical_win_cap": "base_bet * 10000"
+  },
+  "equivalent_snoop_spins": {
+    "100x_bonus_buy": 5,
+    "200x_bonus_buy": 10,
+    "400x_bonus_buy": 20,
+    "800x_bonus_buy": 40
+  },
+  "rows": [
+    {"base_bet": 0.25, "snoop_spin": 5, "buy_100x": 25, "buy_200x": 50, "buy_400x": 100, "buy_800x": 200, "theoretical_10000x_cap": 2500},
+    {"base_bet": 1, "snoop_spin": 20, "buy_100x": 100, "buy_200x": 200, "buy_400x": 400, "buy_800x": 800, "theoretical_10000x_cap": 10000},
+    {"base_bet": 5, "snoop_spin": 100, "buy_100x": 500, "buy_200x": 1000, "buy_400x": 2000, "buy_800x": 4000, "theoretical_10000x_cap": 50000},
+    {"base_bet": 25, "snoop_spin": 500, "buy_100x": 2500, "buy_200x": 5000, "buy_400x": 10000, "buy_800x": 20000, "theoretical_10000x_cap": 250000}
+  ],
+  "limitations": [
+    "This is deterministic cost normalization, not a simulation of outcomes.",
+    "Feature availability and currency limits can vary by operator and jurisdiction.",
+    "Theoretical maximum is not a likely or guaranteed result."
+  ],
+  "methodology": "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/",
+  "last_reviewed": "2026-07-28"
+}

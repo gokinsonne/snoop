@@ -34,6 +34,7 @@ const routes = [
   "/terms-of-service",
   "/responsible-gaming",
   "/editorial-policy",
+  "/research/snoop-dogg-dollars-feature-costs",
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -22,6 +22,7 @@ export function Footer() {
     { href: "/terms-of-service", label: "Terms of Service" },
     { href: "/responsible-gaming", label: "Responsible Gaming" },
     { href: "/editorial-policy", label: "Editorial Policy" },
+    { href: "/research/snoop-dogg-dollars-feature-costs", label: "Open Research" },
     { href: "/sitemap.xml", label: "Sitemap" },
   ]
 
