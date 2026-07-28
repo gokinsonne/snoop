@@ -3,8 +3,8 @@ import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Play Snoop Dogg Dollars in India | UPI, Paytm & 1WIN 2025",
-  description: "Play Snoop Dogg Dollars in India. UPI, Paytm, PhonePe deposits. Hindi support. 200% bonus + 100 free spins at 1WIN. 97% RTP.",
+  title: "Play Snoop Dogg Dollars in India | UPI, Paytm & 1WIN 2026",
+  description: "Play Snoop Dogg Dollars in India. UPI, Paytm, PhonePe deposits. Hindi support. current welcome offer at 1WIN. 97% RTP.",
   keywords: [
     "snoop dogg dollars India",
     "play snoop dogg dollars in India",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Play Snoop Dogg Dollars in India | UPI & 1WIN",
-    description: "Play Snoop Dogg Dollars in India with UPI deposits. 200% bonus at 1WIN.",
+    description: "Play Snoop Dogg Dollars in India with UPI deposits. current offer at 1WIN.",
     type: "article",
     url: "https://snoopdoggdollar.org/play-in-india",
     siteName: "Snoop Dogg Dollars",
@@ -36,7 +36,7 @@ export default function PlayInIndiaPage() {
           headline: "Play Snoop Dogg Dollars in India",
           description: "Guide to playing Snoop Dogg Dollars in India with UPI, Paytm, and 1WIN.",
           author: { "@type": "Organization", name: "Snoop Dogg Dollars" },
-          datePublished: "2025-06-22",
+          datePublished: "2026-06-22",
         })}
       </Script>
 
@@ -99,7 +99,7 @@ export default function PlayInIndiaPage() {
             <p>Minimum deposit is just <strong>₹100</strong> (about $1.20). First deposit gets a <strong>200% bonus</strong> up to ₹42,000 + 100 free spins. This is one of the best bonuses available for Indian players.</p>
 
             <h2>Withdrawals</h2>
-            <p>Withdrawals to UPI and Paytm are processed within 24 hours. Crypto withdrawals are faster — under 1 hour. No KYC required for withdrawals under ₹50,000.</p>
+            <p>Payment methods, processing times, limits and identity checks depend on the operator and account. Verify the live cashier and withdrawal terms before depositing.</p>
 
             <h2>Mobile Play in India</h2>
             <p>Snoop Dogg Dollars runs on any Android or iOS device. No app download needed. Just open 1WIN in your mobile browser and launch the game. Works perfectly on 4G and Wi-Fi.</p>
@@ -107,7 +107,7 @@ export default function PlayInIndiaPage() {
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Play at 1WIN India</h2>
-            <p className="text-neutral-400 mb-6">200% bonus + 100 free spins. UPI deposits. Hindi support.</p>
+            <p className="text-neutral-400 mb-6">current welcome offer. UPI deposits. Hindi support.</p>
             <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
           </section>
         </div>

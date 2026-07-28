@@ -44,7 +44,7 @@ export default function HowToPlayPage() {
             {
               "@type": "HowToStep",
               name: "Choose Your Casino",
-              text: "Pick a trusted casino that offers Snoop Dogg Dollars with a 200% welcome bonus. We recommend 1WIN for the best odds and fastest payouts.",
+              text: "Pick an operator available in your country, then verify its licence details, RTP setting, payment methods and current terms.",
               url: "https://snoopdoggdollar.org/how-to-play#step-1",
             },
             {
@@ -118,10 +118,10 @@ export default function HowToPlayPage() {
           <article className="prose prose-invert prose-lg max-w-none">
             <h2 id="step-1">Step 1: Choose Your Casino</h2>
             <p>
-              First, you need a casino that offers Snoop Dogg Dollars with the full 97% RTP configuration. Not all operators run the highest setting. We recommend <strong>1WIN</strong> — they offer a 200% welcome bonus up to $500 plus 100 free spins, and they carry the verified 97% RTP version.
+              First, you need a casino that offers Snoop Dogg Dollars with the full 97% RTP configuration. Not all operators run the highest setting. We recommend <strong>1WIN</strong> — they offer a 200% welcome bonus up to $500 plus 100 free spins, and they carry the default 97% RTP version.
             </p>
             <p>
-              Sign up takes under 2 minutes. No KYC required for crypto deposits. Minimum deposit is just $1.
+              Registration time, minimum deposit and identity checks vary by operator, country and payment method. Check these terms before sending funds.
             </p>
 
             <h2 id="step-2">Step 2: Set Your Bet</h2>
@@ -212,7 +212,7 @@ export default function HowToPlayPage() {
               Ready to Play?
             </h2>
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">
-              Join 1WIN and get a 200% welcome bonus + 100 free spins. Play Snoop Dogg Dollars with the best odds and fastest withdrawals.
+              Join 1WIN and get a current welcome offer. Play Snoop Dogg Dollars with the current game and payment terms.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
@@ -244,7 +244,7 @@ export default function HowToPlayPage() {
               </a>
               <a href="/casinos" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3>
-                <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with verified bonuses.</p>
+                <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p>
               </a>
               <a href="/strategy" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Winning Strategy</h3>

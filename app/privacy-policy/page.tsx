@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-8">Privacy Policy</h1>
         <div className="prose prose-invert max-w-none">
-          <p className="text-neutral-400">Last updated: June 22, 2025</p>
+          <p className="text-neutral-400">Last updated: June 22, 2026</p>
           <h2>1. Introduction</h2>
           <p>At SnoopDoggDollar.org, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.</p>
           <h2>2. Information We Collect</h2>

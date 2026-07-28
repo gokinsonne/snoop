@@ -5,7 +5,7 @@ import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars FAQ | RTP, Bonus Buy, Free Spins & Mobile",
   description:
-    "Answers to all Snoop Dogg Dollars questions. RTP, volatility, bonus buy, free spins, mobile play. Play with 200% bonus at 1WIN.",
+    "Answers to all Snoop Dogg Dollars questions. RTP, volatility, bonus buy, free spins, mobile play. Play with current offer at 1WIN.",
   keywords: [
     "snoop dogg dollars faq",
     "snoop dogg dollars questions",

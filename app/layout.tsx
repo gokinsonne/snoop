@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { AffiliateTracker } from "@/components/affiliate-tracker"
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { GeistSans } from "geist/font/sans"
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Snoop Dogg Dollars",
   },
   description:
-    "Play Snoop Dogg Dollars by BGaming — 97% RTP, 10,000x max win, free demo. Read review, learn strategy, claim 200% bonus + 100 free spins at 1WIN.",
+    "Independent Snoop Dogg Dollars guide: 97% default RTP, 10,000x max win, features, free demo and crypto casino payment checks.",
   keywords: [
     "snoop dogg dollars",
     "snoop dogg dollars slot",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Snoop Dogg Dollars Slot | 97% RTP & 10,000x Max Win",
-    description: "Play the Snoop Dogg Dollars slot by BGaming. Free demo, full review, strategy guide, and 200% bonus at 1WIN.",
+    description: "Independent Snoop Dogg Dollars review, free demo, feature guide and crypto casino payment checks.",
     type: "website",
     locale: "en_US",
     url: "https://snoopdoggdollar.org",
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Snoop Dogg Dollars Slot | 97% RTP",
-    description: "Play Snoop Dogg Dollars by BGaming. Free demo, review, strategy & 200% bonus at 1WIN.",
+    description: "Independent Snoop Dogg Dollars review, demo, RTP and crypto casino guide.",
     images: ["https://snoopdoggdollar.org/og-image.jpg"],
   },
   authors: [{ name: "Snoop Dogg Dollars" }],
@@ -87,6 +88,7 @@ export default function RootLayout({
           <Footer />
         </Suspense>
         <Analytics />
+        <AffiliateTracker />
 
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID ?? "G-3CVZMLWDXD"}`}

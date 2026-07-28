@@ -14,7 +14,7 @@ export default function TermsOfServicePage() {
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-8">Terms of Service</h1>
         <div className="prose prose-invert max-w-none">
-          <p className="text-neutral-400">Last updated: June 22, 2025</p>
+          <p className="text-neutral-400">Last updated: June 22, 2026</p>
           <h2>1. Acceptance of Terms</h2>
           <p>By accessing and using SnoopDoggDollar.org, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website.</p>
           <h2>2. Age Restriction</h2>

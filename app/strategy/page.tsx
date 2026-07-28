@@ -5,7 +5,7 @@ import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars Strategy | Bankroll, Snoop Spin & Bonus Buy Tips",
   description:
-    "Master Snoop Dogg Dollars with proven strategies. Bankroll management, Snoop Spin timing, Bonus Buy tiers. Play smart with 200% bonus at 1WIN.",
+    "Master Snoop Dogg Dollars with proven strategies. Bankroll management, Snoop Spin timing, Bonus Buy tiers. Play smart with current offer at 1WIN.",
   keywords: [
     "snoop dogg dollars strategy",
     "snoop dogg dollars tips",
@@ -34,7 +34,7 @@ export default function StrategyPage() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Snoop Dogg Dollars Strategy | Win More with These Tips 2025",
+          headline: "Snoop Dogg Dollars Strategy | Win More with These Tips 2026",
           description: "Master Snoop Dogg Dollars with proven strategies for bankroll management, Snoop Spin, Bonus Buy, and free spins.",
           image: "https://snoopdoggdollar.org/og-image.jpg",
           author: {
@@ -50,8 +50,8 @@ export default function StrategyPage() {
               url: "https://snoopdoggdollar.org/favicon.ico",
             },
           },
-          datePublished: "2025-06-22",
-          dateModified: "2025-06-22",
+          datePublished: "2026-06-22",
+          dateModified: "2026-06-22",
           mainEntityOfPage: {
             "@type": "WebPage",
             "@id": "https://snoopdoggdollar.org/strategy",
@@ -240,7 +240,7 @@ export default function StrategyPage() {
               Ready to Test Your Strategy?
             </h2>
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">
-              Join 1WIN and get a 200% welcome bonus + 100 free spins. Play Snoop Dogg Dollars with the best odds and fastest withdrawals.
+              Join 1WIN and get a current welcome offer. Play Snoop Dogg Dollars with the current game and payment terms.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
@@ -275,7 +275,7 @@ export default function StrategyPage() {
               </a>
               <a href="/casinos" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3>
-                <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with verified bonuses.</p>
+                <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p>
               </a>
               <a href="/faq" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">FAQ</h3>

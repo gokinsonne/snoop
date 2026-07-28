@@ -3,7 +3,7 @@ import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Max Win | How to Hit 10,000x 2025",
+  title: "Snoop Dogg Dollars Max Win | How to Hit 10,000x 2026",
   description: "How to hit the 10,000x max win on Snoop Dogg Dollars. Bonus Buy strategy, Snoop Spin, free spins tactics, and real probability breakdown.",
   keywords: [
     "snoop dogg dollars max win",
@@ -35,7 +35,7 @@ export default function MaxWinPage() {
           headline: "Snoop Dogg Dollars Max Win | How to Hit 10,000x",
           description: "Complete guide to maximizing your win potential on Snoop Dogg Dollars.",
           author: { "@type": "Organization", name: "Snoop Dogg Dollars" },
-          datePublished: "2025-06-22",
+          datePublished: "2026-06-22",
         })}
       </Script>
 
@@ -101,7 +101,7 @@ export default function MaxWinPage() {
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Ready to Chase the Max Win?</h2>
-            <p className="text-neutral-400 mb-6">Join 1WIN and play with 200% bonus + 100 free spins.</p>
+            <p className="text-neutral-400 mb-6">Join 1WIN and play with current welcome offer.</p>
             <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
           </section>
         </div>

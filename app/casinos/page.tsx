@@ -5,7 +5,7 @@ import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 export const metadata: Metadata = {
   title: "Where to Play Snoop Dogg Dollars | 1WIN Bonus 200% + 100 FS",
   description:
-    "Find the best casino to play Snoop Dogg Dollars. 1WIN offers 200% bonus + 100 free spins, verified 97% RTP, and fast withdrawals. Start now.",
+    "Find the best casino to play Snoop Dogg Dollars. 1WIN offers current welcome offer, default 97% RTP, and fast withdrawals. Start now.",
   keywords: [
     "where to play snoop dogg dollars",
     "snoop dogg dollars casino",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://snoopdoggdollar.org/casinos",
   },
   openGraph: {
-    title: "Where to Play Snoop Dogg Dollars | Best Casinos 2025",
+    title: "Where to Play Snoop Dogg Dollars | Best Casinos 2026",
     description: "Compare top casinos offering Snoop Dogg Dollars. 1WIN leads with 200% bonus + 100 FS.",
     type: "website",
     url: "https://snoopdoggdollar.org/casinos",
@@ -86,7 +86,7 @@ export default function CasinosPage() {
             Where to Play Snoop Dogg Dollars
           </h1>
           <p className="text-xl text-neutral-400 mb-12 max-w-2xl">
-            We hand-picked the best casinos offering Snoop Dogg Dollars with verified bonuses, fast withdrawals, and the 97% RTP configuration.
+            We hand-picked the best casinos offering Snoop Dogg Dollars with current offers and payment terms, and the 97% RTP configuration.
           </p>
 
           <div className="grid gap-6">
@@ -153,7 +153,7 @@ export default function CasinosPage() {
             <ul className="list-disc list-inside text-neutral-400 space-y-2">
               <li><strong className="text-white">Game availability</strong> — Confirmed Snoop Dogg Dollars in the lobby with the 97% RTP configuration.</li>
               <li><strong className="text-white">Bonus terms</strong> — Wagering requirements under 40x and fair max-win caps.</li>
-              <li><strong className="text-white">Withdrawal speed</strong> — Crypto processed in under 1 hour; e-wallets under 24 hours.</li>
+              <li><strong className="text-white">Withdrawal terms</strong> — Check current processing times, limits, fees and identity requirements in the cashier.</li>
               <li><strong className="text-white">Licensing</strong> — Curacao or stronger. We avoid unlicensed operators.</li>
               <li><strong className="text-white">Support</strong> — 24/7 live chat with response times under 5 minutes.</li>
             </ul>

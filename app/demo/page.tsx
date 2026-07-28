@@ -163,7 +163,7 @@ export default function DemoPage() {
             <ul>
               <li>Understand the cascade rhythm and can spot hot/cold streaks</li>
               <li>Have a bankroll that covers at least 200 spins at your chosen bet</li>
-              <li>Found a casino with the verified 97% RTP version</li>
+              <li>Found a casino with the default 97% RTP version</li>
               <li>Can play responsibly with pre-set win and loss limits</li>
             </ul>
 
@@ -187,7 +187,7 @@ export default function DemoPage() {
               Ready to Play for Real Money?
             </h2>
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">
-              Join 1WIN and get a 200% welcome bonus up to $500 + 100 free spins. Play Snoop Dogg Dollars with the best odds and fastest withdrawals.
+              Join 1WIN and get a 200% welcome bonus up to $500 + 100 free spins. Play Snoop Dogg Dollars with the current game and payment terms.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
@@ -226,7 +226,7 @@ export default function DemoPage() {
               </a>
               <a href="/casinos" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3>
-                <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with verified bonuses.</p>
+                <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p>
               </a>
             </div>
           </section>

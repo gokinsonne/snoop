@@ -20,7 +20,7 @@ export function CTASection({ locale }: CTASectionProps) {
       subtitle: "Join Snoop Dogg for big wins with the rhythm of hip-hop!",
       playButton: "PLAY NOW",
       downloadButton: "DOWNLOAD APP",
-      bonusText: "200% bonus + 100 free spins on first signup!",
+      bonusText: "current welcome offer on first signup!",
       urgency: "⏰ Limited time! Valid today only!",
     },
     pt: {

@@ -4,13 +4,13 @@ import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars vs Sugar Rush | Which Cluster Pays Slot Wins?",
-  description: "Compare Snoop Dogg Dollars vs Sugar Rush. RTP, volatility, max win, features, and which cluster pays slot is better for your bankroll. Detailed comparison 2025.",
+  description: "Compare Snoop Dogg Dollars vs Sugar Rush. RTP, volatility, max win, features, and which cluster pays slot is better for your bankroll. Detailed comparison 2026.",
   keywords: [
     "snoop dogg dollars vs sugar rush",
     "snoop dogg dollars comparison",
     "sugar rush vs snoop dogg dollars",
     "cluster pays slot comparison",
-    "best cluster pays slot 2025",
+    "best cluster pays slot 2026",
   ],
   robots: "index, follow",
   alternates: {
@@ -37,8 +37,8 @@ export default function VsSugarRushPage() {
           image: "https://snoopdoggdollar.org/og-image.jpg",
           author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org" },
           publisher: { "@type": "Organization", name: "Snoop Dogg Dollars", logo: { "@type": "ImageObject", url: "https://snoopdoggdollar.org/favicon.ico" } },
-          datePublished: "2025-06-22",
-          dateModified: "2025-06-22",
+          datePublished: "2026-06-22",
+          dateModified: "2026-06-22",
         })}
       </Script>
 
@@ -113,7 +113,7 @@ export default function VsSugarRushPage() {
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Play Snoop Dogg Dollars at 1WIN</h2>
-            <p className="text-neutral-400 mb-6">200% bonus + 100 free spins. Verified 97% RTP.</p>
+            <p className="text-neutral-400 mb-6">current welcome offer. Verified 97% RTP.</p>
             <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
           </section>
         </div>

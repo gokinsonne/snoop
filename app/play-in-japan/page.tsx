@@ -3,7 +3,7 @@ import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "スヌープ・ドッグ・ダラーズ | 日本語ガイド & デモプレイ 2025",
+  title: "スヌープ・ドッグ・ダラーズ | 日本語ガイド & デモプレイ 2026",
   description: "スヌープ・ドッグ・ダラーズを日本語でプレイ。無料デモ、レビュー、攻略法。1WINで200%ボーナス + 100フリースピン。97% RTP。",
   keywords: [
     "スヌープ・ドッグ・ダラーズ",
@@ -36,7 +36,7 @@ export default function PlayInJapanPage() {
           headline: "スヌープ・ドッグ・ダラーズ | 日本語ガイド & デモプレイ",
           description: "スヌープ・ドッグ・ダラーズの日本語ガイド。無料デモ、攻略法、ボーナス。",
           author: { "@type": "Organization", name: "Snoop Dogg Dollars" },
-          datePublished: "2025-06-22",
+          datePublished: "2026-06-22",
         })}
       </Script>
 

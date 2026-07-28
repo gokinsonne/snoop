@@ -3,7 +3,7 @@ import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Free Spins | How to Trigger & Maximize 2025",
+  title: "Snoop Dogg Dollars Free Spins | How to Trigger & Maximize 2026",
   description: "How to trigger free spins on Snoop Dogg Dollars. Scatters, persistent multipliers, retriggers, and tips to maximize your bonus round wins.",
   keywords: [
     "snoop dogg dollars free spins",
@@ -123,7 +123,7 @@ export default function FreeSpinsPage() {
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Play Snoop Dogg Dollars at 1WIN</h2>
-            <p className="text-neutral-400 mb-6">200% bonus + 100 free spins. Verified 97% RTP.</p>
+            <p className="text-neutral-400 mb-6">current welcome offer. Verified 97% RTP.</p>
             <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
           </section>
         </div>

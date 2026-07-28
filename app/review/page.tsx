@@ -3,9 +3,9 @@ import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Review | 97% RTP, 10,000x Max Win & Features 2025",
+  title: "Snoop Dogg Dollars Review | 97% RTP, 10,000x Max Win & Features 2026",
   description:
-    "Full Snoop Dogg Dollars slot review by BGaming. 97% RTP, 10,000x max win, cluster pays, bonus buy, Snoop Spin. Where to play with 200% bonus + 100 free spins.",
+    "Full Snoop Dogg Dollars slot review by BGaming. 97% RTP, 10,000x max win, cluster pays, bonus buy, Snoop Spin. Where to play with current welcome offer.",
   keywords: [
     "snoop dogg dollars slot review",
     "snoop dogg dollars rtp",
@@ -47,7 +47,7 @@ export default function ReviewPage() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Snoop Dogg Dollars Slot Review 2025 | RTP 97%, Features & Max Win",
+          headline: "Snoop Dogg Dollars Slot Review 2026 | RTP 97%, Features & Max Win",
           description:
             "In-depth review of the Snoop Dogg Dollars slot by BGaming. Cluster pays mechanics, 97% RTP, bonus buy, Snoop Spin, free spins and 10,000x max win potential.",
           image: "https://snoopdoggdollar.org/og-image.jpg",
@@ -65,7 +65,7 @@ export default function ReviewPage() {
             },
           },
           datePublished: "2024-10-30",
-          dateModified: "2025-06-22",
+          dateModified: "2026-06-22",
           mainEntityOfPage: {
             "@type": "WebPage",
             "@id": "https://snoopdoggdollar.org/review",
@@ -251,7 +251,7 @@ export default function ReviewPage() {
               Ready to Play Snoop Dogg Dollars?
             </h2>
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">
-              Join 1WIN and get a 200% welcome bonus + 100 free spins. Play Snoop Dogg Dollars with the best odds and fastest withdrawals.
+              Join 1WIN and get a current welcome offer. Play Snoop Dogg Dollars with the current game and payment terms.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
