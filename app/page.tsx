@@ -192,6 +192,8 @@ export default function HomePage() {
               <Link href="/crypto-casinos/snoop-dogg-dollars/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Snoop Dogg Dollars crypto casinos →</Link>
               <Link href="/bitcoin-casinos/snoop-dogg-dollars/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-amber-300/50">Bitcoin casino guide →</Link>
               <Link href="/usdt-casinos/snoop-dogg-dollars/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">USDT casino guide →</Link>
+              <Link href="/crypto-casino-deposits/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Crypto deposit checklist →</Link>
+              <Link href="/crypto-casino-withdrawals/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Crypto withdrawal guide →</Link>
             </div>
           </div>
         </div>

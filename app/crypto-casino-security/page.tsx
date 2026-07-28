@@ -1,0 +1,8 @@
+import type { Metadata } from "next"
+import { CryptoTopicPage } from "@/components/crypto-topic-page"
+export const metadata: Metadata = { title: "Crypto Casino Security Checklist (2026)", description: "Protect a crypto casino account with address checks, 2FA, wallet separation, phishing prevention and transaction records.", alternates: { canonical: "/crypto-casino-security/" } }
+export default function Page() { return <CryptoTopicPage eyebrow="Security checklist" title="Crypto casino security: protect the account and wallet" intro="Crypto removes chargeback protection and makes address mistakes permanent. Security therefore covers both the casino account and the wallet used to fund it." placement="crypto_security" facts={[["Account", "Unique password"],["Login", "Enable 2FA"],["Wallet", "Separate funds"],["Support", "Official channels"]]} sections={[
+  {title:"Secure the casino account",text:"Use a unique password, enable two-factor authentication where available and verify the domain before logging in. Do not approve unexpected password resets or support messages.",checks:["Bookmark the correct domain","Use an authenticator app","Review active sessions","Secure the linked email"]},
+  {title:"Limit wallet exposure",text:"Do not connect or fund a wallet containing long-term savings. Use only the amount allocated to entertainment and verify every address on the device that signs the transaction."},
+  {title:"Recognize impossible support requests",text:"Legitimate support does not need a seed phrase, private key or remote access to your wallet. Keep transaction IDs and cashier screenshots, but redact unrelated personal information before sharing evidence."},
+]} /> }

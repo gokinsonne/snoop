@@ -12,6 +12,9 @@ export function Footer() {
     { href: "/mobile", label: "Mobile" },
     { href: "/rtp", label: "RTP" },
     { href: "/crypto-casinos/snoop-dogg-dollars", label: "Crypto Casinos" },
+    { href: "/crypto-casino-deposits", label: "Crypto Deposits" },
+    { href: "/crypto-casino-withdrawals", label: "Crypto Withdrawals" },
+    { href: "/bitcoin-vs-usdt-casinos", label: "BTC vs USDT" },
   ]
 
   const legalLinks = [

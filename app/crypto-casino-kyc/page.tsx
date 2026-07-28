@@ -1,0 +1,8 @@
+import type { Metadata } from "next"
+import { CryptoTopicPage } from "@/components/crypto-topic-page"
+export const metadata: Metadata = { title: "Crypto Casino KYC: Verification Before Withdrawal (2026)", description: "Understand when a crypto casino may request identity, address, payment or source-of-funds verification.", alternates: { canonical: "/crypto-casino-kyc/" } }
+export default function Page() { return <CryptoTopicPage eyebrow="Account verification" title="Crypto casino KYC: what can be requested and when" intro="Using crypto does not remove an operator's verification obligations. A casino may request documents at registration, deposit, withdrawal or after a risk trigger." placement="crypto_kyc" facts={[["Crypto payment", "Not KYC-free"],["Timing", "Can vary"],["Documents", "Operator-defined"],["Withdrawal", "May be paused"]]} sections={[
+  {title:"Common verification categories",text:"An operator may request proof of identity, address, age, payment ownership or source of funds. Requirements depend on jurisdiction, account activity and the casino's policies.",checks:["Read the verification policy","Use accurate account details","Upload only through official channels","Never share a seed phrase"]},
+  {title:"Why checks appear at withdrawal",text:"Some checks are triggered by transaction size, changed account details, bonus abuse controls, payment risk or regulatory thresholds. A previous successful deposit is not proof that no later review will occur."},
+  {title:"Treat 'no KYC' claims carefully",text:"A marketing label may mean no routine check below certain conditions, not an unconditional promise. If you cannot or do not want to meet the published verification rules, do not deposit."},
+]} /> }

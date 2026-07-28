@@ -1,0 +1,8 @@
+import type { Metadata } from "next"
+import { CryptoTopicPage } from "@/components/crypto-topic-page"
+export const metadata: Metadata = { title: "Crypto Casino Fees: Deposits, Withdrawals & Spreads (2026)", description: "Calculate the real cost of a crypto casino payment: wallet fee, network fee, operator fee, exchange spread and withdrawal minimum.", alternates: { canonical: "/crypto-casino-fees/" } }
+export default function Page() { return <CryptoTopicPage eyebrow="Cost guide" title="Crypto casino fees: calculate the total, not one headline" intro="A cashier may advertise zero deposit fees while the wallet, blockchain, exchange rate or withdrawal policy still creates a meaningful total cost." placement="crypto_fees" facts={[["Wallet", "Sending fee"],["Network", "Congestion-based"],["Casino", "Possible fee"],["Hidden cost", "Exchange spread"]]} sections={[
+  {title:"The four cost layers",text:"Calculate the exchange purchase fee, withdrawal fee from the exchange, blockchain fee and any operator conversion or payout charge. Compare what leaves your bank with what arrives in the casino balance."},
+  {title:"Small transfers suffer most",text:"A fixed network fee consumes a larger percentage of a small deposit. Minimum deposit and withdrawal rules can also leave a residual balance that is expensive to move.",checks:["Record the quoted exchange rate","Check deposit minimum","Check withdrawal minimum","Compare net amount received"]},
+  {title:"Cheapest is not automatically best",text:"An unfamiliar low-fee network may create more operational risk than it saves. Prefer a supported route you understand and a wallet where you control the destination details."},
+]} /> }
