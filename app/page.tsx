@@ -41,6 +41,9 @@ const guides = [
   ["/how-to-play/", "How to play", "Clusters, refills and multiplier cells"],
   ["/bonus/", "Current bonus", "Offer details, restrictions and terms"],
   ["/mobile/", "Mobile guide", "Browser play on Android and iPhone"],
+  ["/bonus-buy/", "Bonus Buy", "Compare the 100×, 200×, 400× and 800× options"],
+  ["/snoop-spin/", "Snoop Spin", "What the 20× enhanced spin guarantees"],
+  ["/symbols-paytable/", "Symbols & paytable", "Clusters, Wilds, Scatters and multipliers"],
 ]
 
 const faq = [

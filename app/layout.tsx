@@ -3,8 +3,6 @@ import { Footer } from "@/components/footer"
 import { AffiliateTracker } from "@/components/affiliate-tracker"
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { GeistSans } from "geist/font/sans"
-import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import Script from "next/script"
 import "./globals.css"
@@ -72,29 +70,24 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="preconnect" href="https://boost.bgaming-network.com" />
-        <link rel="preconnect" href="https://replays.bgaming-network.com" />
-        <link rel="preconnect" href="https://brush.bgaming-network.com" />
-        <link rel="preconnect" href="https://cdn.bgaming-network.com" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
       </head>
 
-      <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable}`}>
+      <body className="min-h-screen overflow-x-hidden bg-black font-sans text-neutral-100 antialiased">
         <Suspense fallback={<div className="min-h-screen bg-black flex items-center justify-center text-white">Loading...</div>}>
           <Header />
           <div className="pt-14">{children}</div>
           <Footer />
         </Suspense>
-        <Analytics />
         <AffiliateTracker />
 
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID ?? "G-3CVZMLWDXD"}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="ga-init" strategy="afterInteractive">
+        <Script id="ga-init" strategy="lazyOnload">
           {`
             (function(gaId){
               if(!gaId) { console.warn('GA: no NEXT_PUBLIC_GA_ID'); return; }
