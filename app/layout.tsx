@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer"
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import Script from "next/script"
@@ -16,7 +15,11 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Slot | 97% RTP, 10,000x Win & Free Demo 2025",
+  metadataBase: new URL("https://snoopdoggdollar.org"),
+  title: {
+    default: "Snoop Dogg Dollars Slot Guide (2026)",
+    template: "%s | Snoop Dogg Dollars",
+  },
   description:
     "Play Snoop Dogg Dollars by BGaming — 97% RTP, 10,000x max win, free demo. Read review, learn strategy, claim 200% bonus + 100 free spins at 1WIN.",
   keywords: [
@@ -60,9 +63,6 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "Snoop Dogg Dollars" }],
   publisher: "Snoop Dogg Dollars",
-  verification: {
-    google: "your-google-verification-code",
-  },
 }
 
 export default function RootLayout({
@@ -75,13 +75,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://replays.bgaming-network.com" />
         <link rel="preconnect" href="https://brush.bgaming-network.com" />
         <link rel="preconnect" href="https://cdn.bgaming-network.com" />
-        <link rel="canonical" href="https://snoopdoggdollar.org" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
       </head>
 
-      <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased ${GeistSans.variable}`}>
         <Suspense fallback={<div className="min-h-screen bg-black flex items-center justify-center text-white">Loading...</div>}>
           <Header />
           <div className="pt-14">{children}</div>
@@ -103,32 +102,6 @@ export default function RootLayout({
               gtag('js', new Date());
               gtag('config', gaId);
             })('${process.env.NEXT_PUBLIC_GA_ID ?? "G-3CVZMLWDXD"}');
-          `}
-        </Script>
-        <Script id="ga-spa" strategy="afterInteractive">
-          {`
-            (function(){
-              var send = function(){
-                if (typeof window.gtag !== 'function') return;
-                window.gtag('event','page_view',{
-                  page_location: location.href,
-                  page_path: location.pathname + location.search,
-                  page_title: document.title
-                });
-              };
-              var wrap = function(type){
-                var orig = history[type];
-                return function(){
-                  var rv = orig.apply(this, arguments);
-                  window.dispatchEvent(new Event('routechange'));
-                  return rv;
-                };
-              };
-              history.pushState = wrap('pushState');
-              history.replaceState = wrap('replaceState');
-              window.addEventListener('popstate', function(){ window.dispatchEvent(new Event('routechange')); });
-              window.addEventListener('routechange', send);
-            })();
           `}
         </Script>
       </body>

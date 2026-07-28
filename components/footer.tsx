@@ -11,13 +11,14 @@ export function Footer() {
     { href: "/faq", label: "FAQ" },
     { href: "/mobile", label: "Mobile" },
     { href: "/rtp", label: "RTP" },
+    { href: "/crypto-casinos/snoop-dogg-dollars", label: "Crypto Casinos" },
   ]
 
   const legalLinks = [
     { href: "/privacy-policy", label: "Privacy Policy" },
     { href: "/terms-of-service", label: "Terms of Service" },
     { href: "/responsible-gaming", label: "Responsible Gaming" },
-    { href: "/sitemap", label: "Sitemap" },
+    { href: "/sitemap.xml", label: "Sitemap" },
   ]
 
   return (
@@ -83,7 +84,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-muted-foreground text-sm">
-                © 2025 SnoopDoggDollar.org. All rights reserved. 18+ | Responsible Gaming
+                © 2026 SnoopDoggDollar.org. Independent guide. 18+ | Responsible Gaming
               </p>
             </div>
 
