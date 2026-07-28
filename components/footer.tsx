@@ -21,6 +21,7 @@ export function Footer() {
     { href: "/privacy-policy", label: "Privacy Policy" },
     { href: "/terms-of-service", label: "Terms of Service" },
     { href: "/responsible-gaming", label: "Responsible Gaming" },
+    { href: "/editorial-policy", label: "Editorial Policy" },
     { href: "/sitemap.xml", label: "Sitemap" },
   ]
 
