@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AffiliateTracker } from "@/components/affiliate-tracker"
+import { WebsiteSchema } from "@/components/seo-schema"
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Suspense } from "react"
@@ -76,6 +77,7 @@ export default function RootLayout({
       </head>
 
       <body className="min-h-screen overflow-x-hidden bg-black font-sans text-neutral-100 antialiased">
+        <WebsiteSchema />
         <Suspense fallback={<div className="min-h-screen bg-black flex items-center justify-center text-white">Loading...</div>}>
           <Header />
           <div className="pt-14">{children}</div>

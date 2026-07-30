@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { ArticleSchema } from "@/components/seo-schema"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
 
@@ -12,8 +14,20 @@ export function CryptoGuidePage({
   title: string
   intro: string
 }) {
+  const path = currency === "Bitcoin"
+    ? "/bitcoin-casinos/snoop-dogg-dollars/"
+    : currency === "USDT"
+      ? "/usdt-casinos/snoop-dogg-dollars/"
+      : "/crypto-casinos/snoop-dogg-dollars/"
+
   return (
-    <main className="bg-[#080b09] text-neutral-100">
+    <>
+      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: title, url: `https://snoopdoggdollar.org${path}` },
+      ]} />
+      <main className="bg-[#080b09] text-neutral-100">
       <section className="border-b border-white/10 bg-[radial-gradient(circle_at_80%_10%,rgba(16,185,129,.2),transparent_35%)]">
         <div className="mx-auto max-w-5xl px-5 py-20">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">
@@ -90,6 +104,7 @@ export function CryptoGuidePage({
           <Link href="/responsible-gaming/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Responsible gambling →</Link>
         </div>
       </article>
-    </main>
+      </main>
+    </>
   )
 }

@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { ArticleSchema } from "@/components/seo-schema"
 
 type Props = {
   eyebrow: string
@@ -22,10 +24,30 @@ const cluster = [
   ["/crypto-casino-security/", "Security"],
 ]
 
+const paths: Record<string, string> = {
+  btc_vs_usdt: "/bitcoin-vs-usdt-casinos/",
+  crypto_bonuses: "/crypto-casino-bonuses/",
+  crypto_deposits: "/crypto-casino-deposits/",
+  crypto_fees: "/crypto-casino-fees/",
+  crypto_kyc: "/crypto-casino-kyc/",
+  crypto_networks: "/crypto-casino-networks/",
+  crypto_security: "/crypto-casino-security/",
+  crypto_withdrawals: "/crypto-casino-withdrawals/",
+}
+
 export function CryptoTopicPage({ eyebrow, title, intro, facts, sections, placement }: Props) {
+  const path = paths[placement]
+
   return (
-    <main className="bg-[#080b09] text-neutral-100">
-      <article className="mx-auto max-w-5xl px-5 py-16 sm:py-24">
+    <>
+      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: "Crypto casino guides", url: "https://snoopdoggdollar.org/crypto-casinos/snoop-dogg-dollars/" },
+        { name: title, url: `https://snoopdoggdollar.org${path}` },
+      ]} />
+      <main className="bg-[#080b09] text-neutral-100">
+        <article className="mx-auto max-w-5xl px-5 py-16 sm:py-24">
         <p className="text-sm font-black uppercase tracking-[.2em] text-emerald-400">{eyebrow}</p>
         <h1 className="mt-4 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">{title}</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-300">{intro}</p>
@@ -73,7 +95,8 @@ export function CryptoTopicPage({ eyebrow, title, intro, facts, sections, placem
             {cluster.map(([href, label]) => <Link key={href} href={href} className="rounded-full border border-white/15 px-4 py-2 text-sm font-bold hover:border-emerald-400/50">{label}</Link>)}
           </div>
         </nav>
-      </article>
-    </main>
+        </article>
+      </main>
+    </>
   )
 }

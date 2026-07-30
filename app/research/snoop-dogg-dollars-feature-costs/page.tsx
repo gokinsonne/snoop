@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { ArticleSchema } from "@/components/seo-schema"
 
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars Feature Cost Dataset & Research",
@@ -16,7 +18,18 @@ const rows = [
 
 export default function ResearchPage() {
   return (
-    <main className="bg-[#080b09] text-neutral-100">
+    <>
+      <ArticleSchema
+        path="/research/snoop-dogg-dollars-feature-costs/"
+        title="Snoop Dogg Dollars feature costs normalized by stake"
+        description="Original cost-normalization research for Snoop Spin, four Bonus Buy levels and the theoretical 10,000x cap."
+        section="Original research"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://snoopdoggdollar.org/" },
+        { name: "Feature cost research", url: "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/" },
+      ]} />
+      <main className="bg-[#080b09] text-neutral-100">
       <article className="mx-auto max-w-6xl px-5 py-16 sm:py-24">
         <p className="text-sm font-black uppercase tracking-[.2em] text-emerald-400">Open research · CC BY 4.0</p>
         <h1 className="mt-4 max-w-5xl text-4xl font-black tracking-tight sm:text-6xl">
@@ -62,6 +75,7 @@ export default function ResearchPage() {
         </section>
         <p className="mt-12 text-sm text-neutral-500">Dataset version 1.0 · Last reviewed 28 July 2026</p>
       </article>
-    </main>
+      </main>
+    </>
   )
 }

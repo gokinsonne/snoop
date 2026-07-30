@@ -57,11 +57,6 @@ export default function CasinosPage() {
               name: c.name,
               description: c.bonus,
               url: c.link,
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: c.rating,
-                bestRating: 5,
-              },
             },
           })),
         })}
