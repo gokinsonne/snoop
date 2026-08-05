@@ -1,4 +1,5 @@
 import Link from "next/link"
+import type { ReactNode } from "react"
 
 type Section = {
   title: string
@@ -13,9 +14,10 @@ type Props = {
   facts: Array<[string, string]>
   sections: Section[]
   related: Array<[string, string]>
+  children?: ReactNode
 }
 
-export function SlotFeatureGuide({ eyebrow, title, intro, facts, sections, related }: Props) {
+export function SlotFeatureGuide({ eyebrow, title, intro, facts, sections, related, children }: Props) {
   return (
     <main className="bg-[#080b09] text-neutral-100">
       <article className="mx-auto max-w-5xl px-5 py-16 sm:py-24">
@@ -31,6 +33,8 @@ export function SlotFeatureGuide({ eyebrow, title, intro, facts, sections, relat
             </div>
           ))}
         </dl>
+
+        {children && <div className="mt-12">{children}</div>}
 
         <div className="mt-14 space-y-12">
           {sections.map((section) => (

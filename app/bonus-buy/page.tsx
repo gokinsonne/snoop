@@ -1,5 +1,8 @@
 import type { Metadata } from "next"
 import { SlotFeatureGuide } from "@/components/slot-feature-guide"
+import { FeatureCostCalculator } from "@/components/feature-cost-calculator"
+import { ArticleSchema } from "@/components/seo-schema"
+import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars Bonus Buy: 100x–800x Explained (2026)",
@@ -8,7 +11,10 @@ export const metadata: Metadata = {
 }
 
 export default function BonusBuyPage() {
-  return <SlotFeatureGuide
+  return <>
+  <ArticleSchema path="/bonus-buy/" title="Snoop Dogg Dollars Bonus Buy: every 100x–800x option explained" description="Compare the four listed feature-buy tiers and calculate their exact cash cost." section="Game features" published="2026-07-28" modified="2026-08-05" />
+  <BreadcrumbSchema items={[{name:"Home",url:"https://snoopdoggdollar.org/"},{name:"Bonus Buy",url:"https://snoopdoggdollar.org/bonus-buy/"}]} />
+  <SlotFeatureGuide
     eyebrow="Feature guide"
     title="Snoop Dogg Dollars Bonus Buy: every 100x–800x option explained"
     intro="The Bonus Buy menu skips the base-game wait and opens a free-spins round for a fixed multiple of the stake. Paying more changes the starting setup, not the mathematical fact that every result remains random."
@@ -19,5 +25,6 @@ export default function BonusBuyPage() {
       { title: "RTP and regional restrictions", paragraphs: ["Bonus Buy availability depends on the casino, game configuration and local rules. Some regulated markets disable feature purchases entirely. Check the in-game information panel for the RTP shown in your session instead of assuming every operator uses the default setting.", "A casino promotion may also exclude Bonus Buy wagers from wagering contribution or impose a maximum bet. Read the live terms before combining a promotion with a feature purchase."] },
     ]}
     related={[["/free-spins/", "Free spins"], ["/rtp/", "RTP explained"], ["/strategy/", "Risk guide"], ["/demo/", "Free demo"]]}
-  />
+  ><FeatureCostCalculator /></SlotFeatureGuide>
+  </>
 }
