@@ -118,7 +118,7 @@ export default function HowToPlayPage() {
           <article className="prose prose-invert prose-lg max-w-none">
             <h2 id="step-1">Step 1: Choose Your Casino</h2>
             <p>
-              First, you need a casino that offers Snoop Dogg Dollars with the full 97% RTP configuration. Not all operators run the highest setting. We recommend <strong>1WIN</strong> — they offer a 200% welcome bonus up to $500 plus 100 free spins, and they carry the default 97% RTP version.
+              First, choose an operator available in your country and open the game information panel. RTP, payment methods and feature availability can vary. The current affiliate route leads to <strong>1WIN</strong>, but we cannot verify one configuration for every visitor or country.
             </p>
             <p>
               Registration time, minimum deposit and identity checks vary by operator, country and payment method. Check these terms before sending funds.
@@ -129,7 +129,7 @@ export default function HowToPlayPage() {
               Snoop Dogg Dollars accepts bets from <strong>$0.25 to $25 per spin</strong>. The bet controls all payouts and bonus buy costs. For beginners, we recommend starting at $0.25–$1 to learn the rhythm of the game before scaling up.
             </p>
             <p>
-              <strong>Pro tip:</strong> Your bankroll should cover at least 200 spins at your chosen bet. With 33.3% hit rate and very high volatility, dry spells are normal. A $50 bankroll at $0.25 gives you 200 spins — a safe starting point.
+              Convert the stake into cash before playing: a $50 limit at $0.25 equals at most 200 ordinary spins before wins or optional features. That is cost arithmetic, not a “safe” bankroll recommendation. Set a hard loss and time limit before starting.
             </p>
 
             <h2 id="step-3">Step 3: Spin the Reels</h2>
@@ -183,17 +183,17 @@ export default function HowToPlayPage() {
 
             <h3>Free Spins Round</h3>
             <p>
-              Free spins are where the big money is. Triggering Scatters transform into <strong>Wild symbols or x10 Cell Multipliers</strong> that remain for the entire bonus. Multipliers do <strong>not reset</strong> between spins — they compound across the entire session.
+              Triggering Scatters can transform into <strong>Wild symbols or x10 Cell Multipliers</strong> that remain for the bonus. Multipliers do <strong>not reset</strong> between free spins, which changes the feature structure but never guarantees a profitable result.
             </p>
 
             <h3>Snoop Spin</h3>
             <p>
-              For <strong>20x the base bet</strong>, Snoop Spin guarantees at least one Wild dug up before every spin. Expensive, but dramatically increases the chance of massive cascades.
+              For <strong>20x the base bet</strong>, Snoop Spin guarantees at least one Wild before the result. It concentrates twenty ordinary stake units into one paid action and does not guarantee a win.
             </p>
 
             <h3>Bonus Buy</h3>
             <p>
-              Four tiers available (where legal): 100x, 200x, 400x, and 800x. The 800x option turns all triggering Scatters into Wilds — the highest potential.
+              Four listed tiers are available where legal: 100x, 200x, 400x, and 800x. The 800x option turns triggering Scatters into Wilds, but can still return less than its purchase price.
             </p>
 
             <h2>Beginner Tips</h2>
@@ -201,7 +201,7 @@ export default function HowToPlayPage() {
               <li>Always verify the RTP is set to 97% before playing for real money.</li>
               <li>Start with the demo to understand the cascade rhythm.</li>
               <li>Don't chase Bonus Buy at 800x on a small bankroll — it's a high-risk move.</li>
-              <li>Snoop Spin at 20x is best used during hot sessions, not cold streaks.</li>
+              <li>Hot and cold streaks do not predict the next random result.</li>
               <li>Watch for the Weed symbol — it can turn a modest cascade into a monster win.</li>
             </ul>
           </article>
@@ -254,6 +254,8 @@ export default function HowToPlayPage() {
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">FAQ</h3>
                 <p className="mt-1 text-sm text-neutral-400">Common questions about mobile play, withdrawals, and more.</p>
               </a>
+              <a href="/vs-aztec-clusters/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400">Snoop vs Aztec Clusters</h3><p className="mt-1 text-sm text-neutral-400">Compare two BGaming approaches to cluster wins.</p></a>
+              <a href="/best-cluster-pays-slots/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400">Cluster-pays shortlist</h3><p className="mt-1 text-sm text-neutral-400">Choose by mechanics, cost and disclosed configuration.</p></a>
             </div>
           </section>
         </div>

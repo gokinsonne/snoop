@@ -3,13 +3,14 @@ import Image from "next/image"
 import Link from "next/link"
 import Script from "next/script"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
+import { FeatureCostCalculator } from "@/components/feature-cost-calculator"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Slot: Demo, RTP & Review (2026)",
+  title: "Snoop Dogg Dollars Slot: Demo, RTP, BTC & USDT Guide",
   description:
-    "Play the Snoop Dogg Dollars demo, check its 97% RTP, 10,000x max win, free spins and Bonus Buy rules, then compare real-money and crypto payment options.",
+    "Snoop Dogg Dollars demo and independent review: compare RTP variants, feature costs, BTC and USDT casino payment checks before playing.",
   alternates: { canonical: "https://snoopdoggdollar.org/" },
   openGraph: {
     title: "Snoop Dogg Dollars Slot — Demo, RTP & Honest Review",
@@ -44,6 +45,10 @@ const guides = [
   ["/bonus-buy/", "Bonus Buy", "Compare the 100×, 200×, 400× and 800× options"],
   ["/snoop-spin/", "Snoop Spin", "What the 20× enhanced spin guarantees"],
   ["/symbols-paytable/", "Symbols & paytable", "Clusters, Wilds, Scatters and multipliers"],
+  ["/vs-aztec-clusters/", "Snoop vs Aztec", "Compare two BGaming cluster-pays designs"],
+  ["/best-cluster-pays-slots/", "Best cluster slots", "A mechanics-first shortlist without fake rankings"],
+  ["/bgaming-cluster-slots/", "BGaming cluster guide", "How cascades and modifiers differ by game"],
+  ["/snoop-dogg-dollars-release-history/", "Release history", "Source, update and correction timeline"],
 ]
 
 const faq = [
@@ -84,7 +89,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid min-h-[670px] max-w-6xl items-center gap-10 px-5 py-20 lg:grid-cols-[1.12fr_.88fr]">
           <div>
             <p className="mb-5 inline-flex rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[.2em] text-emerald-300">
-              Updated July 2026 · Independent slot guide
+              Updated 5 August 2026 · Independent slot guide
             </p>
             <h1 className="max-w-4xl text-5xl font-black leading-[.95] tracking-tight sm:text-7xl">
               Snoop Dogg Dollars
@@ -157,6 +162,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-5 pb-20">
+        <FeatureCostCalculator />
+      </section>
+
       <section className="border-y border-white/10 bg-[#0d120f]">
         <div className="mx-auto max-w-6xl px-5 py-20">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">How the bonus works</p>
@@ -194,6 +203,9 @@ export default function HomePage() {
               <Link href="/usdt-casinos/snoop-dogg-dollars/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">USDT casino guide →</Link>
               <Link href="/crypto-casino-deposits/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Crypto deposit checklist →</Link>
               <Link href="/crypto-casino-withdrawals/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Crypto withdrawal guide →</Link>
+              <Link href="/bitcoin-vs-usdt-casinos/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-amber-300/50">Bitcoin vs USDT comparison →</Link>
+              <Link href="/crypto-casino-networks/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Choose the correct network →</Link>
+              <Link href="/crypto-casino-fees/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Network and operator fees →</Link>
             </div>
           </div>
         </div>

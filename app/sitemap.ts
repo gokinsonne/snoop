@@ -42,7 +42,7 @@ const routes = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const substantivelyUpdated = new Set(["/strategy", "/rtp", "/bonus-buy", "/vs-aztec-clusters", "/best-cluster-pays-slots", "/bgaming-cluster-slots", "/snoop-dogg-dollars-release-history"])
+  const substantivelyUpdated = new Set(["", "/review", "/how-to-play", "/strategy", "/rtp", "/bonus-buy", "/vs-aztec-clusters", "/best-cluster-pays-slots", "/bgaming-cluster-slots", "/snoop-dogg-dollars-release-history"])
 
   return routes.map((route) => ({
     url: `https://snoopdoggdollar.org${route}/`,

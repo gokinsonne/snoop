@@ -1,0 +1,22 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Wait for the production deployment
+        run: sleep 90
+      - name: Submit changed pages
+        env:
+          INDEXNOW_BEFORE: ${{ github.event.before }}
+        run: node scripts/submit-indexnow.mjs

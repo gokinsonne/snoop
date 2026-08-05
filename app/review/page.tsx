@@ -65,7 +65,7 @@ export default function ReviewPage() {
             },
           },
           datePublished: "2024-10-30",
-          dateModified: "2026-06-22",
+          dateModified: "2026-08-05",
           mainEntityOfPage: {
             "@type": "WebPage",
             "@id": "https://snoopdoggdollar.org/review",
@@ -277,6 +277,10 @@ export default function ReviewPage() {
           <section className="mt-16">
             <h2 className="text-xl font-semibold text-white mb-4">Related Guides</h2>
             <div className="grid gap-4 sm:grid-cols-2">
+              <a href="/vs-aztec-clusters/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400">Snoop vs Aztec Clusters</h3><p className="mt-1 text-sm text-neutral-400">A feature-by-feature BGaming comparison.</p></a>
+              <a href="/best-cluster-pays-slots/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400">Best cluster-pays slots</h3><p className="mt-1 text-sm text-neutral-400">A mechanics-first shortlist without fake scores.</p></a>
+              <a href="/crypto-casinos/snoop-dogg-dollars/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400">Crypto casino hub</h3><p className="mt-1 text-sm text-neutral-400">BTC and USDT checks before a deposit.</p></a>
+              <a href="/snoop-dogg-dollars-release-history/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400">Release and correction history</h3><p className="mt-1 text-sm text-neutral-400">See what changed and when.</p></a>
               <a
                 href="/casinos"
                 className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"
