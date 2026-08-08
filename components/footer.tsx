@@ -2,27 +2,27 @@ import Link from "next/link"
 
 export function Footer() {
   const guideLinks = [
-    { href: "/review", label: "Full Review" },
-    { href: "/how-to-play", label: "How to Play" },
-    { href: "/strategy", label: "Strategy" },
-    { href: "/demo", label: "Demo" },
-    { href: "/casinos", label: "Where to Play" },
-    { href: "/bonus", label: "Bonus" },
-    { href: "/faq", label: "FAQ" },
-    { href: "/mobile", label: "Mobile" },
-    { href: "/rtp", label: "RTP" },
-    { href: "/crypto-casinos/snoop-dogg-dollars", label: "Crypto Casinos" },
-    { href: "/crypto-casino-deposits", label: "Crypto Deposits" },
-    { href: "/crypto-casino-withdrawals", label: "Crypto Withdrawals" },
-    { href: "/bitcoin-vs-usdt-casinos", label: "BTC vs USDT" },
+    { href: "/review/", label: "Full Review" },
+    { href: "/how-to-play/", label: "How to Play" },
+    { href: "/strategy/", label: "Strategy" },
+    { href: "/demo/", label: "Demo" },
+    { href: "/casinos/", label: "Where to Play" },
+    { href: "/bonus/", label: "Bonus" },
+    { href: "/faq/", label: "FAQ" },
+    { href: "/mobile/", label: "Mobile" },
+    { href: "/rtp/", label: "RTP" },
+    { href: "/crypto-casinos/snoop-dogg-dollars/", label: "Crypto Casinos" },
+    { href: "/crypto-casino-deposits/", label: "Crypto Deposits" },
+    { href: "/crypto-casino-withdrawals/", label: "Crypto Withdrawals" },
+    { href: "/bitcoin-vs-usdt-casinos/", label: "BTC vs USDT" },
   ]
 
   const legalLinks = [
-    { href: "/privacy-policy", label: "Privacy Policy" },
-    { href: "/terms-of-service", label: "Terms of Service" },
-    { href: "/responsible-gaming", label: "Responsible Gaming" },
-    { href: "/editorial-policy", label: "Editorial Policy" },
-    { href: "/research/snoop-dogg-dollars-feature-costs", label: "Open Research" },
+    { href: "/privacy-policy/", label: "Privacy Policy" },
+    { href: "/terms-of-service/", label: "Terms of Service" },
+    { href: "/responsible-gaming/", label: "Responsible Gaming" },
+    { href: "/editorial-policy/", label: "Editorial Policy" },
+    { href: "/research/snoop-dogg-dollars-feature-costs/", label: "Open Research" },
     { href: "/sitemap.xml", label: "Sitemap" },
   ]
 

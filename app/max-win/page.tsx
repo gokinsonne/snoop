@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/max-win",
+    canonical: "https://snoopdoggdollar.org/max-win/",
   },
   openGraph: {
     title: "Snoop Dogg Dollars Max Win | How to Hit 10,000x",
     description: "Strategy guide for hitting the 10,000x max win on Snoop Dogg Dollars.",
     type: "article",
-    url: "https://snoopdoggdollar.org/max-win",
+    url: "https://snoopdoggdollar.org/max-win/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -41,7 +41,7 @@ export default function MaxWinPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Max Win", url: "https://snoopdoggdollar.org/max-win" }
+        { name: "Max Win", url: "https://snoopdoggdollar.org/max-win/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">

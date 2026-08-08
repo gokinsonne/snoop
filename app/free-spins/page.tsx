@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/free-spins",
+    canonical: "https://snoopdoggdollar.org/free-spins/",
   },
   openGraph: {
     title: "Snoop Dogg Dollars Free Spins | How to Trigger",
     description: "Complete guide to free spins on Snoop Dogg Dollars. Trigger, retrigger, and maximize wins.",
     type: "article",
-    url: "https://snoopdoggdollar.org/free-spins",
+    url: "https://snoopdoggdollar.org/free-spins/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -45,7 +45,7 @@ export default function FreeSpinsPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Free Spins", url: "https://snoopdoggdollar.org/free-spins" }
+        { name: "Free Spins", url: "https://snoopdoggdollar.org/free-spins/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">

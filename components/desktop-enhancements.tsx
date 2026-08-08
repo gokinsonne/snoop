@@ -23,13 +23,13 @@ export function DesktopEnhancements({ children, content }: DesktopEnhancementsPr
           🎰 {content.playNow}
         </a>
         <a
-          href="/bonus"
+          href="/bonus/"
           className="block bg-gradient-to-r from-primary to-secondary text-primary-foreground px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg"
         >
           💰 {content.promotions}
         </a>
         <a
-          href="/demo"
+          href="/demo/"
           className="block bg-gradient-to-r from-primary to-secondary text-primary-foreground px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg"
         >
           🎮 {content.howToPlay}

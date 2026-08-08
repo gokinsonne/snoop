@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/casinos",
+    canonical: "https://snoopdoggdollar.org/casinos/",
   },
   openGraph: {
     title: "Where to Play Snoop Dogg Dollars | Best Casinos 2026",
     description: "Compare top casinos offering Snoop Dogg Dollars. 1WIN leads with 200% bonus + 100 FS.",
     type: "website",
-    url: "https://snoopdoggdollar.org/casinos",
+    url: "https://snoopdoggdollar.org/casinos/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -64,7 +64,7 @@ export default function CasinosPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Casinos", url: "https://snoopdoggdollar.org/casinos" }
+        { name: "Casinos", url: "https://snoopdoggdollar.org/casinos/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">

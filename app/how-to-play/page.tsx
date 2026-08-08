@@ -18,13 +18,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/how-to-play",
+    canonical: "https://snoopdoggdollar.org/how-to-play/",
   },
   openGraph: {
     title: "How to Play Snoop Dogg Dollars | Complete Guide",
     description: "Step-by-step guide to playing Snoop Dogg Dollars slot. Cluster pays, symbols, bonuses & tips.",
     type: "article",
-    url: "https://snoopdoggdollar.org/how-to-play",
+    url: "https://snoopdoggdollar.org/how-to-play/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -45,25 +45,25 @@ export default function HowToPlayPage() {
               "@type": "HowToStep",
               name: "Choose Your Casino",
               text: "Pick an operator available in your country, then verify its licence details, RTP setting, payment methods and current terms.",
-              url: "https://snoopdoggdollar.org/how-to-play#step-1",
+              url: "https://snoopdoggdollar.org/how-to-play/#step-1",
             },
             {
               "@type": "HowToStep",
               name: "Set Your Bet",
               text: "Adjust your bet size from $0.25 to $25 per spin. Start with smaller bets to learn the game mechanics before going higher.",
-              url: "https://snoopdoggdollar.org/how-to-play#step-2",
+              url: "https://snoopdoggdollar.org/how-to-play/#step-2",
             },
             {
               "@type": "HowToStep",
               name: "Spin the Reels",
               text: "Click the spin button. Wins form when 5+ matching symbols connect horizontally or vertically. Winning clusters disappear and new symbols cascade.",
-              url: "https://snoopdoggdollar.org/how-to-play#step-3",
+              url: "https://snoopdoggdollar.org/how-to-play/#step-3",
             },
             {
               "@type": "HowToStep",
               name: "Trigger Bonuses",
               text: "Land 3+ Scatters for free spins. Use Snoop Spin (20x bet) for guaranteed Wilds. Buy bonus directly with Bonus Buy feature.",
-              url: "https://snoopdoggdollar.org/how-to-play#step-4",
+              url: "https://snoopdoggdollar.org/how-to-play/#step-4",
             },
           ],
         })}
@@ -71,7 +71,7 @@ export default function HowToPlayPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "How to Play", url: "https://snoopdoggdollar.org/how-to-play" }
+        { name: "How to Play", url: "https://snoopdoggdollar.org/how-to-play/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
@@ -223,7 +223,7 @@ export default function HowToPlayPage() {
                 Play at 1WIN →
               </a>
               <a
-                href="/demo"
+                href="/demo/"
                 className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors"
               >
                 Try Demo First
@@ -238,19 +238,19 @@ export default function HowToPlayPage() {
           <section className="mt-16">
             <h2 className="text-xl font-semibold text-white mb-4">Related Guides</h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              <a href="/review" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
+              <a href="/review/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Full Slot Review</h3>
                 <p className="mt-1 text-sm text-neutral-400">In-depth review of RTP, features, and max win potential.</p>
               </a>
-              <a href="/casinos" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
+              <a href="/casinos/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3>
                 <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p>
               </a>
-              <a href="/strategy" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
+              <a href="/strategy/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Winning Strategy</h3>
                 <p className="mt-1 text-sm text-neutral-400">Bankroll management, Snoop Spin timing, and Bonus Buy tips.</p>
               </a>
-              <a href="/faq" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
+              <a href="/faq/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">FAQ</h3>
                 <p className="mt-1 text-sm text-neutral-400">Common questions about mobile play, withdrawals, and more.</p>
               </a>

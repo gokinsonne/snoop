@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/play-in-india",
+    canonical: "https://snoopdoggdollar.org/play-in-india/",
   },
   openGraph: {
     title: "Play Snoop Dogg Dollars in India | UPI & 1WIN",
     description: "Play Snoop Dogg Dollars in India with UPI deposits. current offer at 1WIN.",
     type: "article",
-    url: "https://snoopdoggdollar.org/play-in-india",
+    url: "https://snoopdoggdollar.org/play-in-india/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -42,7 +42,7 @@ export default function PlayInIndiaPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Play in India", url: "https://snoopdoggdollar.org/play-in-india" }
+        { name: "Play in India", url: "https://snoopdoggdollar.org/play-in-india/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">

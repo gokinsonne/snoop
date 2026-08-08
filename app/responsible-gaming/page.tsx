@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Responsible Gaming | Snoop Dogg Dollars",
   description: "Responsible gaming information. Play safely and know your limits.",
   robots: "index, follow",
-  alternates: { canonical: "https://snoopdoggdollar.org/responsible-gaming" },
+  alternates: { canonical: "https://snoopdoggdollar.org/responsible-gaming/" },
 }
 
 export default function ResponsibleGamingPage() {

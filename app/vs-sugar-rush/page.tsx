@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/vs-sugar-rush",
+    canonical: "https://snoopdoggdollar.org/vs-sugar-rush/",
   },
   openGraph: {
     title: "Snoop Dogg Dollars vs Sugar Rush | Comparison",
     description: "Which cluster pays slot wins? Snoop Dogg Dollars vs Sugar Rush — RTP, features, max win.",
     type: "article",
-    url: "https://snoopdoggdollar.org/vs-sugar-rush",
+    url: "https://snoopdoggdollar.org/vs-sugar-rush/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -35,7 +35,7 @@ export default function VsSugarRushPage() {
           headline: "Snoop Dogg Dollars vs Sugar Rush | Which Cluster Pays Slot Wins?",
           description: "Detailed comparison of Snoop Dogg Dollars and Sugar Rush cluster pays slots.",
           image: "https://snoopdoggdollar.org/og-image.jpg",
-          author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org" },
+          author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org/" },
           publisher: { "@type": "Organization", name: "Snoop Dogg Dollars", logo: { "@type": "ImageObject", url: "https://snoopdoggdollar.org/favicon.ico" } },
           datePublished: "2026-06-22",
           dateModified: "2026-06-22",
@@ -44,7 +44,7 @@ export default function VsSugarRushPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "vs Sugar Rush", url: "https://snoopdoggdollar.org/vs-sugar-rush" }
+        { name: "vs Sugar Rush", url: "https://snoopdoggdollar.org/vs-sugar-rush/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">

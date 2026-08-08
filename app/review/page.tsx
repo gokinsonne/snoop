@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/review",
+    canonical: "https://snoopdoggdollar.org/review/",
   },
   openGraph: {
     title: "Snoop Dogg Dollars Slot Review | 97% RTP & 10,000x Max Win",
     description:
       "Full review of BGaming's Snoop Dogg Dollars slot. Cluster pays, bonus buy, Snoop Spin, free spins & 97% RTP. Play at 1WIN.",
     type: "article",
-    url: "https://snoopdoggdollar.org/review",
+    url: "https://snoopdoggdollar.org/review/",
     siteName: "Snoop Dogg Dollars",
   },
   twitter: {
@@ -54,7 +54,7 @@ export default function ReviewPage() {
           author: {
             "@type": "Organization",
             name: "Snoop Dogg Dollars",
-            url: "https://snoopdoggdollar.org",
+            url: "https://snoopdoggdollar.org/",
           },
           publisher: {
             "@type": "Organization",
@@ -68,14 +68,14 @@ export default function ReviewPage() {
           dateModified: "2026-08-05",
           mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": "https://snoopdoggdollar.org/review",
+            "@id": "https://snoopdoggdollar.org/review/",
           },
         })}
       </Script>
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Review", url: "https://snoopdoggdollar.org/review" }
+        { name: "Review", url: "https://snoopdoggdollar.org/review/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
@@ -262,7 +262,7 @@ export default function ReviewPage() {
                 Play at 1WIN →
               </a>
               <a
-                href="/casinos"
+                href="/casinos/"
                 className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors"
               >
                 Compare Casinos
@@ -282,7 +282,7 @@ export default function ReviewPage() {
               <a href="/crypto-casinos/snoop-dogg-dollars/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400">Crypto casino hub</h3><p className="mt-1 text-sm text-neutral-400">BTC and USDT checks before a deposit.</p></a>
               <a href="/snoop-dogg-dollars-release-history/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400">Release and correction history</h3><p className="mt-1 text-sm text-neutral-400">See what changed and when.</p></a>
               <a
-                href="/casinos"
+                href="/casinos/"
                 className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"
               >
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">
@@ -293,7 +293,7 @@ export default function ReviewPage() {
                 </p>
               </a>
               <a
-                href="/faq"
+                href="/faq/"
                 className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"
               >
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">

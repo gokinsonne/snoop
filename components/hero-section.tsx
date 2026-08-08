@@ -83,7 +83,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             {content.playButton}
           </a>
           <a
-            href="/demo"
+            href="/demo/"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-lg px-8 py-4 rounded-full bg-transparent inline-flex items-center justify-center border"
           >
             {content.demoButton}

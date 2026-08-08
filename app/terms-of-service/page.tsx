@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Terms of Service | Snoop Dogg Dollars",
   description: "Terms of service for SnoopDoggDollar.org. Please read carefully before using our website.",
   robots: "index, follow",
-  alternates: { canonical: "https://snoopdoggdollar.org/terms-of-service" },
+  alternates: { canonical: "https://snoopdoggdollar.org/terms-of-service/" },
 }
 
 export default function TermsOfServicePage() {

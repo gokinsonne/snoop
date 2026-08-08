@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://snoopdoggdollar.org"),
+  metadataBase: new URL("https://snoopdoggdollar.org/"),
   title: {
     default: "Snoop Dogg Dollars Slot Guide (2026)",
     template: "%s | Snoop Dogg Dollars",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
   generator: "Next.js",
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org",
+    canonical: "https://snoopdoggdollar.org/",
   },
   openGraph: {
     title: "Snoop Dogg Dollars Slot | 97% RTP & 10,000x Max Win",
     description: "Independent Snoop Dogg Dollars review, free demo, feature guide and crypto casino payment checks.",
     type: "website",
     locale: "en_US",
-    url: "https://snoopdoggdollar.org",
+    url: "https://snoopdoggdollar.org/",
     siteName: "Snoop Dogg Dollars",
     images: [
       {

@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/play-in-japan",
+    canonical: "https://snoopdoggdollar.org/play-in-japan/",
   },
   openGraph: {
     title: "スヌープ・ドッグ・ダラーズ | 日本語ガイド",
     description: "スヌープ・ドッグ・ダラーズを日本語でプレイ。無料デモ、攻略法、1WINボーナス。",
     type: "article",
-    url: "https://snoopdoggdollar.org/play-in-japan",
+    url: "https://snoopdoggdollar.org/play-in-japan/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -42,7 +42,7 @@ export default function PlayInJapanPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Play in Japan", url: "https://snoopdoggdollar.org/play-in-japan" }
+        { name: "Play in Japan", url: "https://snoopdoggdollar.org/play-in-japan/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">

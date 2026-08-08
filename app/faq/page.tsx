@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/faq",
+    canonical: "https://snoopdoggdollar.org/faq/",
   },
   openGraph: {
     title: "Snoop Dogg Dollars FAQ | Common Questions Answered",
     description: "Everything you need to know about Snoop Dogg Dollars slot — RTP, features, bonus buy & more.",
     type: "website",
-    url: "https://snoopdoggdollar.org/faq",
+    url: "https://snoopdoggdollar.org/faq/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -91,7 +91,7 @@ export default function FAQPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "FAQ", url: "https://snoopdoggdollar.org/faq" }
+        { name: "FAQ", url: "https://snoopdoggdollar.org/faq/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
@@ -139,13 +139,13 @@ export default function FAQPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="/review"
+                href="/review/"
                 className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors"
               >
                 Read Full Review
               </a>
               <a
-                href="/casinos"
+                href="/casinos/"
                 className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors"
               >
                 Play at 1WIN →

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Snoop Dogg Dollars",
   description: "Privacy policy for SnoopDoggDollar.org. How we collect, use, and protect your data.",
   robots: "index, follow",
-  alternates: { canonical: "https://snoopdoggdollar.org/privacy-policy" },
+  alternates: { canonical: "https://snoopdoggdollar.org/privacy-policy/" },
 }
 
 export default function PrivacyPolicyPage() {

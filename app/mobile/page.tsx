@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/mobile",
+    canonical: "https://snoopdoggdollar.org/mobile/",
   },
   openGraph: {
     title: "Snoop Dogg Dollars Mobile | Android & iOS",
     description: "Play Snoop Dogg Dollars on mobile. HTML5 optimized, all features, same 97% RTP.",
     type: "article",
-    url: "https://snoopdoggdollar.org/mobile",
+    url: "https://snoopdoggdollar.org/mobile/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -36,17 +36,17 @@ export default function MobilePage() {
           headline: "Snoop Dogg Dollars Mobile | Play on Android & iOS 2026",
           description: "Complete guide to playing Snoop Dogg Dollars on mobile devices. Android, iOS, and HTML5.",
           image: "https://snoopdoggdollar.org/og-image.jpg",
-          author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org" },
+          author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org/" },
           publisher: { "@type": "Organization", name: "Snoop Dogg Dollars", logo: { "@type": "ImageObject", url: "https://snoopdoggdollar.org/favicon.ico" } },
           datePublished: "2026-06-22",
           dateModified: "2026-06-22",
-          mainEntityOfPage: { "@type": "WebPage", "@id": "https://snoopdoggdollar.org/mobile" },
+          mainEntityOfPage: { "@type": "WebPage", "@id": "https://snoopdoggdollar.org/mobile/" },
         })}
       </Script>
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Mobile", url: "https://snoopdoggdollar.org/mobile" }
+        { name: "Mobile", url: "https://snoopdoggdollar.org/mobile/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
@@ -144,7 +144,7 @@ export default function MobilePage() {
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">Join 1WIN and play Snoop Dogg Dollars on any device. current welcome offer. No app download required.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
-              <a href="/demo" className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors">Try Demo</a>
+              <a href="/demo/" className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors">Try Demo</a>
             </div>
             <p className="mt-4 text-xs text-neutral-500">18+ | Gamble Responsibly | T&Cs Apply</p>
           </section>
@@ -152,10 +152,10 @@ export default function MobilePage() {
           <section className="mt-16">
             <h2 className="text-xl font-semibold text-white mb-4">Related Guides</h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              <a href="/review" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Full Slot Review</h3><p className="mt-1 text-sm text-neutral-400">In-depth review of RTP, features, and max win potential.</p></a>
-              <a href="/how-to-play" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">How to Play</h3><p className="mt-1 text-sm text-neutral-400">Step-by-step beginner's guide to cluster pays and bonuses.</p></a>
-              <a href="/strategy" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Winning Strategy</h3><p className="mt-1 text-sm text-neutral-400">Bankroll management, Snoop Spin timing, and Bonus Buy tips.</p></a>
-              <a href="/casinos" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3><p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p></a>
+              <a href="/review/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Full Slot Review</h3><p className="mt-1 text-sm text-neutral-400">In-depth review of RTP, features, and max win potential.</p></a>
+              <a href="/how-to-play/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">How to Play</h3><p className="mt-1 text-sm text-neutral-400">Step-by-step beginner's guide to cluster pays and bonuses.</p></a>
+              <a href="/strategy/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Winning Strategy</h3><p className="mt-1 text-sm text-neutral-400">Bankroll management, Snoop Spin timing, and Bonus Buy tips.</p></a>
+              <a href="/casinos/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3><p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p></a>
             </div>
           </section>
         </div>

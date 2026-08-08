@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   alternates: {
-    canonical: "https://snoopdoggdollar.org/demo",
+    canonical: "https://snoopdoggdollar.org/demo/",
   },
   openGraph: {
     title: "Snoop Dogg Dollars Demo | Play Free",
     description: "Play the Snoop Dogg Dollars demo for free. No download, no registration. Same 97% RTP.",
     type: "website",
-    url: "https://snoopdoggdollar.org/demo",
+    url: "https://snoopdoggdollar.org/demo/",
     siteName: "Snoop Dogg Dollars",
   },
 }
@@ -43,7 +43,7 @@ export default function DemoPage() {
           publisher: {
             "@type": "Organization",
             name: "Snoop Dogg Dollars",
-            url: "https://snoopdoggdollar.org",
+            url: "https://snoopdoggdollar.org/",
           },
           offers: {
             "@type": "Offer",
@@ -56,7 +56,7 @@ export default function DemoPage() {
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Demo", url: "https://snoopdoggdollar.org/demo" }
+        { name: "Demo", url: "https://snoopdoggdollar.org/demo/" }
       ]} />
 
       <main className="min-h-screen bg-black text-neutral-100">
@@ -198,7 +198,7 @@ export default function DemoPage() {
                 Play at 1WIN →
               </a>
               <a
-                href="/how-to-play"
+                href="/how-to-play/"
                 className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors"
               >
                 Read How-To Guide
@@ -212,19 +212,19 @@ export default function DemoPage() {
           <section className="mt-16">
             <h2 className="text-xl font-semibold text-white mb-4">Related Guides</h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              <a href="/review" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
+              <a href="/review/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Full Slot Review</h3>
                 <p className="mt-1 text-sm text-neutral-400">In-depth review of RTP, features, and max win potential.</p>
               </a>
-              <a href="/how-to-play" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
+              <a href="/how-to-play/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">How to Play</h3>
                 <p className="mt-1 text-sm text-neutral-400">Step-by-step beginner's guide to cluster pays and bonuses.</p>
               </a>
-              <a href="/strategy" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
+              <a href="/strategy/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Winning Strategy</h3>
                 <p className="mt-1 text-sm text-neutral-400">Bankroll management, Snoop Spin timing, and Bonus Buy tips.</p>
               </a>
-              <a href="/casinos" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
+              <a href="/casinos/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3>
                 <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p>
               </a>
