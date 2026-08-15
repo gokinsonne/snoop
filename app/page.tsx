@@ -8,7 +8,9 @@ import { FeatureCostCalculator } from "@/components/feature-cost-calculator"
 const OFFER_URL = "https://lkhv.pro/581ee4"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Slot: Demo, RTP, BTC & USDT Guide",
+  title: {
+    absolute: "Snoop Dogg Dollars Slot: Demo, RTP & Crypto Guide",
+  },
   description:
     "Snoop Dogg Dollars demo and independent review: compare RTP variants, feature costs, BTC and USDT casino payment checks before playing.",
   alternates: { canonical: "https://snoopdoggdollar.org/" },
@@ -89,11 +91,11 @@ export default function HomePage() {
         <div className="relative mx-auto grid min-h-[670px] max-w-6xl items-center gap-10 px-5 py-20 lg:grid-cols-[1.12fr_.88fr]">
           <div>
             <p className="mb-5 inline-flex rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[.2em] text-emerald-300">
-              Updated 5 August 2026 · Independent slot guide
+              Updated 15 August 2026 · Independent slot guide
             </p>
             <h1 className="max-w-4xl text-5xl font-black leading-[.95] tracking-tight sm:text-7xl">
-              Snoop Dogg Dollars
-              <span className="mt-3 block text-emerald-400">demo, RTP & real review</span>
+              Snoop Dogg Dollars slot
+              <span className="mt-3 block text-emerald-400">demo, RTP & independent review</span>
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-neutral-300">
               A fact-checked guide to BGaming&apos;s hip-hop cluster slot. Learn the real

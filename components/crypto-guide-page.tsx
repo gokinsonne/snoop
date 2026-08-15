@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Script from "next/script"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { ArticleSchema } from "@/components/seo-schema"
@@ -20,9 +21,39 @@ export function CryptoGuidePage({
       ? "/usdt-casinos/snoop-dogg-dollars/"
       : "/crypto-casinos/snoop-dogg-dollars/"
 
+  const faq = [
+    [
+      `Can I play Snoop Dogg Dollars with ${currency}?`,
+      `Yes, if an operator carries BGaming titles and supports ${currency} for your account and country. Confirm both in the live lobby and cashier.`,
+    ],
+    [
+      "Should I use Bitcoin or USDT?",
+      "Bitcoin is widely supported but its value and network fees can change. USDT is price-stable, but you must match the exact token network used by the casino.",
+    ],
+    [
+      "Do crypto casinos require KYC?",
+      "They may. Crypto payment support does not guarantee anonymous play, and identity checks can be required before or during withdrawal.",
+    ],
+    [
+      "How do I avoid using the wrong network?",
+      "Copy the deposit asset, network and address directly from the cashier, verify every field, and use a small test transfer when practical.",
+    ],
+  ]
+
   return (
     <>
       <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" />
+      <Script id={`schema-${currency.toLowerCase()}-casino-faq`} type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faq.map(([question, answer]) => ({
+            "@type": "Question",
+            name: question,
+            acceptedAnswer: { "@type": "Answer", text: answer },
+          })),
+        })}
+      </Script>
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
         { name: title, url: `https://snoopdoggdollar.org${path}` },
@@ -31,7 +62,7 @@ export function CryptoGuidePage({
       <section className="border-b border-white/10 bg-[radial-gradient(circle_at_80%_10%,rgba(16,185,129,.2),transparent_35%)]">
         <div className="mx-auto max-w-5xl px-5 py-20">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">
-            Updated July 2026 · Payment guide
+            Updated 15 August 2026 · Payment guide
           </p>
           <h1 className="mt-4 max-w-4xl text-5xl font-black leading-tight">{title}</h1>
           <p className="mt-6 max-w-3xl text-xl leading-8 text-neutral-300">{intro}</p>
@@ -43,6 +74,19 @@ export function CryptoGuidePage({
           Casino availability, payment networks and verification rules change by country.
           Confirm the cashier and current terms before creating an account or transferring funds.
         </div>
+
+        <section className="mt-10 grid gap-3 sm:grid-cols-3" aria-label="Crypto casino essentials">
+          {[
+            ["Game check", "Confirm BGaming and the slot in the live lobby"],
+            ["Payment check", "Match the asset, network and cashier limits"],
+            ["Withdrawal check", "Read KYC, wagering, fees and time limits"],
+          ].map(([heading, detail]) => (
+            <div key={heading} className="rounded-2xl border border-white/10 bg-white/[.03] p-5">
+              <h2 className="text-base font-black text-emerald-300">{heading}</h2>
+              <p className="mt-2 text-sm leading-6 text-neutral-400">{detail}</p>
+            </div>
+          ))}
+        </section>
 
         <h2 className="mt-12 text-3xl font-black text-white">Can you play Snoop Dogg Dollars with {currency}?</h2>
         <p className="mt-4">
@@ -71,6 +115,20 @@ export function CryptoGuidePage({
           a fast deposit guarantees a fast withdrawal.
         </p>
 
+        <h2 className="mt-12 text-3xl font-black text-white">Bitcoin vs USDT for casino payments</h2>
+        <div className="mt-5 overflow-x-auto rounded-2xl border border-white/10">
+          <table className="w-full min-w-[560px] text-left text-base">
+            <thead className="bg-white/[.06] text-white"><tr><th className="p-4">Check</th><th className="p-4">Bitcoin</th><th className="p-4">USDT</th></tr></thead>
+            <tbody className="divide-y divide-white/10">
+              <tr><th className="p-4 text-white">Value</th><td className="p-4">Market price can move</td><td className="p-4">Designed to track USD</td></tr>
+              <tr><th className="p-4 text-white">Network choice</th><td className="p-4">Usually the Bitcoin network</td><td className="p-4">Multiple incompatible networks may appear</td></tr>
+              <tr><th className="p-4 text-white">Fees and speed</th><td className="p-4">Depend on network demand</td><td className="p-4">Depend heavily on the selected network</td></tr>
+              <tr><th className="p-4 text-white">Main mistake</th><td className="p-4">Ignoring confirmation time and fees</td><td className="p-4">Sending on a network the cashier does not support</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm text-neutral-500">This comparison covers payment mechanics, not investment advice. Casino support and cashier conditions vary.</p>
+
         <h2 className="mt-12 text-3xl font-black text-white">Current operator route</h2>
         <p className="mt-4">
           The current partner route is 1WIN. We do not claim that every currency, network or
@@ -87,6 +145,16 @@ export function CryptoGuidePage({
           Check availability at 1WIN
         </TrackedAffiliateLink>
         <p className="mt-3 text-sm text-neutral-500">18+ · Affiliate link · Terms and regional restrictions apply</p>
+
+        <h2 className="mt-12 text-3xl font-black text-white">Frequently asked questions</h2>
+        <div className="mt-5 divide-y divide-white/10 border-y border-white/10">
+          {faq.map(([question, answer]) => (
+            <section key={question} className="py-6">
+              <h3 className="text-xl font-black text-white">{question}</h3>
+              <p className="mt-3">{answer}</p>
+            </section>
+          ))}
+        </div>
 
         <h2 className="mt-12 text-3xl font-black text-white">Continue researching</h2>
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
