@@ -3,9 +3,11 @@ import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Demo | Play Free (No Registration, 97% RTP)",
+  title: {
+    absolute: "Snoop Dogg Dollars Demo: Free Play Online (No Download)",
+  },
   description:
-    "Play Snoop Dogg Dollars demo for free. No download, no registration. Same 97% RTP, all features. Try before playing real money at 1WIN.",
+    "Play the Snoop Dogg Dollars demo online with virtual credits. No download, registration or deposit. Test cluster pays, Snoop Spin and bonus features free.",
   keywords: [
     "snoop dogg dollars demo",
     "snoop dogg dollars free play",
@@ -18,8 +20,8 @@ export const metadata: Metadata = {
     canonical: "https://snoopdoggdollar.org/demo/",
   },
   openGraph: {
-    title: "Snoop Dogg Dollars Demo | Play Free",
-    description: "Play the Snoop Dogg Dollars demo for free. No download, no registration. Same 97% RTP.",
+    title: "Snoop Dogg Dollars Demo: Free Play Online",
+    description: "Play online with virtual credits. No download, registration or deposit required.",
     type: "website",
     url: "https://snoopdoggdollar.org/demo/",
     siteName: "Snoop Dogg Dollars",
@@ -53,6 +55,46 @@ export default function DemoPage() {
           },
         })}
       </Script>
+      <Script id="schema-demo-faq" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Can I play the Snoop Dogg Dollars demo for free?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. The demo uses virtual credits, so you can test the game without a deposit or registration.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do I need to download Snoop Dogg Dollars?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. The demo runs in a modern web browser on mobile and desktop, with no app or game file to download.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can I win real money in demo mode?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. Demo wins and balances are virtual and cannot be withdrawn. Real-money play requires an eligible casino account and carries financial risk.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does the demo include the bonus features?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The demo is designed to let players explore the core cluster-pays gameplay and available bonus mechanics without risking money.",
+              },
+            },
+          ],
+        })}
+      </Script>
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
@@ -70,11 +112,24 @@ export default function DemoPage() {
           </nav>
 
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-6">
-            Play Snoop Dogg Dollars Demo
+            Snoop Dogg Dollars Demo — Free Play Online
           </h1>
           <p className="text-xl text-neutral-400 mb-8">
-            Try the game for free. No download, no registration, no deposit. Same 97% RTP and all features.
+            Launch the browser demo with virtual credits: no download, registration or deposit. Test the cluster-pays grid, Snoop Spin and bonus mechanics before deciding whether real-money play is for you.
           </p>
+
+          <div className="mb-8 grid gap-3 sm:grid-cols-3" aria-label="Demo benefits">
+            {[
+              ["Free play", "Virtual credits only"],
+              ["No download", "Runs in your browser"],
+              ["No account", "Start without signing up"],
+            ].map(([title, detail]) => (
+              <div key={title} className="rounded-xl border border-neutral-800 bg-neutral-900/50 p-4">
+                <p className="font-semibold text-green-400">{title}</p>
+                <p className="mt-1 text-sm text-neutral-400">{detail}</p>
+              </div>
+            ))}
+          </div>
 
           {/* Game iframe */}
           <section className="mb-12 rounded-2xl border border-neutral-800 bg-neutral-900/50 p-4 sm:p-6">
@@ -100,6 +155,11 @@ export default function DemoPage() {
             </p>
             <p>
               This is perfect for learning the game mechanics, testing strategies, or simply enjoying the hip-hop themed visuals without any financial risk.
+            </p>
+
+            <h2>No Download or App Required</h2>
+            <p>
+              Snoop Dogg Dollars free play runs directly in this page on a modern mobile or desktop browser. You do not need an APK, installer or casino account. If the game provider blocks the demo in your region, do not download files from unofficial websites; use our <a href="/how-to-play/">gameplay guide</a> instead.
             </p>
 
             <h2>Demo vs Real Money — What's the Difference?</h2>
@@ -180,6 +240,16 @@ export default function DemoPage() {
               <li>Snoop Spin (20x bet)</li>
               <li>Bonus Buy (100x, 200x, 400x, 800x)</li>
             </ul>
+
+            <h2>Snoop Dogg Dollars Demo FAQ</h2>
+            <h3>Can I play the demo for free?</h3>
+            <p>Yes. It uses virtual credits, so there is no deposit and no money can be lost or withdrawn.</p>
+            <h3>Do I need to download Snoop Dogg Dollars?</h3>
+            <p>No. The demo runs in your browser on mobile and desktop. No APK, app or game installer is required.</p>
+            <h3>Can I win real money in demo mode?</h3>
+            <p>No. Demo balances and wins are virtual. Real-money play requires an eligible casino account and carries financial risk.</p>
+            <h3>Does free play include the bonus mechanics?</h3>
+            <p>The demo is designed to expose the core cluster-pays gameplay and available bonus mechanics so you can understand them before risking money.</p>
           </article>
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
@@ -227,6 +297,14 @@ export default function DemoPage() {
               <a href="/casinos/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3>
                 <p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p>
+              </a>
+              <a href="/crypto-casinos/snoop-dogg-dollars/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-green-700 transition-colors">
+                <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Crypto Casino Guide</h3>
+                <p className="mt-1 text-sm text-neutral-400">How Bitcoin, USDT and other crypto payments work for this slot.</p>
+              </a>
+              <a href="/crypto-casino-deposits/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-green-700 transition-colors">
+                <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Crypto Deposits Explained</h3>
+                <p className="mt-1 text-sm text-neutral-400">Networks, confirmation times, fees and common deposit mistakes.</p>
               </a>
             </div>
           </section>
