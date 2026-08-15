@@ -3,9 +3,11 @@ import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Review | 97% RTP, 10,000x Max Win & Features 2026",
+  title: {
+    absolute: "Snoop Dogg Dollars Review: RTP, Features & Verdict",
+  },
   description:
-    "Full Snoop Dogg Dollars slot review by BGaming. 97% RTP, 10,000x max win, cluster pays, bonus buy, Snoop Spin. Where to play with current welcome offer.",
+    "Independent Snoop Dogg Dollars review: RTP variants, volatility, cluster pays, Snoop Spin, bonus buy, max win and our evidence-based verdict.",
   keywords: [
     "snoop dogg dollars slot review",
     "snoop dogg dollars rtp",
@@ -65,7 +67,7 @@ export default function ReviewPage() {
             },
           },
           datePublished: "2024-10-30",
-          dateModified: "2026-08-05",
+          dateModified: "2026-08-15",
           mainEntityOfPage: {
             "@type": "WebPage",
             "@id": "https://snoopdoggdollar.org/review/",
@@ -100,8 +102,20 @@ export default function ReviewPage() {
             Snoop Dogg Dollars Slot Review
           </h1>
           <p className="text-xl text-neutral-400 mb-12">
-            The complete breakdown of BGaming&apos;s hip-hop cluster-pays slot — 97% RTP, 10,000x max win, and features voiced by the Doggfather himself.
+            An independent breakdown of BGaming&apos;s hip-hop cluster-pays slot: RTP variants, volatility, max-win potential, bonus mechanics and the drawbacks you should know before playing.
           </p>
+
+          <section className="mb-12 rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-6 sm:p-8" aria-labelledby="review-verdict">
+            <p className="text-sm font-black uppercase tracking-[.18em] text-emerald-400">Quick verdict</p>
+            <h2 id="review-verdict" className="mt-3 text-2xl font-bold text-white">Strong mechanics, unforgiving volatility</h2>
+            <p className="mt-4 leading-7 text-neutral-300">
+              Snoop Dogg Dollars is most convincing as a feature-rich cluster slot, not merely as a celebrity skin. Its cascading grid and persistent multipliers create real depth, while very high volatility and expensive feature buys make bankroll control essential. Check the RTP shown inside your operator&apos;s game because available configurations can differ.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="/demo/" className="rounded-full bg-emerald-400 px-5 py-3 font-black text-black hover:bg-emerald-300">Play free demo →</a>
+              <a href="/rtp/" className="rounded-full border border-white/15 px-5 py-3 font-bold text-white hover:border-emerald-400/50">Verify RTP variants →</a>
+            </div>
+          </section>
 
           {/* Quick Specs Table */}
           <section className="mb-12 rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8">
