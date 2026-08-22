@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: "A practical checklist for finding the slot and checking crypto payment terms safely.",
     type: "article",
     url: "https://snoopdoggdollar.org/crypto-casinos/snoop-dogg-dollars/",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Snoop Dogg Dollars crypto casino guide" }],
   },
 }
 
