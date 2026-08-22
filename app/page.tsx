@@ -9,15 +9,15 @@ const OFFER_URL = "https://lkhv.pro/581ee4"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Snoop Dogg Dollars Slot: Demo, RTP & Crypto Guide",
+    absolute: "Snoop Dogg Dollars Slot | BGaming Game Guide",
   },
   description:
-    "Snoop Dogg Dollars demo and independent review: compare RTP variants, feature costs, BTC and USDT casino payment checks before playing.",
+    "Fact-checked Snoop Dogg Dollars slot guide: BGaming provider, 6×8 Cluster Pays grid, 10,000× maximum, features and player safety checks.",
   alternates: { canonical: "https://snoopdoggdollar.org/" },
   openGraph: {
-    title: "Snoop Dogg Dollars Slot — Demo, RTP & Honest Review",
+    title: "Snoop Dogg Dollars Slot | BGaming Game Guide",
     description:
-      "A fact-checked guide to BGaming's Snoop Dogg Dollars: free demo, mechanics, RTP, max win and where to play.",
+      "Verified facts, mechanics and practical player checks for BGaming's Snoop Dogg Dollars slot.",
     url: "https://snoopdoggdollar.org/",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Snoop Dogg Dollars slot guide" }],
@@ -38,7 +38,7 @@ const specs = [
 const guides = [
   ["/review/", "Full review", "Mechanics, verdict, strengths and drawbacks"],
   ["/demo/", "Free demo", "Try the game without registration or a deposit"],
-  ["/rtp/", "RTP explained", "Check the game version before wagering"],
+  ["/rtp/", "Snoop Dogg Dollars RTP", "Check the game version before wagering"],
   ["/free-spins/", "Free spins", "Scatter requirements and persistent multipliers"],
   ["/max-win/", "10,000× max win", "What the maximum means in practice"],
   ["/how-to-play/", "How to play", "Clusters, refills and multiplier cells"],
@@ -91,11 +91,11 @@ export default function HomePage() {
         <div className="relative mx-auto grid min-h-[670px] max-w-6xl items-center gap-10 px-5 py-20 lg:grid-cols-[1.12fr_.88fr]">
           <div>
             <p className="mb-5 inline-flex rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[.2em] text-emerald-300">
-              Updated 15 August 2026 · Independent slot guide
+              Updated 22 August 2026 · Independent slot guide
             </p>
             <h1 className="max-w-4xl text-5xl font-black leading-[.95] tracking-tight sm:text-7xl">
               Snoop Dogg Dollars slot
-              <span className="mt-3 block text-emerald-400">demo, RTP & independent review</span>
+              <span className="mt-3 block text-emerald-400">official facts, mechanics & player guide</span>
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-neutral-300">
               A fact-checked guide to BGaming&apos;s hip-hop cluster slot. Learn the real

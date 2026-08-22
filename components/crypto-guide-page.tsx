@@ -89,7 +89,7 @@ export function CryptoGuidePage({
       <section className="border-b border-white/10 bg-[radial-gradient(circle_at_80%_10%,rgba(16,185,129,.2),transparent_35%)]">
         <div className="mx-auto max-w-5xl px-5 py-20">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">
-            Updated 15 August 2026 · Payment guide
+            Updated 22 August 2026 · Payment guide
           </p>
           <h1 className="mt-4 max-w-4xl text-5xl font-black leading-tight">{title}</h1>
           <p className="mt-6 max-w-3xl text-xl leading-8 text-neutral-300">{intro}</p>

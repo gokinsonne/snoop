@@ -42,16 +42,19 @@ const routes = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const updated15August = new Set(["", "/demo", "/review", "/rtp", "/bonus", "/crypto-casinos/snoop-dogg-dollars", "/bitcoin-casinos/snoop-dogg-dollars", "/usdt-casinos/snoop-dogg-dollars", "/bitcoin-vs-usdt-casinos", "/crypto-casino-bonuses"])
+  const updated22August = new Set(["", "/demo", "/review", "/rtp", "/bonus", "/casinos", "/faq", "/free-spins", "/max-win", "/how-to-play", "/strategy", "/mobile", "/play-in-india", "/play-in-japan", "/vs-sugar-rush", "/crypto-casinos/snoop-dogg-dollars", "/bitcoin-casinos/snoop-dogg-dollars", "/usdt-casinos/snoop-dogg-dollars"])
+  const updated15August = new Set(["/bitcoin-vs-usdt-casinos", "/crypto-casino-bonuses"])
   const updated5August = new Set(["/how-to-play", "/strategy", "/bonus-buy", "/vs-aztec-clusters", "/best-cluster-pays-slots", "/bgaming-cluster-slots", "/snoop-dogg-dollars-release-history"])
 
   return routes.map((route) => ({
     url: `https://snoopdoggdollar.org${route}/`,
-    lastModified: updated15August.has(route)
-      ? new Date("2026-08-15")
-      : updated5August.has(route)
-        ? new Date("2026-08-05")
-        : new Date("2026-07-30"),
+    lastModified: updated22August.has(route)
+      ? new Date("2026-08-22")
+      : updated15August.has(route)
+        ? new Date("2026-08-15")
+        : updated5August.has(route)
+          ? new Date("2026-08-05")
+          : new Date("2026-07-30"),
     changeFrequency: route === "" ? "weekly" : "monthly",
     priority: route === "" ? 1 : route === "/review" ? 0.9 : 0.7,
   }))

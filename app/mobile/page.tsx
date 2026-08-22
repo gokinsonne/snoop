@@ -3,9 +3,9 @@ import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Mobile | Play on Android & iOS 2026",
+  title: "Snoop Dogg Dollars App & Download | No APK Needed",
   description:
-    "Play the Snoop Dogg Dollars browser demo on Android or iOS. No APK required. Check compatibility, data use, RTP and mobile security before playing.",
+    "Looking for a Snoop Dogg Dollars app or download? Use the browser demo on Android or iOS—no standalone game APK is needed. Follow the mobile security checks.",
   keywords: [
     "snoop dogg dollars mobile",
     "snoop dogg dollars android",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: "https://snoopdoggdollar.org/mobile/",
   },
   openGraph: {
-    title: "Snoop Dogg Dollars Mobile | Android & iOS",
-    description: "Mobile browser guide for Snoop Dogg Dollars on Android and iOS, with no unofficial APK required.",
+    title: "Snoop Dogg Dollars App & Mobile Play",
+    description: "Browser guide for Snoop Dogg Dollars on Android and iOS, with no unofficial game APK required.",
     type: "article",
     url: "https://snoopdoggdollar.org/mobile/",
     siteName: "Snoop Dogg Dollars",
@@ -33,13 +33,13 @@ export default function MobilePage() {
       <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Snoop Dogg Dollars Mobile | Play on Android & iOS 2026",
-          description: "Complete guide to playing Snoop Dogg Dollars on mobile devices. Android, iOS, and HTML5.",
+          headline: "Snoop Dogg Dollars App & Download | No APK Needed",
+          description: "Security-first browser guide to Snoop Dogg Dollars on Android and iOS.",
           image: "https://snoopdoggdollar.org/og-image.jpg",
           author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org/" },
           publisher: { "@type": "Organization", name: "Snoop Dogg Dollars", logo: { "@type": "ImageObject", url: "https://snoopdoggdollar.org/favicon.ico" } },
           datePublished: "2026-06-22",
-          dateModified: "2026-06-22",
+          dateModified: "2026-08-22",
           mainEntityOfPage: { "@type": "WebPage", "@id": "https://snoopdoggdollar.org/mobile/" },
         }} />
 
@@ -59,19 +59,24 @@ export default function MobilePage() {
           </nav>
 
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-6">
-            Snoop Dogg Dollars on Mobile
+            Snoop Dogg Dollars App & Mobile Play
           </h1>
           <p className="text-xl text-neutral-400 mb-12">
             Launch the browser demo on a modern Android or iOS device. No unofficial APK is needed; verify the exact game panel and operator terms before real-money play.
           </p>
 
           <article className="prose prose-invert prose-lg max-w-none">
-            <h2>Mobile Compatibility</h2>
+            <h2>Is there a Snoop Dogg Dollars app or APK?</h2>
             <p>
-              Snoop Dogg Dollars is built on <strong>HTML5</strong> and runs directly in your mobile browser. No download, no app store, no installation. Just open your casino, find the game, and spin.
+              You do not need a standalone Snoop Dogg Dollars game download. Use the provider demo or a verified casino lobby in a current mobile browser. Do not install an APK from a review site, file mirror, chat message or search ad: an unofficial package can be outdated, altered or malicious.
             </p>
             <p>
-              The game adapts to any screen size from 4-inch phones to tablets. The 6×8 grid is optimized for touch controls — tap to spin, swipe to browse the paytable, and pinch to zoom on the cascading symbols.
+              A casino may offer its own operator app, but that is separate from the BGaming title. Verify the operator domain, publisher and current terms independently before installing anything.
+            </p>
+
+            <h2>Mobile compatibility</h2>
+            <p>
+              The browser version is designed for modern mobile devices, but exact support depends on the provider, browser, device and region. Keep the browser and operating system updated, allow the game to load fully, and check the in-game information panel before real-money play.
             </p>
 
             <h2>Android</h2>
@@ -79,7 +84,7 @@ export default function MobilePage() {
               On Android, you have two options:
             </p>
             <ul>
-              <li><strong>Browser play</strong> — Chrome, Firefox, or Samsung Browser. Works on any Android 5.0+ device. Just log into your casino and launch the game.</li>
+              <li><strong>Browser play</strong> — use a currently supported browser and launch the game from the provider demo or an operator domain you have verified.</li>
               <li><strong>Casino app</strong> — Install only from an operator domain you have independently verified. Never sideload an APK from a review, chat or mirror site.</li>
             </ul>
             <p>
@@ -90,35 +95,27 @@ export default function MobilePage() {
             <p>
               iOS users can try the demo in a current Safari or Chrome version. Performance depends on the device, browser, connection and provider availability.
             </p>
-            <ul>
-              <li><strong>Safari</strong> — Best performance on iOS. Add the casino to your home screen for app-like experience.</li>
-              <li><strong>Chrome for iOS</strong> — Works well, but Safari has slightly better WebGL performance for the animations.</li>
-            </ul>
             <p>
-              <strong>Tip:</strong> Add the casino to your home screen (Share → Add to Home Screen). It creates an app icon and launches in full-screen mode, hiding the browser chrome for an immersive experience.
+              A home-screen shortcut is only a link to the website; it does not turn an unverified site into an official app. Check the domain each time before signing in or depositing.
             </p>
 
-            <h2>Mobile Features</h2>
+            <h2>What to verify on mobile</h2>
             <p>
-              Every desktop feature is available on mobile:
+              Game controls can vary by operator build and country. Use the live information panel to verify:
             </p>
             <ul>
-              <li>Full 6×8 cluster pays grid</li>
-              <li>Multiplier Area system (x2 to x10)</li>
-              <li>Wild, Weed, Skull, and Scatter bonus symbols</li>
-              <li>Free spins with persistent multipliers</li>
-              <li>Snoop Spin (20x bet)</li>
-              <li>Bonus Buy (100x, 200x, 400x, 800x)</li>
-              <li>Quick spin and turbo mode</li>
-              <li>Autoplay with loss/win limits</li>
+              <li>The game title and BGaming provider name</li>
+              <li>The configured RTP and stake range</li>
+              <li>Whether optional Snoop Spin or Bonus Buy controls are available</li>
+              <li>Session, deposit and loss-limit controls supplied by the operator</li>
             </ul>
 
-            <h2>Mobile Performance Tips</h2>
+            <h2>Mobile performance and security</h2>
             <ul>
-              <li><strong>Use Wi-Fi</strong> — The game streams high-quality audio (Snoop Dogg's voiceovers) and animations. A stable connection prevents lag during cascades.</li>
-              <li><strong>Close background apps</strong> — Free up RAM for smooth animations. 2GB+ free RAM is recommended.</li>
-              <li><strong>Enable battery saver</strong> — The game is optimized, but very long sessions can drain battery. Bring a charger for extended play.</li>
-              <li><strong>Portrait vs Landscape</strong> — Landscape mode gives the best view of the 6×8 grid. Portrait works but the grid is compressed.</li>
+              <li><strong>Use a stable connection</strong> — avoid switching networks while a payment or game round is being processed.</li>
+              <li><strong>Keep software current</strong> — install browser and operating-system security updates.</li>
+              <li><strong>Check the address bar</strong> — do not enter credentials into lookalike domains opened from messages or ads.</li>
+              <li><strong>Prefer the demo first</strong> — confirm that controls and information panels are readable on your screen before considering real-money play.</li>
             </ul>
 
             <h2>Mobile vs Desktop</h2>
@@ -130,8 +127,8 @@ export default function MobilePage() {
                 <tbody className="divide-y divide-neutral-800">
                   <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">RTP</td><td className="px-4 py-3 text-green-400">Check game panel</td><td className="px-4 py-3 text-green-400">Check game panel</td></tr>
                   <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Max Win</td><td className="px-4 py-3 text-green-400">10,000x</td><td className="px-4 py-3 text-green-400">10,000x</td></tr>
-                  <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Bonus Features</td><td className="px-4 py-3 text-green-400">All</td><td className="px-4 py-3 text-green-400">All</td></tr>
-                  <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Screen Size</td><td className="px-4 py-3 text-yellow-400">4-12 inches</td><td className="px-4 py-3 text-green-400">13+ inches</td></tr>
+                  <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Optional Features</td><td className="px-4 py-3 text-yellow-400">Operator-dependent</td><td className="px-4 py-3 text-yellow-400">Operator-dependent</td></tr>
+                  <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Installation</td><td className="px-4 py-3 text-green-400">No game APK needed</td><td className="px-4 py-3 text-green-400">No game download needed</td></tr>
                   <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Controls</td><td className="px-4 py-3 text-yellow-400">Touch</td><td className="px-4 py-3 text-green-400">Mouse/Keyboard</td></tr>
                 </tbody>
               </table>
@@ -153,8 +150,8 @@ export default function MobilePage() {
             <div className="grid gap-4 sm:grid-cols-2">
               <a href="/review/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Full Slot Review</h3><p className="mt-1 text-sm text-neutral-400">In-depth review of RTP, features, and max win potential.</p></a>
               <a href="/how-to-play/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">How to Play</h3><p className="mt-1 text-sm text-neutral-400">Step-by-step beginner's guide to cluster pays and bonuses.</p></a>
-              <a href="/strategy/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Winning Strategy</h3><p className="mt-1 text-sm text-neutral-400">Bankroll management, Snoop Spin timing, and Bonus Buy tips.</p></a>
-              <a href="/casinos/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Where to Play</h3><p className="mt-1 text-sm text-neutral-400">Best casinos offering Snoop Dogg Dollars with current operator terms.</p></a>
+              <a href="/strategy/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">No-myth Strategy</h3><p className="mt-1 text-sm text-neutral-400">Bankroll limits, feature costs and why spin timing cannot beat RNG.</p></a>
+              <a href="/casinos/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-neutral-700 transition-colors"><h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Operator Checks</h3><p className="mt-1 text-sm text-neutral-400">How to verify game availability, regional access and current terms.</p></a>
             </div>
           </section>
         </div>

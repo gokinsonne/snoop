@@ -33,6 +33,21 @@ const nextConfig = {
         destination: "https://lkhv.pro/581ee4",
         permanent: true,
       },
+      {
+        source: "/en",
+        destination: "https://snoopdoggdollar.org/",
+        permanent: true,
+      },
+      {
+        source: "/fr",
+        destination: "https://snoopdoggdollar.org/",
+        permanent: true,
+      },
+      {
+        source: "/ie",
+        destination: "https://snoopdoggdollar.org/",
+        permanent: true,
+      },
     ];
   },
   async headers() {
