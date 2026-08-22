@@ -1,4 +1,4 @@
-import Script from "next/script"
+import { JsonLd } from "@/components/json-ld"
 
 const SITE_URL = "https://snoopdoggdollar.org"
 const PUBLISHER_ID = `${SITE_URL}/#publisher`
@@ -31,11 +31,7 @@ export function WebsiteSchema() {
     ],
   }
 
-  return (
-    <Script id="website-schema" type="application/ld+json">
-      {JSON.stringify(schema)}
-    </Script>
-  )
+  return <JsonLd data={schema} />
 }
 
 type ArticleSchemaProps = {
@@ -53,7 +49,7 @@ export function ArticleSchema({
   description,
   section,
   published = "2026-07-28",
-  modified = "2026-07-30",
+  modified = "2026-08-22",
 }: ArticleSchemaProps) {
   const url = new URL(path, SITE_URL).toString()
   const schema = {
@@ -76,9 +72,5 @@ export function ArticleSchema({
     publisher: { "@id": PUBLISHER_ID },
   }
 
-  return (
-    <Script id={`article-schema-${path.replace(/[^a-z0-9]+/gi, "-")}`} type="application/ld+json">
-      {JSON.stringify(schema)}
-    </Script>
-  )
+  return <JsonLd data={schema} />
 }

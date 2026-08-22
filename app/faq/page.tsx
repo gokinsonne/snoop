@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
-import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars FAQ | RTP, Bonus Buy, Free Spins & Mobile",
@@ -25,13 +25,14 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://snoopdoggdollar.org/faq/",
     siteName: "Snoop Dogg Dollars",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Snoop Dogg Dollars FAQ" }],
   },
 }
 
 const faqs = [
   {
     q: "What is the RTP of Snoop Dogg Dollars?",
-    a: "The default BGaming configuration ships at 97.00% RTP, which is above average for a celebrity-branded slot. Some operators run reduced variants at 96% or 94%, so always check the in-game rules panel before playing for real money.",
+    a: "BGaming's current public game page lists 96.00% RTP. Operator configurations can differ, so check the information panel inside the exact game build before wagering.",
   },
   {
     q: "What is the maximum win on Snoop Dogg Dollars?",
@@ -59,23 +60,22 @@ const faqs = [
   },
   {
     q: "Is Snoop Dogg Dollars legit?",
-    a: "Yes. The game is developed by BGaming, a licensed provider with MGA and Curacao certifications. It uses certified RNG algorithms verified by independent auditors. Always play at licensed casinos to ensure fairness.",
+    a: "It is an official BGaming title released on 30 October 2024. That does not make every site offering it safe: independently verify the operator, licence register, terms and withdrawal rules for your country.",
   },
   {
     q: "What is the volatility of Snoop Dogg Dollars?",
-    a: "Very High. While the hit rate is 33.3% (a win roughly every 3 spins), most base-game wins are small. The big payouts are concentrated in rare events, especially during the free spins round with sticky multipliers.",
+    a: "BGaming classifies the game as Very High volatility and lists Hit Rate 3.00. The provider does not present that field as a promise of one win every three spins, so we do not convert it into a per-spin guarantee.",
   },
   {
     q: "Where can I play Snoop Dogg Dollars for real money?",
-    a: "We recommend 1WIN for the best combination of bonus value, fast crypto withdrawals, and confirmed 97% RTP configuration. Other solid options include Roobet, BitStarz, and Stake. See our full casino comparison.",
+    a: "Availability changes by country. Our current affiliate route is 1WIN, but we have not verified one RTP, bonus or withdrawal configuration for every visitor. Check the live lobby, game panel, licence and cashier terms first.",
   },
 ]
 
 export default function FAQPage() {
   return (
     <>
-      <Script id="schema-faq" type="application/ld+json">
-        {JSON.stringify({
+      <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           mainEntity: faqs.map((f) => ({
@@ -86,8 +86,7 @@ export default function FAQPage() {
               text: f.a,
             },
           })),
-        })}
-      </Script>
+        }} />
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
@@ -148,7 +147,7 @@ export default function FAQPage() {
                 href="/casinos/"
                 className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors"
               >
-                Play at 1WIN →
+                Check Where to Play →
               </a>
             </div>
           </section>

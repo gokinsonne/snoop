@@ -1,6 +1,7 @@
 "use client";
 import { useState, useMemo } from "react";
 import type { LocaleContent } from "@/lib/content";
+import { JsonLd } from "@/components/json-ld";
 
 export default function FAQSection({ faq }: { faq: LocaleContent["faq"] }) {
   const [open, setOpen] = useState<string | null>(faq.items[0]?.id ?? null);
@@ -43,7 +44,7 @@ export default function FAQSection({ faq }: { faq: LocaleContent["faq"] }) {
         })}
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={jsonLd} />
       </div>
 </section>
   );

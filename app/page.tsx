@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import Script from "next/script"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 import { FeatureCostCalculator } from "@/components/feature-cost-calculator"
+import { JsonLd } from "@/components/json-ld"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
 
@@ -29,8 +29,8 @@ const specs = [
   ["Release", "30 October 2024"],
   ["Grid", "6 reels × 8 rows"],
   ["Mechanic", "Cluster Pays"],
-  ["Default RTP", "97.00%"],
-  ["Volatility", "High"],
+  ["BGaming RTP", "96.00%"],
+  ["Volatility", "Very high"],
   ["Max win", "10,000× bet"],
   ["Bet range", "$0.25–$25"],
 ]
@@ -51,6 +51,8 @@ const guides = [
   ["/best-cluster-pays-slots/", "Best cluster slots", "A mechanics-first shortlist without fake rankings"],
   ["/bgaming-cluster-slots/", "BGaming cluster guide", "How cascades and modifiers differ by game"],
   ["/snoop-dogg-dollars-release-history/", "Release history", "Source, update and correction timeline"],
+  ["/play-in-india/", "India guide", "Local-law, payment and operator verification checks"],
+  ["/play-in-japan/", "日本語ガイド", "公式RTP、無料デモ、地域制限の確認方法"],
 ]
 
 const faq = [
@@ -74,9 +76,7 @@ export default function HomePage() {
 
   return (
     <main className="bg-[#080b09] text-neutral-100">
-      <Script id="home-faq-schema" type="application/ld+json">
-        {JSON.stringify(faqSchema)}
-      </Script>
+      <JsonLd data={faqSchema} />
 
       <section className="relative isolate overflow-hidden border-b border-emerald-400/15">
         <Image
@@ -99,7 +99,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-neutral-300">
               A fact-checked guide to BGaming&apos;s hip-hop cluster slot. Learn the real
-              10,000× cap, inspect its 97% default RTP, try the demo, and compare
+              10,000× cap, inspect BGaming&apos;s 96% public RTP listing, try the demo, and compare
               real-money and crypto payment options without fake win promises.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -155,10 +155,13 @@ export default function HomePage() {
               sequences can develop.
             </p>
             <p>
-              The 97% default RTP is attractive, but operators may use a lower configuration.
+              BGaming currently lists 96.00% RTP, while operator configurations may differ.
               High volatility also means long losing stretches are possible. Our verdict:
               try the demo first, verify the RTP in the game information panel, and never
               treat the 10,000× maximum as an expected result.
+            </p>
+            <p>
+              Source: <a href="https://bgaming.com/games/snoop-dogg-dollars" rel="noopener noreferrer" target="_blank">BGaming&apos;s official game page</a>. Facts checked 22 August 2026.
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import Script from "next/script"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
+import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
   title: {
@@ -24,9 +24,7 @@ const checks = [
 export default function BonusPage() {
   return (
     <main className="bg-black text-white">
-      <Script id="schema-bonus-faq" type="application/ld+json">
-        {JSON.stringify({"@context":"https://schema.org","@type":"FAQPage",mainEntity:[{"@type":"Question",name:"Is there a Snoop Dogg Dollars no-deposit bonus?",acceptedAnswer:{"@type":"Answer",text:"We do not publish an unverified universal no-deposit code. Offers vary by operator, account and country, so availability must be confirmed in the live promotion terms."}},{"@type":"Question",name:"Do casino bonuses work on Snoop Dogg Dollars?",acceptedAnswer:{"@type":"Answer",text:"Only when the operator lists the game as eligible. Slots, bonus buys or individual features may contribute differently or be excluded."}},{"@type":"Question",name:"What should I check before claiming a bonus?",acceptedAnswer:{"@type":"Answer",text:"Check wagering, eligible games, maximum bet, expiry, withdrawal limits, payment restrictions and country availability."}}]})}
-      </Script>
+      <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage",mainEntity:[{"@type":"Question",name:"Is there a Snoop Dogg Dollars no-deposit bonus?",acceptedAnswer:{"@type":"Answer",text:"We do not publish an unverified universal no-deposit code. Offers vary by operator, account and country, so availability must be confirmed in the live promotion terms."}},{"@type":"Question",name:"Do casino bonuses work on Snoop Dogg Dollars?",acceptedAnswer:{"@type":"Answer",text:"Only when the operator lists the game as eligible. Slots, bonus buys or individual features may contribute differently or be excluded."}},{"@type":"Question",name:"What should I check before claiming a bonus?",acceptedAnswer:{"@type":"Answer",text:"Check wagering, eligible games, maximum bet, expiry, withdrawal limits, payment restrictions and country availability."}}]}} />
       <section className="mx-auto max-w-5xl px-5 py-16 sm:py-24">
         <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">Current offer guide</p>
         <h1 className="mt-4 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">

@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
-  title: "How to Play Snoop Dogg Dollars | 97% RTP, Free Demo & Bonus Guide",
+  title: "How to Play Snoop Dogg Dollars | Rules, Demo & Bonus Guide",
   description:
     "Learn how to play Snoop Dogg Dollars slot. Step-by-step guide: cluster pays, symbols, bonus features, Snoop Spin, free spins. Play free demo or real money at 1WIN.",
   keywords: [
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     type: "article",
     url: "https://snoopdoggdollar.org/how-to-play/",
     siteName: "Snoop Dogg Dollars",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "How to play Snoop Dogg Dollars" }],
   },
 }
 
 export default function HowToPlayPage() {
   return (
     <>
-      <Script id="schema-how-to-play" type="application/ld+json">
-        {JSON.stringify({
+      <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "HowTo",
           name: "How to Play Snoop Dogg Dollars",
@@ -66,8 +66,7 @@ export default function HowToPlayPage() {
               url: "https://snoopdoggdollar.org/how-to-play/#step-4",
             },
           ],
-        })}
-      </Script>
+        }} />
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
@@ -102,10 +101,10 @@ export default function HowToPlayPage() {
                 { label: "Pay System", value: "Cluster Pays" },
                 { label: "Min Bet", value: "$0.25" },
                 { label: "Max Bet", value: "$25" },
-                { label: "RTP", value: "97.00%" },
+                { label: "BGaming RTP", value: "96.00%" },
                 { label: "Volatility", value: "Very High" },
                 { label: "Max Win", value: "10,000x" },
-                { label: "Hit Rate", value: "33.3%" },
+                { label: "Hit Rate", value: "3.00 (listed)" },
               ].map((spec) => (
                 <div key={spec.label} className="rounded-lg bg-neutral-800/50 p-3">
                   <dt className="text-xs text-neutral-500 uppercase tracking-wider">{spec.label}</dt>
@@ -198,7 +197,7 @@ export default function HowToPlayPage() {
 
             <h2>Beginner Tips</h2>
             <ul>
-              <li>Always verify the RTP is set to 97% before playing for real money.</li>
+              <li>BGaming lists 96.00% RTP; verify the value in the exact game build before wagering.</li>
               <li>Start with the demo to understand the cascade rhythm.</li>
               <li>Don't chase Bonus Buy at 800x on a small bankroll — it's a high-risk move.</li>
               <li>Hot and cold streaks do not predict the next random result.</li>

@@ -7,9 +7,15 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*",
+        source: "/",
         has: [{ type: "host", value: "www.snoopdoggdollar.org" }],
-        destination: "https://snoopdoggdollar.org/:path*",
+        destination: "https://snoopdoggdollar.org/",
+        permanent: true,
+      },
+      {
+        source: "/:path+",
+        has: [{ type: "host", value: "www.snoopdoggdollar.org" }],
+        destination: "https://snoopdoggdollar.org/:path+/",
         permanent: true,
       },
       {

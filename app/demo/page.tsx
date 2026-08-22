@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
-import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { DemoGameFrame } from "@/components/demo-game-frame"
+import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
   title: {
@@ -25,14 +26,14 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://snoopdoggdollar.org/demo/",
     siteName: "Snoop Dogg Dollars",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Snoop Dogg Dollars free demo" }],
   },
 }
 
 export default function DemoPage() {
   return (
     <>
-      <Script id="schema-demo" type="application/ld+json">
-        {JSON.stringify({
+      <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "VideoGame",
           name: "Snoop Dogg Dollars Demo",
@@ -53,10 +54,8 @@ export default function DemoPage() {
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
           },
-        })}
-      </Script>
-      <Script id="schema-demo-faq" type="application/ld+json">
-        {JSON.stringify({
+        }} />
+      <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           mainEntity: [
@@ -93,8 +92,7 @@ export default function DemoPage() {
               },
             },
           ],
-        })}
-      </Script>
+        }} />
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
@@ -131,18 +129,9 @@ export default function DemoPage() {
             ))}
           </div>
 
-          {/* Game iframe */}
+          {/* The heavy third-party game loads only after user intent. */}
           <section className="mb-12 rounded-2xl border border-neutral-800 bg-neutral-900/50 p-4 sm:p-6">
-            <div className="relative aspect-video bg-black rounded-xl overflow-hidden border border-neutral-700">
-              <iframe
-                className="w-full h-full"
-                src="https://bgaming-network.com/play/SnoopDoggDollars/FUN?server=demo"
-                frameBorder="0"
-                allowFullScreen
-                scrolling="no"
-                title="Snoop Dogg Dollars Demo"
-              />
-            </div>
+            <DemoGameFrame />
             <p className="mt-4 text-center text-sm text-neutral-500">
               If the game doesn't load, try refreshing the page or disable your ad blocker.
             </p>
@@ -151,7 +140,7 @@ export default function DemoPage() {
           <article className="prose prose-invert prose-lg max-w-none">
             <h2>What Is the Demo Mode?</h2>
             <p>
-              The Snoop Dogg Dollars demo is a <strong>free-to-play version</strong> of the real money slot. It uses the exact same game engine, the same 97% RTP, and the same bonus features — but you play with virtual credits instead of real cash.
+              The Snoop Dogg Dollars demo is a <strong>free-to-play version</strong> using virtual credits instead of real cash. BGaming&apos;s public page currently lists 96.00% RTP; always confirm the value shown in the game information panel because an operator build can differ.
             </p>
             <p>
               This is perfect for learning the game mechanics, testing strategies, or simply enjoying the hip-hop themed visuals without any financial risk.
@@ -175,8 +164,8 @@ export default function DemoPage() {
                 <tbody className="divide-y divide-neutral-800">
                   <tr className="hover:bg-neutral-900/50">
                     <td className="px-4 py-3 font-medium text-white">RTP</td>
-                    <td className="px-4 py-3 text-green-400">97%</td>
-                    <td className="px-4 py-3 text-green-400">97%</td>
+                    <td className="px-4 py-3 text-green-400">Check game panel</td>
+                    <td className="px-4 py-3 text-green-400">Check operator build</td>
                   </tr>
                   <tr className="hover:bg-neutral-900/50">
                     <td className="px-4 py-3 font-medium text-white">Bonus Features</td>
@@ -212,7 +201,7 @@ export default function DemoPage() {
               <li><strong>Learn the mechanics</strong> — Cluster pays, cascading wins, and multipliers are unique. The demo lets you understand them without losing money.</li>
               <li><strong>Test strategies</strong> — Try different bet sizes, Snoop Spin timing, and Bonus Buy tiers to see what works for your style.</li>
               <li><strong>Experience the volatility</strong> — Very high volatility means long dry spells. The demo shows you exactly what to expect.</li>
-              <li><strong>Check the RTP</strong> — Verify the game info panel shows 97% RTP before switching to real money.</li>
+              <li><strong>Check the RTP</strong> — BGaming lists 96.00%; verify the exact value in the game info panel.</li>
               <li><strong>Enjoy the theme</strong> — Snoop Dogg's voiceovers and the hip-hop visuals are genuinely fun, even without real stakes.</li>
             </ul>
 
@@ -221,9 +210,9 @@ export default function DemoPage() {
               Switch to real money when you:
             </p>
             <ul>
-              <li>Understand the cascade rhythm and can spot hot/cold streaks</li>
-              <li>Have a bankroll that covers at least 200 spins at your chosen bet</li>
-              <li>Found a casino with the default 97% RTP version</li>
+              <li>Understand that past hot or cold streaks do not predict the next result</li>
+              <li>Have set a hard cash and time limit you can afford to lose</li>
+              <li>Verified the operator, game RTP and withdrawal terms</li>
               <li>Can play responsibly with pre-set win and loss limits</li>
             </ul>
 
@@ -257,7 +246,7 @@ export default function DemoPage() {
               Ready to Play for Real Money?
             </h2>
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">
-              Join 1WIN and get a 200% welcome bonus up to $500 + 100 free spins. Play Snoop Dogg Dollars with the current game and payment terms.
+              Check whether the game, payment method and current terms are available for your account and country before depositing.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a

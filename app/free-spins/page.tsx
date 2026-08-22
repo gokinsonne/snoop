@@ -1,10 +1,10 @@
 import type { Metadata } from "next"
-import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Free Spins | How to Trigger & Maximize 2026",
-  description: "How to trigger free spins on Snoop Dogg Dollars. Scatters, persistent multipliers, retriggers, and tips to maximize your bonus round wins.",
+  title: "Snoop Dogg Dollars Free Spins | Trigger & Mechanics Guide",
+  description: "How Snoop Dogg Dollars free spins trigger: Scatters, persistent multipliers, sticky Wilds and retriggers, based on BGaming's official mechanics.",
   keywords: [
     "snoop dogg dollars free spins",
     "snoop dogg dollars scatter",
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     type: "article",
     url: "https://snoopdoggdollar.org/free-spins/",
     siteName: "Snoop Dogg Dollars",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Snoop Dogg Dollars free spins" }],
   },
 }
 
 export default function FreeSpinsPage() {
   return (
     <>
-      <Script id="schema-freespins" type="application/ld+json">
-        {JSON.stringify({
+      <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "HowTo",
           name: "How to Trigger Free Spins on Snoop Dogg Dollars",
@@ -40,8 +40,7 @@ export default function FreeSpinsPage() {
             { "@type": "HowToStep", name: "Build Multipliers", text: "Multipliers do not reset between spins. Every win on a marked cell increases the multiplier." },
             { "@type": "HowToStep", name: "Retrigger", text: "Land 3+ scatters during free spins to add more spins and more wilds/multipliers." },
           ],
-        })}
-      </Script>
+        }} />
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
@@ -62,7 +61,7 @@ export default function FreeSpinsPage() {
             Snoop Dogg Dollars Free Spins
           </h1>
           <p className="text-xl text-neutral-400 mb-12">
-            The money round. How to trigger it, how to maximize it, and why it's where the big wins happen.
+            How the feature triggers, which symbols persist and what the official rules do—and do not—promise.
           </p>
 
           <section className="mb-12 rounded-2xl border border-neutral-800 bg-neutral-900/50 p-6 sm:p-8">
@@ -112,18 +111,18 @@ export default function FreeSpinsPage() {
             <h2>Retriggering Free Spins</h2>
             <p>During free spins, landing <strong>3+ scatters again</strong> awards additional free spins (same amounts as the initial trigger). The new scatters also transform into wilds or multipliers. This is how the biggest wins happen — a 20-spin round that retriggers to 35+ spins with 8+ wilds on the board.</p>
 
-            <h2>Tips to Maximize Free Spins</h2>
+            <h2>Mechanics to Watch</h2>
             <ul>
-              <li><strong>Weed Symbol</strong> — When it appears, it upgrades ALL active multipliers by +2. Early Weed = compound growth.</li>
+              <li><strong>Weed Symbol</strong> — When it appears, it upgrades active cell multipliers by +2 and Wild multipliers by +10.</li>
               <li><strong>Skull Symbol</strong> — Removes low-paying symbols, increasing the chance of high-value clusters.</li>
-              <li><strong>Retrigger is everything</strong> — A 20-spin round with 1 retrigger is worth far more than 2 separate 10-spin rounds.</li>
-              <li><strong>800x Bonus Buy</strong> — All scatters become wilds. Highest potential setup for free spins.</li>
+              <li><strong>Retrigger</strong> — Additional Scatters can extend the round, but do not guarantee a profit.</li>
+              <li><strong>800x Bonus Buy</strong> — The most expensive listed option and still capable of returning less than its purchase price.</li>
             </ul>
           </article>
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Play Snoop Dogg Dollars at 1WIN</h2>
-            <p className="text-neutral-400 mb-6">current welcome offer. Verified 97% RTP.</p>
+            <p className="text-neutral-400 mb-6">BGaming lists 96.00% RTP; verify the exact operator build and current terms.</p>
             <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
           </section>
         </div>

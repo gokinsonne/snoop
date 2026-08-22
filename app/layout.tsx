@@ -16,12 +16,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://snoopdoggdollar.org/"),
-  title: {
-    default: "Snoop Dogg Dollars Slot Guide (2026)",
-    template: "%s | Snoop Dogg Dollars",
-  },
+  title: "Snoop Dogg Dollars Slot Guide (2026)",
   description:
-    "Independent Snoop Dogg Dollars guide: 97% default RTP, 10,000x max win, features, free demo and crypto casino payment checks.",
+    "Independent Snoop Dogg Dollars guide: official 96% RTP listing, 10,000x max multiplier, features, free demo and crypto payment checks.",
   keywords: [
     "snoop dogg dollars",
     "snoop dogg dollars slot",
@@ -40,7 +37,7 @@ export const metadata: Metadata = {
     canonical: "https://snoopdoggdollar.org/",
   },
   openGraph: {
-    title: "Snoop Dogg Dollars Slot | 97% RTP & 10,000x Max Win",
+    title: "Snoop Dogg Dollars Slot | 96% RTP & 10,000x Max",
     description: "Independent Snoop Dogg Dollars review, free demo, feature guide and crypto casino payment checks.",
     type: "website",
     locale: "en_US",
@@ -57,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Snoop Dogg Dollars Slot | 97% RTP",
+    title: "Snoop Dogg Dollars Slot | 96% RTP",
     description: "Independent Snoop Dogg Dollars review, demo, RTP and crypto casino guide.",
     images: ["https://snoopdoggdollar.org/og-image.jpg"],
   },

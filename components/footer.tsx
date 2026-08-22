@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   const guideLinks = [
@@ -15,6 +16,8 @@ export function Footer() {
     { href: "/crypto-casino-deposits/", label: "Crypto Deposits" },
     { href: "/crypto-casino-withdrawals/", label: "Crypto Withdrawals" },
     { href: "/bitcoin-vs-usdt-casinos/", label: "BTC vs USDT" },
+    { href: "/play-in-india/", label: "India Guide" },
+    { href: "/play-in-japan/", label: "日本語ガイド" },
   ]
 
   const legalLinks = [
@@ -53,16 +56,16 @@ export function Footer() {
               <h4 className="text-lg font-semibold text-center mb-4 text-foreground">Payment Methods</h4>
               <div className="flex flex-wrap justify-center items-center gap-4">
                 <div className="bg-white rounded-lg p-2 shadow-md">
-                  <img src="/mastercard.svg" alt="Mastercard" className="h-6" />
+                  <Image src="/mastercard.svg" alt="Mastercard" width={38} height={24} className="h-6 w-auto" />
                 </div>
                 <div className="bg-white rounded-lg p-2 shadow-md">
-                  <img src="/vissa.svg" alt="Visa" className="h-6" />
+                  <Image src="/vissa.svg" alt="Visa" width={50} height={24} className="h-6 w-auto" />
                 </div>
                 <div className="bg-white rounded-lg p-2 shadow-md">
-                  <img src="/bitt.svg" alt="Bitcoin" className="h-6" />
+                  <Image src="/bitt.svg" alt="Bitcoin" width={24} height={24} className="h-6 w-auto" />
                 </div>
                 <div className="bg-white rounded-lg p-2 shadow-md">
-                  <img src="/eu.svg" alt="Ethereum" className="h-6" />
+                  <Image src="/eu.svg" alt="Ethereum" width={24} height={24} className="h-6 w-auto" />
                 </div>
               </div>
             </div>
@@ -77,7 +80,7 @@ export function Footer() {
                   rel="noopener noreferrer sponsored"
                   className="hover:scale-105 transition-transform"
                 >
-                  <img src="/1w.svg" alt="1WIN Casino" className="h-10 w-auto drop-shadow-lg" />
+                  <Image src="/1w.svg" alt="1WIN Casino" width={120} height={40} className="h-10 w-auto drop-shadow-lg" />
                 </a>
               </div>
             </div>

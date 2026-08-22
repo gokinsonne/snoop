@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
-import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars Mobile | Play on Android & iOS 2026",
   description:
-    "Play Snoop Dogg Dollars on mobile. Android APK, iOS browser, HTML5 optimized. Same 97% RTP, all features. Best mobile casinos with fast payouts.",
+    "Play the Snoop Dogg Dollars browser demo on Android or iOS. No APK required. Check compatibility, data use, RTP and mobile security before playing.",
   keywords: [
     "snoop dogg dollars mobile",
     "snoop dogg dollars android",
@@ -19,18 +19,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Snoop Dogg Dollars Mobile | Android & iOS",
-    description: "Play Snoop Dogg Dollars on mobile. HTML5 optimized, all features, same 97% RTP.",
+    description: "Mobile browser guide for Snoop Dogg Dollars on Android and iOS, with no unofficial APK required.",
     type: "article",
     url: "https://snoopdoggdollar.org/mobile/",
     siteName: "Snoop Dogg Dollars",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Snoop Dogg Dollars mobile guide" }],
   },
 }
 
 export default function MobilePage() {
   return (
     <>
-      <Script id="schema-mobile" type="application/ld+json">
-        {JSON.stringify({
+      <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "Article",
           headline: "Snoop Dogg Dollars Mobile | Play on Android & iOS 2026",
@@ -41,8 +41,7 @@ export default function MobilePage() {
           datePublished: "2026-06-22",
           dateModified: "2026-06-22",
           mainEntityOfPage: { "@type": "WebPage", "@id": "https://snoopdoggdollar.org/mobile/" },
-        })}
-      </Script>
+        }} />
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
@@ -63,7 +62,7 @@ export default function MobilePage() {
             Snoop Dogg Dollars on Mobile
           </h1>
           <p className="text-xl text-neutral-400 mb-12">
-            Play Snoop Dogg Dollars anywhere. HTML5-optimized for Android and iOS. Same 97% RTP, all features, no app download needed.
+            Launch the browser demo on a modern Android or iOS device. No unofficial APK is needed; verify the exact game panel and operator terms before real-money play.
           </p>
 
           <article className="prose prose-invert prose-lg max-w-none">
@@ -81,15 +80,15 @@ export default function MobilePage() {
             </p>
             <ul>
               <li><strong>Browser play</strong> — Chrome, Firefox, or Samsung Browser. Works on any Android 5.0+ device. Just log into your casino and launch the game.</li>
-              <li><strong>Casino app</strong> — Some casinos offer Android APK downloads. These often include push notifications for bonuses and faster loading times.</li>
+              <li><strong>Casino app</strong> — Install only from an operator domain you have independently verified. Never sideload an APK from a review, chat or mirror site.</li>
             </ul>
             <p>
-              <strong>Recommended browsers:</strong> Chrome 90+, Firefox 88+, Samsung Browser 14+. Enable "Desktop site" mode if the game doesn't load properly — though it should work natively.
+              Use a currently supported browser version. If the provider blocks the demo in your region, do not bypass the restriction or download a mirrored game file.
             </p>
 
             <h2>iOS (iPhone & iPad)</h2>
             <p>
-              iOS users can play directly in Safari or Chrome. The game is tested on iOS 14+ and works flawlessly on iPhone 8 and newer, including all iPad models.
+              iOS users can try the demo in a current Safari or Chrome version. Performance depends on the device, browser, connection and provider availability.
             </p>
             <ul>
               <li><strong>Safari</strong> — Best performance on iOS. Add the casino to your home screen for app-like experience.</li>
@@ -129,7 +128,7 @@ export default function MobilePage() {
                   <tr><th className="px-4 py-3">Feature</th><th className="px-4 py-3">Mobile</th><th className="px-4 py-3">Desktop</th></tr>
                 </thead>
                 <tbody className="divide-y divide-neutral-800">
-                  <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">RTP</td><td className="px-4 py-3 text-green-400">97%</td><td className="px-4 py-3 text-green-400">97%</td></tr>
+                  <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">RTP</td><td className="px-4 py-3 text-green-400">Check game panel</td><td className="px-4 py-3 text-green-400">Check game panel</td></tr>
                   <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Max Win</td><td className="px-4 py-3 text-green-400">10,000x</td><td className="px-4 py-3 text-green-400">10,000x</td></tr>
                   <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Bonus Features</td><td className="px-4 py-3 text-green-400">All</td><td className="px-4 py-3 text-green-400">All</td></tr>
                   <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Screen Size</td><td className="px-4 py-3 text-yellow-400">4-12 inches</td><td className="px-4 py-3 text-green-400">13+ inches</td></tr>
@@ -141,7 +140,7 @@ export default function MobilePage() {
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Play on Mobile Now</h2>
-            <p className="text-neutral-400 mb-6 max-w-xl mx-auto">Join 1WIN and play Snoop Dogg Dollars on any device. current welcome offer. No app download required.</p>
+            <p className="text-neutral-400 mb-6 max-w-xl mx-auto">Try the free demo first, then verify the operator, exact game build and mobile cashier terms.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
               <a href="/demo/" className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors">Try Demo</a>

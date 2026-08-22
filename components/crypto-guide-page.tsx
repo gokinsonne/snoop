@@ -1,8 +1,8 @@
 import Link from "next/link"
-import Script from "next/script"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { ArticleSchema } from "@/components/seo-schema"
+import { JsonLd } from "@/components/json-ld"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
 
@@ -21,7 +21,36 @@ export function CryptoGuidePage({
       ? "/usdt-casinos/snoop-dogg-dollars/"
       : "/crypto-casinos/snoop-dogg-dollars/"
 
-  const faq = [
+  const profiles = {
+    Crypto: {
+      heading: "Choose the payment rail before choosing the operator",
+      copy: "This hub compares the decision points shared by Bitcoin, USDT and other crypto deposits. Start with operator eligibility and the exact game build, then choose an asset and network you already understand. A long coin list is not evidence of reliable withdrawals.",
+      checks: ["List the assets and networks shown in your own cashier", "Compare total deposit and withdrawal costs", "Decide whether price movement or token-network mismatch is the larger risk"],
+    },
+    Bitcoin: {
+      heading: "Bitcoin-specific deposit checks",
+      copy: "A BTC deposit has two moving parts: the amount can change in fiat value and the transfer may need network confirmations before the casino credits it. The cashier—not a review page—must supply the current address, minimum amount and confirmation policy.",
+      checks: ["Use a fresh BTC address from the authenticated cashier", "Review the wallet fee before broadcasting", "Save the transaction ID and wait for the stated confirmations before contacting support"],
+    },
+    USDT: {
+      heading: "USDT-specific network checks",
+      copy: "USDT exists on several incompatible networks. Matching the ticker is not enough: the withdrawal network in your wallet must exactly match the deposit network selected in the casino cashier. A wrong-network transfer may be unrecoverable.",
+      checks: ["Match asset, network and address character by character", "Check whether your wallet needs a separate fee token", "Use a small test transfer when limits and fees make that practical"],
+    },
+  } as const
+  const profile = profiles[currency]
+
+  const faq = currency === "Bitcoin" ? [
+    ["Can I play Snoop Dogg Dollars with Bitcoin?", "Only when the operator carries the BGaming game and enables BTC for your account and country. Confirm both inside the live lobby and cashier."],
+    ["How many Bitcoin confirmations are required?", "There is no universal number. Read the current cashier policy and track the transaction ID on a Bitcoin block explorer."],
+    ["Can the credited amount change?", "The BTC amount and its fiat value can move between deposit and play. Check the operator's conversion and account-currency rules."],
+    ["Is a Bitcoin deposit anonymous?", "No. Blockchain transfers are public and the operator may require identity verification before withdrawal."],
+  ] : currency === "USDT" ? [
+    ["Can I play Snoop Dogg Dollars with USDT?", "Only when the operator carries the BGaming game and enables USDT on a supported network for your account and country."],
+    ["Which USDT network should I use?", "Use only the exact network displayed in the authenticated cashier. Similar-looking addresses do not make networks interchangeable."],
+    ["Why might a wallet need another token?", "Some networks charge transaction fees in their native token rather than USDT. Check your wallet's fee estimate before sending."],
+    ["Does USDT remove all price risk?", "No. It is designed to track the US dollar, but issuer, market, platform and conversion risks still exist."],
+  ] : [
     [
       `Can I play Snoop Dogg Dollars with ${currency}?`,
       `Yes, if an operator carries BGaming titles and supports ${currency} for your account and country. Confirm both in the live lobby and cashier.`,
@@ -43,8 +72,7 @@ export function CryptoGuidePage({
   return (
     <>
       <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" />
-      <Script id={`schema-${currency.toLowerCase()}-casino-faq`} type="application/ld+json">
-        {JSON.stringify({
+      <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           mainEntity: faq.map(([question, answer]) => ({
@@ -52,8 +80,7 @@ export function CryptoGuidePage({
             name: question,
             acceptedAnswer: { "@type": "Answer", text: answer },
           })),
-        })}
-      </Script>
+        }} />
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
         { name: title, url: `https://snoopdoggdollar.org${path}` },
@@ -115,6 +142,14 @@ export function CryptoGuidePage({
           a fast deposit guarantees a fast withdrawal.
         </p>
 
+        <section className="mt-12 rounded-2xl border border-emerald-400/20 bg-emerald-400/[.06] p-6">
+          <h2 className="text-3xl font-black text-white">{profile.heading}</h2>
+          <p className="mt-4">{profile.copy}</p>
+          <ul className="mt-5 list-disc space-y-3 pl-6">
+            {profile.checks.map((check) => <li key={check}>{check}</li>)}
+          </ul>
+        </section>
+
         <h2 className="mt-12 text-3xl font-black text-white">Bitcoin vs USDT for casino payments</h2>
         <div className="mt-5 overflow-x-auto rounded-2xl border border-white/10">
           <table className="w-full min-w-[560px] text-left text-base">
@@ -128,6 +163,10 @@ export function CryptoGuidePage({
           </table>
         </div>
         <p className="mt-4 text-sm text-neutral-500">This comparison covers payment mechanics, not investment advice. Casino support and cashier conditions vary.</p>
+
+        <p className="mt-8 text-sm text-neutral-400">
+          Game facts source: <a href="https://bgaming.com/games/snoop-dogg-dollars" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline">BGaming official Snoop Dogg Dollars page</a>, checked 22 August 2026. BGaming lists 96.00% RTP; verify the operator build in-game.
+        </p>
 
         <h2 className="mt-12 text-3xl font-black text-white">Current operator route</h2>
         <p className="mt-4">

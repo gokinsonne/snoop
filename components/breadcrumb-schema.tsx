@@ -1,4 +1,4 @@
-import Script from "next/script"
+import { JsonLd } from "@/components/json-ld"
 
 interface BreadcrumbItem {
   name: string
@@ -21,9 +21,5 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
     })),
   }
 
-  return (
-    <Script id="breadcrumb-schema" type="application/ld+json">
-      {JSON.stringify(schema)}
-    </Script>
-  )
+  return <JsonLd data={schema} />
 }

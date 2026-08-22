@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
-import Script from "next/script"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
   title: {
@@ -27,16 +27,17 @@ export const metadata: Metadata = {
     canonical: "https://snoopdoggdollar.org/review/",
   },
   openGraph: {
-    title: "Snoop Dogg Dollars Slot Review | 97% RTP & 10,000x Max Win",
+    title: "Snoop Dogg Dollars Review | 96% RTP & 10,000x Max",
     description:
-      "Full review of BGaming's Snoop Dogg Dollars slot. Cluster pays, bonus buy, Snoop Spin, free spins & 97% RTP. Play at 1WIN.",
+      "Independent review of BGaming's Snoop Dogg Dollars: cluster pays, bonus buy, Snoop Spin, free spins and current 96% public RTP listing.",
     type: "article",
     url: "https://snoopdoggdollar.org/review/",
     siteName: "Snoop Dogg Dollars",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Snoop Dogg Dollars review" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Snoop Dogg Dollars Slot Review | 97% RTP",
+    title: "Snoop Dogg Dollars Slot Review | 96% RTP",
     description: "Complete review of the Snoop Dogg Dollars slot by BGaming. Features, RTP & where to play.",
   },
 }
@@ -45,13 +46,12 @@ export default function ReviewPage() {
   return (
     <>
       {/* Schema.org Article */}
-      <Script id="schema-review" type="application/ld+json">
-        {JSON.stringify({
+      <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Snoop Dogg Dollars Slot Review 2026 | RTP 97%, Features & Max Win",
+          headline: "Snoop Dogg Dollars Slot Review 2026 | RTP, Features & Max Win",
           description:
-            "In-depth review of the Snoop Dogg Dollars slot by BGaming. Cluster pays mechanics, 97% RTP, bonus buy, Snoop Spin, free spins and 10,000x max win potential.",
+            "In-depth review of the Snoop Dogg Dollars slot by BGaming. Cluster pays, current public RTP listing, bonus buy, Snoop Spin, free spins and 10,000x maximum multiplier.",
           image: "https://snoopdoggdollar.org/og-image.jpg",
           author: {
             "@type": "Organization",
@@ -67,13 +67,12 @@ export default function ReviewPage() {
             },
           },
           datePublished: "2024-10-30",
-          dateModified: "2026-08-15",
+          dateModified: "2026-08-22",
           mainEntityOfPage: {
             "@type": "WebPage",
             "@id": "https://snoopdoggdollar.org/review/",
           },
-        })}
-      </Script>
+        }} />
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
@@ -124,10 +123,10 @@ export default function ReviewPage() {
               {[
                 { label: "Provider", value: "BGaming" },
                 { label: "Release", value: "Oct 30, 2024" },
-                { label: "RTP", value: "97.00%" },
+                { label: "BGaming RTP", value: "96.00%" },
                 { label: "Volatility", value: "Very High" },
                 { label: "Max Win", value: "10,000x" },
-                { label: "Hit Rate", value: "33.3%" },
+                { label: "Hit Rate", value: "3.00 (listed)" },
                 { label: "Min Bet", value: "$0.25" },
                 { label: "Max Bet", value: "$25" },
                 { label: "Reels", value: "6×8" },
@@ -247,16 +246,17 @@ export default function ReviewPage() {
 
             <h2>RTP & Volatility Reality Check</h2>
             <p>
-              The default configuration ships at <strong>97.00% RTP</strong>, which is exceptional for a celebrity-branded slot. However, operators can configure reduced variants at 96% or even 94%. Always check the in-game rules panel before playing for real money.
+              BGaming&apos;s current public game page lists <strong>96.00% RTP</strong>. The provider also documents that operator builds can differ, so always check the information panel inside the exact game before playing for real money.
             </p>
             <p>
-              With <strong>Very High</strong> volatility and a hit rate of 33.3%, expect plenty of dry spells punctuated by occasional explosive hits. The max win hit rate is approximately <strong>1 in 4,600</strong> during Snoop Spin mode — this is not a slot for the faint of bankroll.
+              BGaming classifies the slot as <strong>Very High</strong> volatility and lists Hit Rate 3.00. It does not publish a max-win probability, so precise “1 in N” claims would be speculation. Long losing stretches remain possible regardless of feature choice.
             </p>
 
             <h2>Our Verdict</h2>
             <p>
-              Snoop Dogg Dollars is the rare celebrity slot that earns its branding. BGaming built a legitimate cluster-pays machine around the Doggfather rather than just licensing his face. The <strong>97% RTP</strong>, sticky Wilds with x100 potential, and genuine Snoop voiceovers create a session that holds its tone. The catches: the bankroll demands are real, Bonus Buy is pricey, and the max-win hit rate is unforgiving. For high-volatility cluster fans, this is one of 2024&apos;s best releases.
+              Snoop Dogg Dollars is a feature-rich celebrity slot rather than a simple reskin. The <strong>96.00% public RTP listing</strong>, sticky Wilds with x100 potential and genuine Snoop voiceovers give it a clear identity. The catches are very high volatility and expensive optional features; demo play is the sensible first step.
             </p>
+            <p>Primary source: <a href="https://bgaming.com/games/snoop-dogg-dollars" rel="noopener noreferrer" target="_blank">BGaming&apos;s official game page</a>, checked 22 August 2026.</p>
           </article>
 
           {/* CTA Section */}
