@@ -27,5 +27,10 @@
     "Theoretical maximum is not a likely or guaranteed result."
   ],
   "methodology": "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/",
-  "last_reviewed": "2026-07-28"
+  "primary_sources": [
+    "https://bgaming.com/games/snoop-dogg-dollars",
+    "https://bgaming.com/articles/rtp-in-slot-games-how-return-to-player-works"
+  ],
+  "license": "CC-BY-4.0",
+  "last_reviewed": "2026-08-24"
 }

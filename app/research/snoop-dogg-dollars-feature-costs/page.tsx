@@ -44,7 +44,7 @@ export default function ResearchPage() {
         <div className="mt-8 flex flex-wrap gap-3">
           <a href="/data/snoop-dogg-dollars-feature-costs.csv" download className="rounded-full bg-emerald-400 px-5 py-3 font-black text-black">Download CSV</a>
           <a href="/data/snoop-dogg-dollars-feature-costs.json" download className="rounded-full border border-white/20 px-5 py-3 font-black">Download JSON</a>
-          <a href="https://github.com/gokinsonne/snoop-dogg-dollars-data" rel="noopener" className="rounded-full border border-white/20 px-5 py-3 font-black">GitHub dataset</a>
+          <a href="https://github.com/gokinsonne/snoop" rel="noopener" className="rounded-full border border-white/20 px-5 py-3 font-black">GitHub dataset</a>
         </div>
 
         <div className="mt-12 overflow-x-auto rounded-2xl border border-white/10">
@@ -73,7 +73,7 @@ export default function ResearchPage() {
           <p>Operator configuration, jurisdiction, currency presentation, bet limits and feature availability can differ. The live game information panel remains authoritative. The maximum win is a theoretical ceiling, never a promise.</p>
           <p>Reuse is permitted under CC BY 4.0 with attribution to this page. See the <Link href="/editorial-policy/" className="font-bold text-emerald-300">editorial methodology</Link> and the <Link href="/bonus-buy/" className="font-bold text-emerald-300">Bonus Buy explanation</Link>.</p>
         </section>
-        <p className="mt-12 text-sm text-neutral-500">Dataset version 1.0 · Last reviewed 28 July 2026</p>
+        <p className="mt-12 text-sm text-neutral-500">Dataset version 1.0 · Sources and calculations rechecked 24 August 2026</p>
       </article>
       </main>
     </>

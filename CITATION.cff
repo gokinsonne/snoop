@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "При использовании данных, пожалуйста, цитируйте каноническую страницу исследования."
+title: "Snoop Dogg Dollars: нормализация стоимости игровых функций"
+type: dataset
+authors:
+  - name: "Snoop Dogg Dollars Data Lab"
+version: "1.0"
+date-released: 2026-08-24
+license: CC-BY-4.0
+repository-code: "https://github.com/gokinsonne/snoop"
+url: "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/"
+keywords:
+  - "Snoop Dogg Dollars"
+  - "BGaming"
+  - "slot dataset"
+  - "feature cost"
+  - "RTP"
+abstract: "Открытый набор формул и расчётов стоимости Snoop Spin, Bonus Buy и теоретического предела 10 000× для нескольких базовых ставок."

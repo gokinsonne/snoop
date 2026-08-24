@@ -2,6 +2,24 @@ import type { Metadata } from "next"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { JsonLd } from "@/components/json-ld"
 
+const mobileFaq = [
+  {
+    question: "Is there an official Snoop Dogg Dollars app?",
+    answer:
+      "BGaming's official game page presents Snoop Dogg Dollars as a browser demo and does not list a separate standalone game app. A casino operator may offer its own app, but that is not a dedicated Snoop Dogg Dollars app.",
+  },
+  {
+    question: "Do I need a Snoop Dogg Dollars APK?",
+    answer:
+      "No game APK is needed for browser play. Avoid APK files offered by review sites, mirrors, chat messages or search ads because they are not supplied by the game page we verified.",
+  },
+  {
+    question: "How can I play Snoop Dogg Dollars on Android or iPhone?",
+    answer:
+      "Use the official provider demo or a verified operator lobby in a current mobile browser. Before real-money play, check the provider name, configured RTP, regional availability and operator terms in the live game panel.",
+  },
+]
+
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars App & Download | No APK Needed",
   description:
@@ -39,9 +57,22 @@ export default function MobilePage() {
           author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org/" },
           publisher: { "@type": "Organization", name: "Snoop Dogg Dollars", logo: { "@type": "ImageObject", url: "https://snoopdoggdollar.org/favicon.ico" } },
           datePublished: "2026-06-22",
-          dateModified: "2026-08-22",
+          dateModified: "2026-08-24",
           mainEntityOfPage: { "@type": "WebPage", "@id": "https://snoopdoggdollar.org/mobile/" },
         }} />
+
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: mobileFaq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      }} />
 
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
@@ -73,6 +104,13 @@ export default function MobilePage() {
             <p>
               A casino may offer its own operator app, but that is separate from the BGaming title. Verify the operator domain, publisher and current terms independently before installing anything.
             </p>
+            <div className="my-8 rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-5">
+              <p className="m-0 text-sm leading-6 text-neutral-300">
+                <strong className="text-white">Official-source check (24 August 2026):</strong>{" "}
+                the <a href="https://bgaming.com/games/snoop-dogg-dollars" rel="noopener" className="font-bold text-emerald-300">BGaming game page</a>{" "}
+                provides a browser demo and game specifications; it does not present a separate Snoop Dogg Dollars app or APK download.
+              </p>
+            </div>
 
             <h2>Mobile compatibility</h2>
             <p>
@@ -132,6 +170,16 @@ export default function MobilePage() {
                   <tr className="hover:bg-neutral-900/50"><td className="px-4 py-3 font-medium text-white">Controls</td><td className="px-4 py-3 text-yellow-400">Touch</td><td className="px-4 py-3 text-green-400">Mouse/Keyboard</td></tr>
                 </tbody>
               </table>
+            </div>
+
+            <h2>Snoop Dogg Dollars app FAQ</h2>
+            <div className="not-prose mt-6 space-y-4">
+              {mobileFaq.map((item) => (
+                <section key={item.question} className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-5">
+                  <h3 className="text-lg font-bold text-white">{item.question}</h3>
+                  <p className="mt-2 leading-7 text-neutral-300">{item.answer}</p>
+                </section>
+              ))}
             </div>
           </article>
 
