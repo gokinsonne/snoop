@@ -3,7 +3,7 @@ import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars vs Sugar Rush | Which Cluster Pays Slot Wins?",
+  title: "Snoop Dogg Dollars vs Sugar Rush | Slot Comparison",
   description: "Compare Snoop Dogg Dollars vs Sugar Rush. RTP, volatility, max win, features, and which cluster pays slot is better for your bankroll. Detailed comparison 2026.",
   keywords: [
     "snoop dogg dollars vs sugar rush",
