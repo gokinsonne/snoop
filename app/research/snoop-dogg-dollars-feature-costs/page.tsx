@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
+import { JsonLd } from "@/components/json-ld"
 import { ArticleSchema } from "@/components/seo-schema"
 
 export const metadata: Metadata = {
@@ -17,8 +18,69 @@ const rows = [
 ]
 
 export default function ResearchPage() {
+  const datasetSchema = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "Snoop Dogg Dollars feature-cost normalization dataset",
+    alternateName: "Snoop Dogg Dollars Feature Cost Dataset",
+    description:
+      "An open, deterministic dataset that converts the documented 20x Snoop Spin, 100x to 800x Bonus Buy prices and theoretical 10,000x maximum into absolute costs across representative base bets.",
+    url: "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/",
+    sameAs: "https://github.com/gokinsonne/snoop",
+    identifier: "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/",
+    creator: {
+      "@type": "Organization",
+      name: "Snoop Dogg Dollars Data Lab",
+      url: "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Snoop Dogg Dollars",
+      url: "https://snoopdoggdollar.org/",
+    },
+    datePublished: "2026-08-24",
+    dateModified: "2026-08-26",
+    version: "1.0",
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    isAccessibleForFree: true,
+    keywords: [
+      "Snoop Dogg Dollars",
+      "BGaming",
+      "feature cost",
+      "Bonus Buy",
+      "Snoop Spin",
+      "slot dataset",
+    ],
+    variableMeasured: [
+      "Base bet",
+      "Snoop Spin cost",
+      "Bonus Buy cost",
+      "Theoretical maximum win",
+    ],
+    measurementTechnique:
+      "Deterministic multiplication of each representative base bet by the documented feature-cost multiplier.",
+    isBasedOn: "https://bgaming.com/games/snoop-dogg-dollars",
+    distribution: [
+      {
+        "@type": "DataDownload",
+        name: "Snoop Dogg Dollars feature costs in CSV format",
+        encodingFormat: "text/csv",
+        contentUrl: "https://snoopdoggdollar.org/data/snoop-dogg-dollars-feature-costs.csv",
+        license: "https://creativecommons.org/licenses/by/4.0/",
+      },
+      {
+        "@type": "DataDownload",
+        name: "Snoop Dogg Dollars feature costs in JSON format",
+        encodingFormat: "application/json",
+        contentUrl: "https://snoopdoggdollar.org/data/snoop-dogg-dollars-feature-costs.json",
+        license: "https://creativecommons.org/licenses/by/4.0/",
+      },
+    ],
+  }
+
   return (
     <>
+      <JsonLd data={datasetSchema} />
       <ArticleSchema
         path="/research/snoop-dogg-dollars-feature-costs/"
         title="Snoop Dogg Dollars feature costs normalized by stake"
