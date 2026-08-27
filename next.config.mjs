@@ -20,17 +20,17 @@ const nextConfig = {
       },
       {
         source: "/play",
-        destination: "https://lkhv.pro/581ee4",
+        destination: "/demo/",
         permanent: true,
       },
       {
         source: "/app",
-        destination: "https://lkhv.pro/581ee4",
+        destination: "/mobile/",
         permanent: true,
       },
       {
         source: "/download-vpn",
-        destination: "https://lkhv.pro/581ee4",
+        destination: "/mobile/",
         permanent: true,
       },
       {

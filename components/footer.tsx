@@ -3,15 +3,15 @@ import Image from "next/image"
 
 export function Footer() {
   const guideLinks = [
-    { href: "/review/", label: "Full Review" },
+    { href: "/review/", label: "Snoop Dogg Dollars Review" },
     { href: "/how-to-play/", label: "How to Play" },
     { href: "/strategy/", label: "Strategy" },
-    { href: "/demo/", label: "Demo" },
+    { href: "/demo/", label: "Snoop Dogg Dollars Demo" },
     { href: "/casinos/", label: "Where to Play" },
     { href: "/bonus/", label: "Bonus" },
     { href: "/faq/", label: "FAQ" },
-    { href: "/mobile/", label: "Mobile" },
-    { href: "/rtp/", label: "RTP" },
+    { href: "/mobile/", label: "Snoop Dogg Dollars App" },
+    { href: "/rtp/", label: "Snoop Dogg Dollars RTP" },
     { href: "/crypto-casinos/snoop-dogg-dollars/", label: "Crypto Casinos" },
     { href: "/crypto-casino-deposits/", label: "Crypto Deposits" },
     { href: "/crypto-casino-withdrawals/", label: "Crypto Withdrawals" },

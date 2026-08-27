@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { JsonLd } from "@/components/json-ld"
+import { EditorialAttribution } from "@/components/editorial-attribution"
 
 const mobileFaq = [
   {
@@ -57,7 +58,7 @@ export default function MobilePage() {
           author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org/" },
           publisher: { "@type": "Organization", name: "Snoop Dogg Dollars", logo: { "@type": "ImageObject", url: "https://snoopdoggdollar.org/favicon.ico" } },
           datePublished: "2026-06-22",
-          dateModified: "2026-08-24",
+          dateModified: "2026-08-27",
           mainEntityOfPage: { "@type": "WebPage", "@id": "https://snoopdoggdollar.org/mobile/" },
         }} />
 
@@ -95,6 +96,7 @@ export default function MobilePage() {
           <p className="text-xl text-neutral-400 mb-12">
             Launch the browser demo on a modern Android or iOS device. No unofficial APK is needed; verify the exact game panel and operator terms before real-money play.
           </p>
+          <EditorialAttribution />
 
           <article className="prose prose-invert prose-lg max-w-none">
             <h2>Is there a Snoop Dogg Dollars app or APK?</h2>

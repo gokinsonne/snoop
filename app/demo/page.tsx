@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { DemoGameFrame } from "@/components/demo-game-frame"
 import { JsonLd } from "@/components/json-ld"
+import { EditorialAttribution } from "@/components/editorial-attribution"
 
 export const metadata: Metadata = {
   title: {
@@ -45,9 +46,10 @@ export default function DemoPage() {
           },
           publisher: {
             "@type": "Organization",
-            name: "Snoop Dogg Dollars",
-            url: "https://snoopdoggdollar.org/",
+            name: "BGaming",
+            url: "https://bgaming.com/",
           },
+          mainEntityOfPage: "https://snoopdoggdollar.org/demo/",
           offers: {
             "@type": "Offer",
             price: "0",
@@ -115,6 +117,7 @@ export default function DemoPage() {
           <p className="text-xl text-neutral-400 mb-8">
             Launch the browser demo with virtual credits: no download, registration or deposit. Test the cluster-pays grid, Snoop Spin and bonus mechanics before deciding whether real-money play is for you.
           </p>
+          <EditorialAttribution />
 
           <div className="mb-8 grid gap-3 sm:grid-cols-3" aria-label="Demo benefits">
             {[

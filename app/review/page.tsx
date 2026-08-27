@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { JsonLd } from "@/components/json-ld"
+import { EditorialAttribution } from "@/components/editorial-attribution"
 
 export const metadata: Metadata = {
   title: {
@@ -66,8 +67,8 @@ export default function ReviewPage() {
               url: "https://snoopdoggdollar.org/favicon.ico",
             },
           },
-          datePublished: "2024-10-30",
-          dateModified: "2026-08-22",
+          datePublished: "2026-06-22",
+          dateModified: "2026-08-27",
           mainEntityOfPage: {
             "@type": "WebPage",
             "@id": "https://snoopdoggdollar.org/review/",
@@ -103,6 +104,7 @@ export default function ReviewPage() {
           <p className="text-xl text-neutral-400 mb-12">
             An independent breakdown of BGaming&apos;s hip-hop cluster-pays slot: RTP variants, volatility, max-win potential, bonus mechanics and the drawbacks you should know before playing.
           </p>
+          <EditorialAttribution />
 
           <section className="mb-12 rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-6 sm:p-8" aria-labelledby="review-verdict">
             <p className="text-sm font-black uppercase tracking-[.18em] text-emerald-400">Quick verdict</p>

@@ -4,6 +4,7 @@ import Link from "next/link"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 import { FeatureCostCalculator } from "@/components/feature-cost-calculator"
 import { JsonLd } from "@/components/json-ld"
+import { EditorialAttribution } from "@/components/editorial-attribution"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
 
@@ -91,7 +92,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid min-h-[670px] max-w-6xl items-center gap-10 px-5 py-20 lg:grid-cols-[1.12fr_.88fr]">
           <div>
             <p className="mb-5 inline-flex rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[.2em] text-emerald-300">
-              Updated 22 August 2026 · Independent slot guide
+              Updated 27 August 2026 · Independent slot guide
             </p>
             <h1 className="max-w-4xl text-5xl font-black leading-[.95] tracking-tight sm:text-7xl">
               Snoop Dogg Dollars slot
@@ -160,8 +161,9 @@ export default function HomePage() {
               try the demo first, verify the RTP in the game information panel, and never
               treat the 10,000× maximum as an expected result.
             </p>
+            <EditorialAttribution />
             <p>
-              Source: <a href="https://bgaming.com/games/snoop-dogg-dollars" rel="noopener noreferrer" target="_blank">BGaming&apos;s official game page</a>. Facts checked 22 August 2026.
+              Source: <a href="https://bgaming.com/games/snoop-dogg-dollars" rel="noopener noreferrer" target="_blank">BGaming&apos;s official game page</a>. Facts checked 27 August 2026. See the dedicated <Link href="/rtp/" className="font-bold text-emerald-300">Snoop Dogg Dollars RTP analysis</Link> for variant evidence and the house-edge calculator.
             </p>
           </div>
         </div>

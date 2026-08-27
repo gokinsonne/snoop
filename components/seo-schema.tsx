@@ -2,6 +2,7 @@ import { JsonLd } from "@/components/json-ld"
 
 const SITE_URL = "https://snoopdoggdollar.org"
 const PUBLISHER_ID = `${SITE_URL}/#publisher`
+const GAME_ID = `${SITE_URL}/#game`
 
 export function WebsiteSchema() {
   const schema = {
@@ -16,6 +17,24 @@ export function WebsiteSchema() {
           "Independent Snoop Dogg Dollars slot guide covering gameplay, RTP, features and crypto casino payment checks.",
         inLanguage: "en",
         publisher: { "@id": PUBLISHER_ID },
+        about: { "@id": GAME_ID },
+      },
+      {
+        "@type": "VideoGame",
+        "@id": GAME_ID,
+        name: "Snoop Dogg Dollars",
+        description: "A 6 by 8 Cluster Pays slot released by BGaming on 30 October 2024.",
+        url: `${SITE_URL}/`,
+        sameAs: "https://bgaming.com/games/snoop-dogg-dollars",
+        image: `${SITE_URL}/og-image.jpg`,
+        datePublished: "2024-10-30",
+        genre: "Cluster Pays slot",
+        gamePlatform: "Web browser",
+        publisher: {
+          "@type": "Organization",
+          name: "BGaming",
+          url: "https://bgaming.com/",
+        },
       },
       {
         "@type": "Organization",
@@ -72,6 +91,7 @@ export function ArticleSchema({
     inLanguage: "en",
     author: { "@id": PUBLISHER_ID },
     publisher: { "@id": PUBLISHER_ID },
+    about: { "@id": GAME_ID },
   }
 
   return <JsonLd data={schema} />

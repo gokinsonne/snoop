@@ -42,7 +42,7 @@ const routes = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const updated27August = new Set(["/editorial-policy", "/research/snoop-dogg-dollars-feature-costs", "/bonus-buy", "/snoop-spin", "/symbols-paytable", "/vs-aztec-clusters", "/best-cluster-pays-slots", "/bgaming-cluster-slots", "/snoop-dogg-dollars-release-history", "/crypto-casinos/snoop-dogg-dollars", "/bitcoin-casinos/snoop-dogg-dollars", "/usdt-casinos/snoop-dogg-dollars", "/crypto-casino-deposits", "/crypto-casino-withdrawals", "/bitcoin-vs-usdt-casinos", "/crypto-casino-networks", "/crypto-casino-fees", "/crypto-casino-kyc", "/crypto-casino-bonuses", "/crypto-casino-security"])
+  const updated27August = new Set(["", "/demo", "/review", "/rtp", "/mobile", "/editorial-policy", "/research/snoop-dogg-dollars-feature-costs", "/bonus-buy", "/snoop-spin", "/symbols-paytable", "/vs-aztec-clusters", "/best-cluster-pays-slots", "/bgaming-cluster-slots", "/snoop-dogg-dollars-release-history", "/crypto-casinos/snoop-dogg-dollars", "/bitcoin-casinos/snoop-dogg-dollars", "/usdt-casinos/snoop-dogg-dollars", "/crypto-casino-deposits", "/crypto-casino-withdrawals", "/bitcoin-vs-usdt-casinos", "/crypto-casino-networks", "/crypto-casino-fees", "/crypto-casino-kyc", "/crypto-casino-bonuses", "/crypto-casino-security"])
   const updated26August = new Set(["/research/snoop-dogg-dollars-feature-costs"])
   const updated25August = new Set(["/vs-sugar-rush"])
   const updated24August = new Set(["/mobile"])
