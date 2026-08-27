@@ -5,6 +5,7 @@ import { ArticleSchema } from "@/components/seo-schema"
 import { JsonLd } from "@/components/json-ld"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
+const STAKE_URL = "https://stake.com/?c=szC3eT4O"
 
 export function CryptoGuidePage({
   currency,
@@ -168,22 +169,42 @@ export function CryptoGuidePage({
           Game facts source: <a href="https://bgaming.com/games/snoop-dogg-dollars" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline">BGaming official Snoop Dogg Dollars page</a>, checked 22 August 2026. BGaming lists 96.00% RTP; verify the operator build in-game.
         </p>
 
-        <h2 className="mt-12 text-3xl font-black text-white">Current operator route</h2>
+        <h2 className="mt-12 text-3xl font-black text-white">Current operator routes</h2>
         <p className="mt-4">
-          The current partner route is 1WIN. We do not claim that every currency, network or
-          bonus is available in every country. Use the link to inspect the live cashier and
-          terms; leave if the product is unavailable or the conditions do not fit.
+          These are availability checks, not a ranking or a promise that the game, currency,
+          network or bonus is available in your country. Inspect the live lobby, cashier and
+          operator terms before registering or transferring funds.
         </p>
-        <TrackedAffiliateLink
-          href={OFFER_URL}
-          placement={`crypto_guide_${currency.toLowerCase()}`}
-          target="_blank"
-          rel="nofollow sponsored noopener"
-          className="mt-7 inline-flex rounded-xl bg-emerald-400 px-7 py-4 font-black text-black hover:bg-emerald-300"
-        >
-          Check availability at 1WIN
-        </TrackedAffiliateLink>
+        <div className="mt-7 flex flex-wrap gap-3">
+          <TrackedAffiliateLink
+            href={OFFER_URL}
+            placement={`crypto_guide_${currency.toLowerCase()}_primary`}
+            operator="1win"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            className="inline-flex rounded-xl bg-emerald-400 px-7 py-4 font-black text-black hover:bg-emerald-300"
+          >
+            Check availability at 1WIN
+          </TrackedAffiliateLink>
+          {currency === "Crypto" ? (
+            <TrackedAffiliateLink
+              href={STAKE_URL}
+              placement="crypto_guide_crypto_secondary"
+              operator="stake"
+              target="_blank"
+              rel="nofollow sponsored noopener"
+              className="inline-flex rounded-xl border border-emerald-400/50 bg-emerald-400/[.08] px-7 py-4 font-black text-emerald-200 hover:bg-emerald-400/[.14]"
+            >
+              Check crypto availability at Stake
+            </TrackedAffiliateLink>
+          ) : null}
+        </div>
         <p className="mt-3 text-sm text-neutral-500">18+ · Affiliate link · Terms and regional restrictions apply</p>
+        {currency === "Crypto" ? (
+          <p className="mt-2 text-xs leading-5 text-neutral-500">
+            Stake.com does not accept players located in the United States and other prohibited jurisdictions.
+          </p>
+        ) : null}
 
         <h2 className="mt-12 text-3xl font-black text-white">Frequently asked questions</h2>
         <div className="mt-5 divide-y divide-white/10 border-y border-white/10">
