@@ -4,10 +4,10 @@ title: "Snoop Dogg Dollars: нормализация стоимости игро
 type: dataset
 authors:
   - name: "Snoop Dogg Dollars Data Lab"
-version: "1.0"
-date-released: 2026-08-24
+version: "1.0.0"
+date-released: 2026-08-27
 license: CC-BY-4.0
-repository-code: "https://github.com/gokinsonne/snoop"
+repository-code: "https://github.com/gokinsonne/snoop-dogg-dollars-data"
 url: "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/"
 keywords:
   - "Snoop Dogg Dollars"

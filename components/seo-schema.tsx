@@ -23,6 +23,8 @@ export function WebsiteSchema() {
         name: "Snoop Dogg Dollars Guide",
         url: SITE_URL,
         description: "Independent informational publisher. Not BGaming or an official game operator.",
+        sameAs: ["https://github.com/gokinsonne/snoop-dogg-dollars-data"],
+        publishingPrinciples: `${SITE_URL}/editorial-policy/`,
         logo: {
           "@type": "ImageObject",
           url: `${SITE_URL}/og-image.jpg`,

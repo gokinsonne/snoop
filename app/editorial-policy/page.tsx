@@ -21,7 +21,11 @@ export default function EditorialPolicyPage() {
         <div className="mt-12 space-y-10 text-base leading-8 text-neutral-300">
           <section>
             <h2 className="text-3xl font-black text-white">How game facts are checked</h2>
-            <p className="mt-3">Provider, release, grid, RTP, volatility, bet range, maximum win and feature rules are checked against BGaming materials and the information panel available in the game. Where operator configurations can differ, we tell readers to verify the live version.</p>
+            <p className="mt-3">Provider, release, grid, RTP, volatility, bet range, maximum win and feature rules are checked against BGaming materials and the information panel available in the game. Where operator configurations can differ, we tell readers to verify the live version. The current official BGaming listing reports 96.00% RTP and very-high volatility.</p>
+          </section>
+          <section>
+            <h2 className="text-3xl font-black text-white">Who publishes this site</h2>
+            <p className="mt-3">The publisher is the independent Snoop Dogg Dollars Guide editorial project—not BGaming, Snoop Dogg, a casino or a fictional expert. Reusable calculations and source-linked game facts are published in our <Link href="/research/snoop-dogg-dollars-feature-costs/" className="font-bold text-emerald-300">open Data Lab</Link> and <a href="https://github.com/gokinsonne/snoop-dogg-dollars-data" className="font-bold text-emerald-300" rel="noopener">public GitHub repository</a>.</p>
           </section>
           <section>
             <h2 className="text-3xl font-black text-white">Crypto and casino information</h2>
@@ -40,7 +44,7 @@ export default function EditorialPolicyPage() {
             <p className="mt-3">The site is intended for adults. Gambling is entertainment with a risk of loss, not an investment or income method. See our <Link href="/responsible-gaming/" className="font-bold text-emerald-300">responsible gambling guide</Link>.</p>
           </section>
         </div>
-        <p className="mt-12 text-sm text-neutral-500">Last reviewed: 28 July 2026</p>
+        <p className="mt-12 text-sm text-neutral-500">Last reviewed: 27 August 2026</p>
       </article>
     </main>
   )

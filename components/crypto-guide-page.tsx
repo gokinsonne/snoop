@@ -3,6 +3,7 @@ import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { ArticleSchema } from "@/components/seo-schema"
 import { JsonLd } from "@/components/json-ld"
+import { EditorialAttribution } from "@/components/editorial-attribution"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
 const STAKE_URL = "https://stake.com/?c=szC3eT4O"
@@ -72,7 +73,7 @@ export function CryptoGuidePage({
 
   return (
     <>
-      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" />
+      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" modified="2026-08-27" />
       <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -90,10 +91,11 @@ export function CryptoGuidePage({
       <section className="border-b border-white/10 bg-[radial-gradient(circle_at_80%_10%,rgba(16,185,129,.2),transparent_35%)]">
         <div className="mx-auto max-w-5xl px-5 py-20">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">
-            Updated 22 August 2026 · Payment guide
+            Updated 27 August 2026 · Payment guide
           </p>
           <h1 className="mt-4 max-w-4xl text-5xl font-black leading-tight">{title}</h1>
           <p className="mt-6 max-w-3xl text-xl leading-8 text-neutral-300">{intro}</p>
+          <EditorialAttribution />
         </div>
       </section>
 

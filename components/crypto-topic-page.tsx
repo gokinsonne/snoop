@@ -2,6 +2,7 @@ import Link from "next/link"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { ArticleSchema } from "@/components/seo-schema"
+import { EditorialAttribution } from "@/components/editorial-attribution"
 
 type Props = {
   eyebrow: string
@@ -40,7 +41,7 @@ export function CryptoTopicPage({ eyebrow, title, intro, facts, sections, placem
 
   return (
     <>
-      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" />
+      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" modified="2026-08-27" />
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
         { name: "Crypto casino guides", url: "https://snoopdoggdollar.org/crypto-casinos/snoop-dogg-dollars/" },
@@ -51,6 +52,7 @@ export function CryptoTopicPage({ eyebrow, title, intro, facts, sections, placem
         <p className="text-sm font-black uppercase tracking-[.2em] text-emerald-400">{eyebrow}</p>
         <h1 className="mt-4 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">{title}</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-300">{intro}</p>
+        <EditorialAttribution />
 
         <div className="mt-8 rounded-2xl border border-amber-300/25 bg-amber-300/10 p-5 text-sm leading-6 text-amber-100">
           Crypto transfers are normally irreversible. Availability, limits, verification and

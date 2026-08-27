@@ -26,7 +26,7 @@ export default function ResearchPage() {
     description:
       "An open, deterministic dataset that converts the documented 20x Snoop Spin, 100x to 800x Bonus Buy prices and theoretical 10,000x maximum into absolute costs across representative base bets.",
     url: "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/",
-    sameAs: "https://github.com/gokinsonne/snoop",
+    sameAs: "https://github.com/gokinsonne/snoop-dogg-dollars-data",
     identifier: "https://snoopdoggdollar.org/research/snoop-dogg-dollars-feature-costs/",
     creator: {
       "@type": "Organization",
@@ -39,8 +39,8 @@ export default function ResearchPage() {
       url: "https://snoopdoggdollar.org/",
     },
     datePublished: "2026-08-24",
-    dateModified: "2026-08-26",
-    version: "1.0",
+    dateModified: "2026-08-27",
+    version: "1.0.0",
     license: "https://creativecommons.org/licenses/by/4.0/",
     isAccessibleForFree: true,
     keywords: [
@@ -106,7 +106,7 @@ export default function ResearchPage() {
         <div className="mt-8 flex flex-wrap gap-3">
           <a href="/data/snoop-dogg-dollars-feature-costs.csv" download className="rounded-full bg-emerald-400 px-5 py-3 font-black text-black">Download CSV</a>
           <a href="/data/snoop-dogg-dollars-feature-costs.json" download className="rounded-full border border-white/20 px-5 py-3 font-black">Download JSON</a>
-          <a href="https://github.com/gokinsonne/snoop" rel="noopener" className="rounded-full border border-white/20 px-5 py-3 font-black">GitHub dataset</a>
+          <a href="https://github.com/gokinsonne/snoop-dogg-dollars-data" rel="noopener" className="rounded-full border border-white/20 px-5 py-3 font-black">GitHub dataset</a>
         </div>
 
         <div className="mt-12 overflow-x-auto rounded-2xl border border-white/10">
@@ -135,7 +135,7 @@ export default function ResearchPage() {
           <p>Operator configuration, jurisdiction, currency presentation, bet limits and feature availability can differ. The live game information panel remains authoritative. The maximum win is a theoretical ceiling, never a promise.</p>
           <p>Reuse is permitted under CC BY 4.0 with attribution to this page. See the <Link href="/editorial-policy/" className="font-bold text-emerald-300">editorial methodology</Link> and the <Link href="/bonus-buy/" className="font-bold text-emerald-300">Bonus Buy explanation</Link>.</p>
         </section>
-        <p className="mt-12 text-sm text-neutral-500">Dataset version 1.0 · Sources and calculations rechecked 24 August 2026</p>
+        <p className="mt-12 text-sm text-neutral-500">Dataset version 1.0.0 · Sources and calculations rechecked 27 August 2026</p>
       </article>
       </main>
     </>

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import type { ReactNode } from "react"
+import { EditorialAttribution } from "@/components/editorial-attribution"
 
 type Section = {
   title: string
@@ -24,6 +25,7 @@ export function SlotFeatureGuide({ eyebrow, title, intro, facts, sections, relat
         <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">{eyebrow}</p>
         <h1 className="mt-4 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">{title}</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-300">{intro}</p>
+        <EditorialAttribution />
 
         <dl className="mt-10 grid gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {facts.map(([label, value]) => (
