@@ -4,7 +4,7 @@ import { ArticleSchema } from "@/components/seo-schema"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { FeatureCostCalculator } from "@/components/feature-cost-calculator"
 
-export const metadata: Metadata = { title: "Snoop Dogg Dollars Strategy: Bankroll & Feature Cost Guide", description: "A no-myth Snoop Dogg Dollars strategy guide: calculate feature costs, set hard session limits and understand why spin timing cannot beat RNG.", alternates: { canonical: "https://snoopdoggdollar.org/strategy/" } }
+export const metadata: Metadata = { title: { absolute: "Snoop Dogg Dollars Strategy | No-Myth Bankroll Guide" }, description: "A no-myth Snoop Dogg Dollars strategy guide: calculate feature costs, set hard session limits and understand why spin timing cannot beat RNG.", alternates: { canonical: "https://snoopdoggdollar.org/strategy/" } }
 
 export default function StrategyPage() { return <>
   <ArticleSchema path="/strategy/" title="Snoop Dogg Dollars Strategy: Bankroll & Feature Cost Guide" description="A practical, no-myth guide to cost, variance and session limits." section="Game guides" published="2026-06-22" modified="2026-08-22" />
