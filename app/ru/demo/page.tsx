@@ -113,7 +113,7 @@ export default function RussianDemoPage() {
           </nav>
 
           <p className="text-sm font-black uppercase tracking-[.18em] text-green-400">Бесплатная версия без депозита</p>
-          <h1 className="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-4 text-3xl font-black leading-tight tracking-tight text-white sm:text-5xl">
             Snoop Dogg Dollars демо — играть бесплатно онлайн
           </h1>
           <p className="mt-6 text-xl leading-8 text-neutral-400">
