@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   robots: "index, follow",
   alternates: {
     canonical: "https://snoopdoggdollar.org/demo/",
+    languages: {
+      en: "https://snoopdoggdollar.org/demo/",
+      ru: "https://snoopdoggdollar.org/ru/demo/",
+      "x-default": "https://snoopdoggdollar.org/demo/",
+    },
   },
   openGraph: {
     title: "Snoop Dogg Dollars Demo: Free Play Online",
@@ -297,6 +302,10 @@ export default function DemoPage() {
               <a href="/crypto-casino-deposits/" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-green-700 transition-colors">
                 <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Crypto Deposits Explained</h3>
                 <p className="mt-1 text-sm text-neutral-400">Networks, confirmation times, fees and common deposit mistakes.</p>
+              </a>
+              <a href="/ru/demo/" lang="ru" hrefLang="ru" className="group rounded-xl border border-neutral-800 bg-neutral-900/50 p-5 hover:border-green-700 transition-colors">
+                <h3 className="font-semibold text-white group-hover:text-green-400 transition-colors">Демо на русском</h3>
+                <p className="mt-1 text-sm text-neutral-400">Русская инструкция, бесплатный запуск и ответы по RTP и регистрации.</p>
               </a>
             </div>
           </section>
