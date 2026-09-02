@@ -53,6 +53,7 @@ const guides = [
   ["/bgaming-cluster-slots/", "BGaming cluster guide", "How cascades and modifiers differ by game"],
   ["/snoop-dogg-dollars-release-history/", "Release history", "Source, update and correction timeline"],
   ["/play-in-india/", "India guide", "Local-law, payment and operator verification checks"],
+  ["/ru/demo/", "Демо на русском", "Бесплатная игра, RTP и правила без депозита"],
   ["/play-in-japan/", "日本語ガイド", "公式RTP、無料デモ、地域制限の確認方法"],
 ]
 
