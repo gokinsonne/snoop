@@ -11,6 +11,7 @@ type Props = {
   facts: Array<[string, string]>
   sections: Array<{ title: string; text: string; checks?: string[] }>
   placement: string
+  modified?: string
 }
 
 const cluster = [
@@ -36,12 +37,12 @@ const paths: Record<string, string> = {
   crypto_withdrawals: "/crypto-casino-withdrawals/",
 }
 
-export function CryptoTopicPage({ eyebrow, title, intro, facts, sections, placement }: Props) {
+export function CryptoTopicPage({ eyebrow, title, intro, facts, sections, placement, modified = "2026-08-27" }: Props) {
   const path = paths[placement]
 
   return (
     <>
-      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" modified="2026-08-27" />
+      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" modified={modified} />
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
         { name: "Crypto casino guides", url: "https://snoopdoggdollar.org/crypto-casinos/snoop-dogg-dollars/" },
