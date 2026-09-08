@@ -2,8 +2,10 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { JsonLd } from "@/components/json-ld"
+import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
+const IGNITION_US_URL = "https://maglead.buzz/click?o=1856&a=26488"
 
 export const metadata: Metadata = {
   title: "Where to Play Snoop Dogg Dollars | Verification Checklist",
@@ -39,7 +41,7 @@ export default function CasinosPage() {
           <nav aria-label="Breadcrumb" className="mb-8 text-sm text-neutral-400"><Link href="/" className="hover:text-white">Home</Link> <span aria-hidden="true">/</span> <span aria-current="page">Where to Play</span></nav>
           <p className="text-sm font-black uppercase tracking-[.18em] text-green-400">Verification first</p>
           <h1 className="mt-3 text-4xl font-black tracking-tight text-white sm:text-5xl">Where to Play Snoop Dogg Dollars</h1>
-          <p className="mt-5 max-w-3xl text-xl leading-8 text-neutral-400">We currently have one affiliate route, not a tested multi-casino ranking. Use this checklist instead of trusting a bonus badge or an invented score.</p>
+          <p className="mt-5 max-w-3xl text-xl leading-8 text-neutral-400">We show two clearly labelled availability routes, not a tested multi-casino ranking. Use this checklist instead of trusting a bonus badge or an invented score.</p>
 
           <section className="mt-12 grid gap-4 sm:grid-cols-2" aria-labelledby="operator-checks">
             <h2 id="operator-checks" className="sr-only">Operator checks</h2>
@@ -47,11 +49,15 @@ export default function CasinosPage() {
           </section>
 
           <section className="mt-12 rounded-2xl border border-green-900/40 bg-green-950/20 p-7">
-            <p className="text-sm font-bold uppercase tracking-wider text-green-400">Current affiliate route</p>
-            <h2 className="mt-2 text-2xl font-bold text-white">1WIN availability check</h2>
+            <p className="text-sm font-bold uppercase tracking-wider text-green-400">Current affiliate routes</p>
+            <h2 className="mt-2 text-2xl font-bold text-white">Check the live lobby and your location first</h2>
             <p className="mt-4 max-w-3xl leading-7 text-neutral-300">We do not claim a universal bonus, deposit minimum, licence, RTP or withdrawal speed. Those details can change by country and account. Open the route only to inspect the current lobby, legal entity and terms.</p>
-            <a href={OFFER_URL} target="_blank" rel="nofollow sponsored noopener" className="mt-6 inline-flex rounded-full bg-green-400 px-6 py-3 font-black text-black hover:bg-green-300">Check live availability →</a>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <TrackedAffiliateLink href={OFFER_URL} placement="casinos_primary" operator="1win" target="_blank" rel="nofollow sponsored noopener" className="inline-flex rounded-full bg-green-400 px-6 py-3 font-black text-black hover:bg-green-300">Check 1WIN availability →</TrackedAffiliateLink>
+              <TrackedAffiliateLink href={IGNITION_US_URL} placement="casinos_us_secondary" operator="ignition" target="_blank" rel="nofollow sponsored noopener" className="inline-flex rounded-full border border-green-400/50 bg-green-400/10 px-6 py-3 font-black text-green-200 hover:bg-green-400/15">US option: check Ignition →</TrackedAffiliateLink>
+            </div>
             <p className="mt-3 text-xs text-neutral-500">18+ · Affiliate link · Regional restrictions and terms apply</p>
+            <p className="mt-2 max-w-3xl text-xs leading-5 text-neutral-500">Ignition excludes Delaware, Maryland, Nevada, New Jersey and New York. We have not independently confirmed that Snoop Dogg Dollars is currently available there; search the live lobby before registering or depositing.</p>
           </section>
 
           <section className="mt-14">

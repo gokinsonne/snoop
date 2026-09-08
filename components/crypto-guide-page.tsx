@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/json-ld"
 import { EditorialAttribution } from "@/components/editorial-attribution"
 
 const OFFER_URL = "https://lkhv.pro/581ee4"
-const STAKE_URL = "https://stake.com/?c=szC3eT4O"
+const IGNITION_US_URL = "https://maglead.buzz/click?o=1856&a=26488"
 
 export function CryptoGuidePage({
   currency,
@@ -22,6 +22,7 @@ export function CryptoGuidePage({
     : currency === "USDT"
       ? "/usdt-casinos/snoop-dogg-dollars/"
       : "/crypto-casinos/snoop-dogg-dollars/"
+  const modified = currency === "Crypto" ? "2026-09-08" : "2026-08-27"
 
   const profiles = {
     Crypto: {
@@ -73,7 +74,7 @@ export function CryptoGuidePage({
 
   return (
     <>
-      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" modified="2026-08-27" />
+      <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" modified={modified} />
       <JsonLd data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -91,7 +92,7 @@ export function CryptoGuidePage({
       <section className="border-b border-white/10 bg-[radial-gradient(circle_at_80%_10%,rgba(16,185,129,.2),transparent_35%)]">
         <div className="mx-auto max-w-5xl px-5 py-20">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">
-            Updated 27 August 2026 · Payment guide
+            Updated {currency === "Crypto" ? "8 September 2026" : "27 August 2026"} · Payment guide
           </p>
           <h1 className="mt-4 max-w-4xl text-5xl font-black leading-tight">{title}</h1>
           <p className="mt-6 max-w-3xl text-xl leading-8 text-neutral-300">{intro}</p>
@@ -190,21 +191,24 @@ export function CryptoGuidePage({
           </TrackedAffiliateLink>
           {currency === "Crypto" ? (
             <TrackedAffiliateLink
-              href={STAKE_URL}
-              placement="crypto_guide_crypto_secondary"
-              operator="stake"
+              href={IGNITION_US_URL}
+              placement="crypto_guide_crypto_us_secondary"
+              operator="ignition"
               target="_blank"
               rel="nofollow sponsored noopener"
               className="inline-flex rounded-xl border border-emerald-400/50 bg-emerald-400/[.08] px-7 py-4 font-black text-emerald-200 hover:bg-emerald-400/[.14]"
             >
-              Check crypto availability at Stake
+              US option: check Ignition
             </TrackedAffiliateLink>
           ) : null}
         </div>
         <p className="mt-3 text-sm text-neutral-500">18+ · Affiliate link · Terms and regional restrictions apply</p>
         {currency === "Crypto" ? (
           <p className="mt-2 text-xs leading-5 text-neutral-500">
-            Stake.com does not accept players located in the United States and other prohibited jurisdictions.
+            Ignition accepts players in most US states but excludes Delaware, Maryland, Nevada,
+            New Jersey and New York. We have not independently confirmed Snoop Dogg Dollars in
+            its current lobby. Check state eligibility and search the live lobby before registering
+            or depositing.
           </p>
         ) : null}
 
