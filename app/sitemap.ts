@@ -43,6 +43,7 @@ const routes = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const updated9September = new Set(["/mobile", "/crypto-casinos/snoop-dogg-dollars", "/bitcoin-casinos/snoop-dogg-dollars", "/usdt-casinos/snoop-dogg-dollars", "/crypto-casino-deposits", "/crypto-casino-withdrawals", "/bitcoin-vs-usdt-casinos", "/crypto-casino-networks", "/crypto-casino-fees", "/crypto-casino-kyc", "/crypto-casino-bonuses", "/crypto-casino-security"])
   const updated8September = new Set(["/casinos", "/crypto-casinos/snoop-dogg-dollars"])
   const updated5September = new Set(["/crypto-casino-withdrawals"])
   const updated3September = new Set(["/demo"])
@@ -58,7 +59,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map((route) => ({
     url: `https://snoopdoggdollar.org${route}/`,
-    lastModified: updated8September.has(route)
+    lastModified: updated9September.has(route)
+      ? new Date("2026-09-09")
+      : updated8September.has(route)
       ? new Date("2026-09-08")
       : updated5September.has(route)
       ? new Date("2026-09-05")

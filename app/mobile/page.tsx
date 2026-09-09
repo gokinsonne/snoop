@@ -58,7 +58,7 @@ export default function MobilePage() {
           author: { "@type": "Organization", name: "Snoop Dogg Dollars", url: "https://snoopdoggdollar.org/" },
           publisher: { "@type": "Organization", name: "Snoop Dogg Dollars", logo: { "@type": "ImageObject", url: "https://snoopdoggdollar.org/favicon.ico" } },
           datePublished: "2026-06-22",
-          dateModified: "2026-08-27",
+          dateModified: "2026-09-09",
           mainEntityOfPage: { "@type": "WebPage", "@id": "https://snoopdoggdollar.org/mobile/" },
         }} />
 
@@ -186,10 +186,15 @@ export default function MobilePage() {
           </article>
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">Play on Mobile Now</h2>
-            <p className="text-neutral-400 mb-6 max-w-xl mx-auto">Try the free demo first, then verify the operator, exact game build and mobile cashier terms.</p>
+            <h2 className="text-2xl font-bold text-white mb-4">Check Mobile Play for Your Region</h2>
+            <p className="text-neutral-400 mb-6 max-w-xl mx-auto">Open the regional option and confirm that Snoop Dogg Dollars loads in its mobile lobby before creating an account or depositing.</p>
+            <ul className="mx-auto mb-6 grid max-w-2xl gap-3 text-left text-sm text-neutral-300 sm:grid-cols-3">
+              <li className="rounded-xl border border-green-400/15 bg-black/20 p-4">✓ Game and BGaming shown in the mobile lobby</li>
+              <li className="rounded-xl border border-green-400/15 bg-black/20 p-4">✓ Browser, OS and regional availability</li>
+              <li className="rounded-xl border border-green-400/15 bg-black/20 p-4">✓ Mobile cashier, KYC and withdrawal terms</li>
+            </ul>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="/go/?placement=mobile_bottom" data-operator="smartlink" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Check regional availability →</a>
+              <a href="/go/?placement=mobile_bottom" data-operator="smartlink" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Check regional mobile availability →</a>
               <a href="/demo/" className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors">Try Demo</a>
             </div>
             <p className="mt-4 text-xs text-neutral-500">18+ | Gamble Responsibly | T&Cs Apply</p>

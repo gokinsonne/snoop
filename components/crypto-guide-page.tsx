@@ -19,23 +19,35 @@ export function CryptoGuidePage({
     : currency === "USDT"
       ? "/usdt-casinos/snoop-dogg-dollars/"
       : "/crypto-casinos/snoop-dogg-dollars/"
-  const modified = currency === "Crypto" ? "2026-09-08" : "2026-08-27"
+  const modified = "2026-09-09"
 
   const profiles = {
     Crypto: {
       heading: "Choose the payment rail before choosing the operator",
       copy: "This hub compares the decision points shared by Bitcoin, USDT and other crypto deposits. Start with operator eligibility and the exact game build, then choose an asset and network you already understand. A long coin list is not evidence of reliable withdrawals.",
       checks: ["List the assets and networks shown in your own cashier", "Compare total deposit and withdrawal costs", "Decide whether price movement or token-network mismatch is the larger risk"],
+      ctaHeading: "Compare the regional crypto route",
+      ctaCopy: "Open the option available in your country, then compare its live lobby and cashier against this guide. Check the game, payment rail and withdrawal rules before registering or depositing.",
+      ctaChecks: ["Snoop Dogg Dollars in the live lobby", "Supported asset and exact network", "KYC, fees, limits and payout process"],
+      ctaLabel: "Check regional crypto options →",
     },
     Bitcoin: {
       heading: "Bitcoin-specific deposit checks",
       copy: "A BTC deposit has two moving parts: the amount can change in fiat value and the transfer may need network confirmations before the casino credits it. The cashier—not a review page—must supply the current address, minimum amount and confirmation policy.",
       checks: ["Use a fresh BTC address from the authenticated cashier", "Review the wallet fee before broadcasting", "Save the transaction ID and wait for the stated confirmations before contacting support"],
+      ctaHeading: "Check the regional Bitcoin route",
+      ctaCopy: "Open the option available in your country and verify that both Snoop Dogg Dollars and BTC appear for your account. The authenticated cashier must supply the current address, limits and confirmation policy.",
+      ctaChecks: ["BTC enabled in the cashier", "Minimum amount and network fee", "Confirmations, KYC and withdrawal limits"],
+      ctaLabel: "Check regional Bitcoin availability →",
     },
     USDT: {
       heading: "USDT-specific network checks",
       copy: "USDT exists on several incompatible networks. Matching the ticker is not enough: the withdrawal network in your wallet must exactly match the deposit network selected in the casino cashier. A wrong-network transfer may be unrecoverable.",
       checks: ["Match asset, network and address character by character", "Check whether your wallet needs a separate fee token", "Use a small test transfer when limits and fees make that practical"],
+      ctaHeading: "Check the regional USDT route",
+      ctaCopy: "Open the option available in your country and verify that both Snoop Dogg Dollars and USDT appear for your account. Match the exact token network shown by the authenticated cashier.",
+      ctaChecks: ["USDT enabled in the cashier", "Exact chain, address and fee token", "Limits, KYC and withdrawal network"],
+      ctaLabel: "Check regional USDT availability →",
     },
   } as const
   const profile = profiles[currency]
@@ -89,7 +101,7 @@ export function CryptoGuidePage({
       <section className="border-b border-white/10 bg-[radial-gradient(circle_at_80%_10%,rgba(16,185,129,.2),transparent_35%)]">
         <div className="mx-auto max-w-5xl px-5 py-20">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">
-            Updated {currency === "Crypto" ? "8 September 2026" : "27 August 2026"} · Payment guide
+            Updated 9 September 2026 · Payment guide
           </p>
           <h1 className="mt-4 max-w-4xl text-5xl font-black leading-tight">{title}</h1>
           <p className="mt-6 max-w-3xl text-xl leading-8 text-neutral-300">{intro}</p>
@@ -169,12 +181,13 @@ export function CryptoGuidePage({
           Game facts source: <a href="https://bgaming.com/games/snoop-dogg-dollars" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline">BGaming official Snoop Dogg Dollars page</a>, checked 22 August 2026. BGaming lists 96.00% RTP; verify the operator build in-game.
         </p>
 
-        <h2 className="mt-12 text-3xl font-black text-white">Regional operator availability</h2>
-        <p className="mt-4">
-          These are availability checks, not a ranking or a promise that the game, currency,
-          network or bonus is available in your country. Inspect the live lobby, cashier and
-          operator terms before registering or transferring funds.
-        </p>
+        <h2 className="mt-12 text-3xl font-black text-white">{profile.ctaHeading}</h2>
+        <p className="mt-4">{profile.ctaCopy}</p>
+        <ul className="mt-5 grid gap-3 text-base sm:grid-cols-3">
+          {profile.ctaChecks.map((check) => (
+            <li key={check} className="rounded-xl border border-emerald-300/15 bg-emerald-400/[.05] p-4">✓ {check}</li>
+          ))}
+        </ul>
         <div className="mt-7 flex flex-wrap gap-3">
           <TrackedAffiliateLink
             placement={`crypto_guide_${currency.toLowerCase()}_primary`}
@@ -182,7 +195,7 @@ export function CryptoGuidePage({
             rel="nofollow sponsored noopener"
             className="inline-flex rounded-xl bg-emerald-400 px-7 py-4 font-black text-black hover:bg-emerald-300"
           >
-            Check options for your region
+            {profile.ctaLabel}
           </TrackedAffiliateLink>
         </div>
         <p className="mt-3 text-sm text-neutral-500">18+ · Affiliate link · Terms and regional restrictions apply</p>
