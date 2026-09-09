@@ -69,7 +69,8 @@ export function CTASection({ locale }: CTASectionProps) {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://lkhv.pro/581ee4"
+              href="/go/?placement=legacy_cta_primary"
+              data-operator="smartlink"
               target="_blank"
               rel="nofollow noopener sponsored"
               className="inline-flex items-center justify-center bg-gradient-to-r from-gold to-coral hover:from-gold/90 hover:to-coral/90 text-background font-bold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
@@ -79,7 +80,8 @@ export function CTASection({ locale }: CTASectionProps) {
             </a>
 
             <a
-              href="https://lkhv.pro/581ee4"
+              href="/go/?placement=legacy_cta_secondary"
+              data-operator="smartlink"
               target="_blank"
               rel="nofollow noopener sponsored"
               className="inline-flex items-center justify-center border-2 border-gold text-gold bg-black/40 hover:bg-gold hover:text-black font-bold px-8 py-4 text-lg rounded-full w-full sm:w-auto"

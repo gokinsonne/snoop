@@ -258,11 +258,12 @@ export default function DemoPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://lkhv.pro/581ee4"
+                href="/go/?placement=demo_bottom"
+                data-operator="smartlink"
                 rel="nofollow noopener sponsored"
                 className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors"
               >
-                Play at 1WIN →
+                Check regional availability →
               </a>
               <a
                 href="/how-to-play/"

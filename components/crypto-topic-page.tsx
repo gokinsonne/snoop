@@ -85,8 +85,8 @@ export function CryptoTopicPage({ eyebrow, title, intro, facts, sections, placem
 
         <aside className="mt-14 rounded-3xl border border-emerald-400/25 bg-emerald-400/10 p-7">
           <h2 className="text-2xl font-black">Check the live operator terms</h2>
-          <p className="mt-3 max-w-2xl text-neutral-300">The current route leads to 1WIN. We do not guarantee that a currency, network, bonus or game is available for every visitor.</p>
-          <TrackedAffiliateLink href="https://lkhv.pro/581ee4" placement={placement} target="_blank" rel="nofollow sponsored noopener" className="mt-6 inline-flex rounded-full bg-emerald-400 px-7 py-3 font-black text-black hover:bg-emerald-300">
+          <p className="mt-3 max-w-2xl text-neutral-300">The route selects an available operator by country. We do not guarantee that a currency, network, bonus or game is available for every visitor.</p>
+          <TrackedAffiliateLink placement={placement} target="_blank" rel="nofollow sponsored noopener" className="mt-6 inline-flex rounded-full bg-emerald-400 px-7 py-3 font-black text-black hover:bg-emerald-300">
             Check availability →
           </TrackedAffiliateLink>
           <p className="mt-3 text-xs text-neutral-500">18+ · Affiliate link · Regional restrictions and terms apply</p>

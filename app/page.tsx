@@ -6,8 +6,6 @@ import { FeatureCostCalculator } from "@/components/feature-cost-calculator"
 import { JsonLd } from "@/components/json-ld"
 import { EditorialAttribution } from "@/components/editorial-attribution"
 
-const OFFER_URL = "https://lkhv.pro/581ee4"
-
 export const metadata: Metadata = {
   title: {
     absolute: "Snoop Dogg Dollars Slot | BGaming Game Guide",
@@ -112,7 +110,6 @@ export default function HomePage() {
                 Play free demo
               </Link>
               <TrackedAffiliateLink
-                href={OFFER_URL}
                 placement="home_hero"
                 target="_blank"
                 rel="nofollow sponsored noopener"
@@ -253,7 +250,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href="/demo/" className="rounded-xl bg-black px-6 py-4 font-black text-white">Play demo</Link>
-            <TrackedAffiliateLink href={OFFER_URL} placement="home_bottom" target="_blank" rel="nofollow sponsored noopener" className="rounded-xl border-2 border-black px-6 py-4 font-black">Visit 1WIN</TrackedAffiliateLink>
+            <TrackedAffiliateLink placement="home_bottom" target="_blank" rel="nofollow sponsored noopener" className="rounded-xl border-2 border-black px-6 py-4 font-black">Check regional availability</TrackedAffiliateLink>
           </div>
         </div>
       </section>

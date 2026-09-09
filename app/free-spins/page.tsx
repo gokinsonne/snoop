@@ -121,9 +121,9 @@ export default function FreeSpinsPage() {
           </article>
 
           <section className="mt-16 rounded-2xl border border-green-900/30 bg-green-950/20 p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">Play Snoop Dogg Dollars at 1WIN</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Check Snoop Dogg Dollars Availability</h2>
             <p className="text-neutral-400 mb-6">BGaming lists 96.00% RTP; verify the exact operator build and current terms.</p>
-            <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
+            <a href="/go/?placement=free_spins_bottom" data-operator="smartlink" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Check regional availability →</a>
           </section>
         </div>
       </main>

@@ -70,17 +70,18 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Partner */}
+            {/* Regional offer */}
             <div>
-              <h4 className="text-lg font-semibold text-center mb-4 text-foreground">Partner</h4>
+              <h4 className="text-lg font-semibold text-center mb-4 text-foreground">Regional Availability</h4>
               <div className="flex justify-center">
                 <a
-                  href="https://lkhv.pro/581ee4"
+                  href="/go/?placement=footer"
                   target="_blank"
                   rel="noopener noreferrer sponsored"
-                  className="hover:scale-105 transition-transform"
+                  data-operator="smartlink"
+                  className="rounded-full bg-primary px-6 py-3 text-sm font-black text-primary-foreground hover:scale-105 transition-transform"
                 >
-                  <Image src="/1w.svg" alt="1WIN Casino" width={120} height={40} className="h-10 w-auto drop-shadow-lg" />
+                  Check options for your region →
                 </a>
               </div>
             </div>

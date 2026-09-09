@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld"
 export const metadata: Metadata = {
   title: "How to Play Snoop Dogg Dollars | Rules, Demo & Bonus Guide",
   description:
-    "Learn how to play Snoop Dogg Dollars slot. Step-by-step guide: cluster pays, symbols, bonus features, Snoop Spin, free spins. Play free demo or real money at 1WIN.",
+    "Learn how to play Snoop Dogg Dollars slot. Step-by-step guide to cluster pays, symbols, bonus features, Snoop Spin, free spins and regional operator checks.",
   keywords: [
     "how to play snoop dogg dollars",
     "snoop dogg dollars guide",
@@ -117,7 +117,7 @@ export default function HowToPlayPage() {
           <article className="prose prose-invert prose-lg max-w-none">
             <h2 id="step-1">Step 1: Choose Your Casino</h2>
             <p>
-              First, choose an operator available in your country and open the game information panel. RTP, payment methods and feature availability can vary. The current affiliate route leads to <strong>1WIN</strong>, but we cannot verify one configuration for every visitor or country.
+              First, choose an operator available in your country and open the game information panel. RTP, payment methods and feature availability can vary. The affiliate route selects an option by country, but we cannot verify one configuration for every visitor or region.
             </p>
             <p>
               Registration time, minimum deposit and identity checks vary by operator, country and payment method. Check these terms before sending funds.
@@ -211,15 +211,16 @@ export default function HowToPlayPage() {
               Ready to Play?
             </h2>
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">
-              Join 1WIN and get a current welcome offer. Play Snoop Dogg Dollars with the current game and payment terms.
+              Check the operator available for your region, then verify the current game, licence and payment terms.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://lkhv.pro/581ee4"
+                href="/go/?placement=how_to_play_bottom"
+                data-operator="smartlink"
                 rel="nofollow noopener sponsored"
                 className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors"
               >
-                Play at 1WIN →
+                Check regional availability →
               </a>
               <a
                 href="/demo/"

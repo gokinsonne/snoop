@@ -74,7 +74,8 @@ export function HeroSection({ content }: HeroSectionProps) {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="https://lkhv.pro/581ee4"
+            href="/go/?placement=legacy_hero"
+            data-operator="smartlink"
             target="_blank"
             rel="nofollow noopener sponsored"
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-4 rounded-full animate-glow inline-flex items-center justify-center"

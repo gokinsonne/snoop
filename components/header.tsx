@@ -39,7 +39,7 @@ export function Header() {
               {label}
             </Link>
           ))}
-          <a href="https://lkhv.pro/581ee4" target="_blank" rel="nofollow sponsored noopener" data-cta="header" className="ml-2 rounded-full bg-emerald-400 px-5 py-2 text-sm font-black text-black hover:bg-emerald-300">
+          <a href="/go/?placement=header" target="_blank" rel="nofollow sponsored noopener" data-cta="header" data-operator="smartlink" className="ml-2 rounded-full bg-emerald-400 px-5 py-2 text-sm font-black text-black hover:bg-emerald-300">
             Play Now
           </a>
         </nav>
@@ -55,7 +55,7 @@ export function Header() {
                 {label}
               </Link>
             ))}
-            <a href="https://lkhv.pro/581ee4" target="_blank" rel="nofollow sponsored noopener" data-cta="header-mobile" className="mt-2 block rounded-xl bg-emerald-400 px-4 py-3 text-center font-black text-black">
+            <a href="/go/?placement=header-mobile" target="_blank" rel="nofollow sponsored noopener" data-cta="header-mobile" data-operator="smartlink" className="mt-2 block rounded-xl bg-emerald-400 px-4 py-3 text-center font-black text-black">
               Play Now
             </a>
           </nav>

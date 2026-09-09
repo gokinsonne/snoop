@@ -62,7 +62,6 @@ export default function BonusPage() {
             Never deposit solely because of a headline percentage.
           </p>
           <TrackedAffiliateLink
-            href="https://lkhv.pro/581ee4"
             placement="bonus_terms"
             rel="nofollow sponsored noopener"
             className="mt-6 inline-flex rounded-full bg-emerald-400 px-7 py-3 font-black text-black hover:bg-emerald-300"

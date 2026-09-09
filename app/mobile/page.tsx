@@ -189,7 +189,7 @@ export default function MobilePage() {
             <h2 className="text-2xl font-bold text-white mb-4">Play on Mobile Now</h2>
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">Try the free demo first, then verify the operator, exact game build and mobile cashier terms.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://lkhv.pro/581ee4" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Play at 1WIN →</a>
+              <a href="/go/?placement=mobile_bottom" data-operator="smartlink" rel="nofollow noopener sponsored" className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors">Check regional availability →</a>
               <a href="/demo/" className="inline-flex items-center justify-center rounded-full border border-neutral-700 px-8 py-4 text-lg font-medium text-white hover:bg-neutral-800 transition-colors">Try Demo</a>
             </div>
             <p className="mt-4 text-xs text-neutral-500">18+ | Gamble Responsibly | T&Cs Apply</p>

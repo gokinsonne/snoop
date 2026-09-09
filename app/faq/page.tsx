@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld"
 export const metadata: Metadata = {
   title: "Snoop Dogg Dollars FAQ | RTP, Bonus Buy, Free Spins & Mobile",
   description:
-    "Answers to all Snoop Dogg Dollars questions. RTP, volatility, bonus buy, free spins, mobile play. Play with current offer at 1WIN.",
+    "Answers to Snoop Dogg Dollars questions: RTP, volatility, bonus buy, free spins, mobile play and how to check regional operator availability.",
   keywords: [
     "snoop dogg dollars faq",
     "snoop dogg dollars questions",
@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "Where can I play Snoop Dogg Dollars for real money?",
-    a: "Availability changes by country. Our current affiliate route is 1WIN, but we have not verified one RTP, bonus or withdrawal configuration for every visitor. Check the live lobby, game panel, licence and cashier terms first.",
+    a: "Availability changes by country. Our affiliate route selects an option by location, but we have not verified one RTP, bonus or withdrawal configuration for every visitor. Check the live lobby, game panel, licence and cashier terms first.",
   },
 ]
 

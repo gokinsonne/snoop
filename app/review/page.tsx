@@ -267,15 +267,16 @@ export default function ReviewPage() {
               Ready to Play Snoop Dogg Dollars?
             </h2>
             <p className="text-neutral-400 mb-6 max-w-xl mx-auto">
-              Join 1WIN and get a current welcome offer. Play Snoop Dogg Dollars with the current game and payment terms.
+              Check the operator available for your region, then verify the current game, licence and payment terms.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://lkhv.pro/581ee4"
+                href="/go/?placement=review_bottom"
+                data-operator="smartlink"
                 rel="nofollow noopener sponsored"
                 className="inline-flex items-center justify-center rounded-full bg-green-500 px-8 py-4 text-lg font-bold text-black hover:bg-green-400 transition-colors"
               >
-                Play at 1WIN →
+                Check regional availability →
               </a>
               <a
                 href="/casinos/"

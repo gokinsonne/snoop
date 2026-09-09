@@ -7,8 +7,11 @@ type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 export function TrackedAffiliateLink({
   placement,
-  operator = "1win",
+  operator = "smartlink",
+  href: _href,
   ...props
 }: Props) {
-  return <a {...props} data-placement={placement} data-operator={operator} />
+  const href = `/go/?placement=${encodeURIComponent(placement)}`
+
+  return <a {...props} href={href} data-placement={placement} data-operator={operator} />
 }

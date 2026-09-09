@@ -12,10 +12,10 @@ export function AffiliateTracker() {
   useEffect(() => {
     const track = (event: MouseEvent) => {
       const link = (event.target as Element | null)?.closest<HTMLAnchorElement>("a[href]")
-      if (!link || (!link.href.includes("lkhv.pro") && !link.dataset.operator)) return
+      if (!link || (!link.href.includes("/go/") && !link.dataset.operator)) return
 
       window.gtag?.("event", "affiliate_click", {
-        operator: link.dataset.operator || "1win",
+        operator: link.dataset.operator || "smartlink",
         placement: link.dataset.placement || link.dataset.cta || "unlabeled",
         source_path: window.location.pathname,
         target_url: link.href,

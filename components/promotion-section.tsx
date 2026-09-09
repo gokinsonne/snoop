@@ -202,7 +202,7 @@ export function PromotionSection({ content }: PromotionSectionProps) {
                     <div className="text-sm text-muted-foreground mb-2">
                       FREE SPIN BONUS
                     </div>
-                    <div className="text-lg font-bold text-primary">1WIN BONUS</div>
+                    <div className="text-lg font-bold text-primary">REGIONAL OFFER</div>
                     <div className="text-sm text-muted-foreground mb-2">
                       EXCLUSIVE FOR NEW PLAYERS
                     </div>
@@ -210,7 +210,8 @@ export function PromotionSection({ content }: PromotionSectionProps) {
                 </div>
 
                 <a
-                  href="https://lkhv.pro/581ee4"
+                  href="/go/?placement=promotion"
+                  data-operator="smartlink"
                   target="_blank"
                   rel="nofollow noopener sponsored"
                   className="inline-flex items-center justify-center bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-6 py-3 text-base rounded-full animate-glow"

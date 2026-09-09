@@ -5,9 +5,6 @@ import { ArticleSchema } from "@/components/seo-schema"
 import { JsonLd } from "@/components/json-ld"
 import { EditorialAttribution } from "@/components/editorial-attribution"
 
-const OFFER_URL = "https://lkhv.pro/581ee4"
-const IGNITION_US_URL = "https://maglead.buzz/click?o=1856&a=26488"
-
 export function CryptoGuidePage({
   currency,
   title,
@@ -172,7 +169,7 @@ export function CryptoGuidePage({
           Game facts source: <a href="https://bgaming.com/games/snoop-dogg-dollars" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline">BGaming official Snoop Dogg Dollars page</a>, checked 22 August 2026. BGaming lists 96.00% RTP; verify the operator build in-game.
         </p>
 
-        <h2 className="mt-12 text-3xl font-black text-white">Current operator routes</h2>
+        <h2 className="mt-12 text-3xl font-black text-white">Regional operator availability</h2>
         <p className="mt-4">
           These are availability checks, not a ranking or a promise that the game, currency,
           network or bonus is available in your country. Inspect the live lobby, cashier and
@@ -180,37 +177,20 @@ export function CryptoGuidePage({
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <TrackedAffiliateLink
-            href={OFFER_URL}
             placement={`crypto_guide_${currency.toLowerCase()}_primary`}
-            operator="1win"
             target="_blank"
             rel="nofollow sponsored noopener"
             className="inline-flex rounded-xl bg-emerald-400 px-7 py-4 font-black text-black hover:bg-emerald-300"
           >
-            Check availability at 1WIN
+            Check options for your region
           </TrackedAffiliateLink>
-          {currency === "Crypto" ? (
-            <TrackedAffiliateLink
-              href={IGNITION_US_URL}
-              placement="crypto_guide_crypto_us_secondary"
-              operator="ignition"
-              target="_blank"
-              rel="nofollow sponsored noopener"
-              className="inline-flex rounded-xl border border-emerald-400/50 bg-emerald-400/[.08] px-7 py-4 font-black text-emerald-200 hover:bg-emerald-400/[.14]"
-            >
-              US option: check Ignition
-            </TrackedAffiliateLink>
-          ) : null}
         </div>
         <p className="mt-3 text-sm text-neutral-500">18+ · Affiliate link · Terms and regional restrictions apply</p>
-        {currency === "Crypto" ? (
-          <p className="mt-2 text-xs leading-5 text-neutral-500">
-            Ignition accepts players in most US states but excludes Delaware, Maryland, Nevada,
-            New Jersey and New York. We have not independently confirmed Snoop Dogg Dollars in
-            its current lobby. Check state eligibility and search the live lobby before registering
-            or depositing.
-          </p>
-        ) : null}
+        <p className="mt-2 text-xs leading-5 text-neutral-500">
+          The destination is selected by country and can still exclude individual states or regions.
+          We have not independently confirmed Snoop Dogg Dollars in every current lobby. Check local
+          eligibility and search the live lobby before registering or depositing.
+        </p>
 
         <h2 className="mt-12 text-3xl font-black text-white">Frequently asked questions</h2>
         <div className="mt-5 divide-y divide-white/10 border-y border-white/10">
