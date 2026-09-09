@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /play
-Disallow: /app
-Disallow: /download-vpn
 
 Sitemap: https://snoopdoggdollar.org/sitemap.xml
