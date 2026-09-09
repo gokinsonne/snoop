@@ -25,6 +25,8 @@ const routes = [
   "/usdt-casinos/snoop-dogg-dollars",
   "/crypto-casino-deposits",
   "/crypto-casino-withdrawals",
+  "/dogecoin-casino-withdrawals",
+  "/ethereum-casino-withdrawals",
   "/bitcoin-vs-usdt-casinos",
   "/crypto-casino-networks",
   "/crypto-casino-fees",
@@ -43,7 +45,7 @@ const routes = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const updated9September = new Set(["/mobile", "/crypto-casinos/snoop-dogg-dollars", "/bitcoin-casinos/snoop-dogg-dollars", "/usdt-casinos/snoop-dogg-dollars", "/crypto-casino-deposits", "/crypto-casino-withdrawals", "/bitcoin-vs-usdt-casinos", "/crypto-casino-networks", "/crypto-casino-fees", "/crypto-casino-kyc", "/crypto-casino-bonuses", "/crypto-casino-security"])
+  const updated9September = new Set(["/mobile", "/crypto-casinos/snoop-dogg-dollars", "/bitcoin-casinos/snoop-dogg-dollars", "/usdt-casinos/snoop-dogg-dollars", "/crypto-casino-deposits", "/crypto-casino-withdrawals", "/dogecoin-casino-withdrawals", "/ethereum-casino-withdrawals", "/bitcoin-vs-usdt-casinos", "/crypto-casino-networks", "/crypto-casino-fees", "/crypto-casino-kyc", "/crypto-casino-bonuses", "/crypto-casino-security"])
   const updated8September = new Set(["/casinos", "/crypto-casinos/snoop-dogg-dollars"])
   const updated5September = new Set(["/crypto-casino-withdrawals"])
   const updated3September = new Set(["/demo"])

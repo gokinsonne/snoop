@@ -18,6 +18,8 @@ const cluster = [
   ["/crypto-casinos/snoop-dogg-dollars/", "Crypto casino hub"],
   ["/crypto-casino-deposits/", "Deposit guide"],
   ["/crypto-casino-withdrawals/", "Withdrawal guide"],
+  ["/dogecoin-casino-withdrawals/", "Dogecoin withdrawals"],
+  ["/ethereum-casino-withdrawals/", "Ethereum withdrawals"],
   ["/bitcoin-vs-usdt-casinos/", "Bitcoin vs USDT"],
   ["/crypto-casino-networks/", "Networks"],
   ["/crypto-casino-fees/", "Fees"],
