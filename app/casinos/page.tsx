@@ -5,13 +5,13 @@ import { JsonLd } from "@/components/json-ld"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 
 export const metadata: Metadata = {
-  title: "Where to Play Snoop Dogg Dollars | Verification Checklist",
-  description: "How to verify a casino offering Snoop Dogg Dollars: live game availability, RTP, licence, bonus, KYC, payment and withdrawal terms.",
+  title: "Snoop Dogg Dollars Real Money Casinos | Where to Play",
+  description: "Find where to play the Snoop Dogg Dollars casino game for real money. Verify availability, licence, RTP, bonus, KYC, deposit and withdrawal terms.",
   robots: "index, follow",
   alternates: { canonical: "https://snoopdoggdollar.org/casinos/" },
   openGraph: {
-    title: "Where to Play Snoop Dogg Dollars",
-    description: "A verification-first guide to game availability, RTP, licensing and cashier terms.",
+    title: "Snoop Dogg Dollars Real Money Casinos",
+    description: "A verification-first guide to real-money game availability, RTP, licensing and cashier terms.",
     type: "website",
     url: "https://snoopdoggdollar.org/casinos/",
     siteName: "Snoop Dogg Dollars",
@@ -31,13 +31,13 @@ const checks = [
 export default function CasinosPage() {
   return (
     <>
-      <JsonLd data={{ "@context": "https://schema.org", "@type": "WebPage", name: "Where to Play Snoop Dogg Dollars", url: "https://snoopdoggdollar.org/casinos/", description: "Verification checklist for casinos offering Snoop Dogg Dollars." }} />
+      <JsonLd data={{ "@context": "https://schema.org", "@type": "WebPage", name: "Snoop Dogg Dollars Real Money Casinos", url: "https://snoopdoggdollar.org/casinos/", description: "Verification checklist for real-money casinos offering Snoop Dogg Dollars." }} />
       <BreadcrumbSchema items={[{ name: "Home", url: "https://snoopdoggdollar.org/" }, { name: "Where to Play", url: "https://snoopdoggdollar.org/casinos/" }]} />
       <main className="min-h-screen bg-black text-neutral-100">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <nav aria-label="Breadcrumb" className="mb-8 text-sm text-neutral-400"><Link href="/" className="hover:text-white">Home</Link> <span aria-hidden="true">/</span> <span aria-current="page">Where to Play</span></nav>
           <p className="text-sm font-black uppercase tracking-[.18em] text-green-400">Verification first</p>
-          <h1 className="mt-3 text-4xl font-black tracking-tight text-white sm:text-5xl">Where to Play Snoop Dogg Dollars</h1>
+          <h1 className="mt-3 text-4xl font-black tracking-tight text-white sm:text-5xl">Snoop Dogg Dollars real-money casinos: where to play</h1>
           <p className="mt-5 max-w-3xl text-xl leading-8 text-neutral-400">We provide a location-aware availability route, not an invented multi-casino ranking. Use this checklist instead of trusting a bonus badge or an unverified score.</p>
 
           <section className="mt-12 grid gap-4 sm:grid-cols-2" aria-labelledby="operator-checks">

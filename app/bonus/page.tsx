@@ -5,10 +5,10 @@ import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Snoop Dogg Dollars Bonus & No-Deposit Offers Explained",
+    absolute: "Snoop Dogg Dollars Promo Code & No Deposit Bonus",
   },
   description:
-    "Looking for a Snoop Dogg Dollars no-deposit bonus? Learn what can be verified, avoid fake codes and check wagering, game eligibility and withdrawal terms.",
+    "Is there a Snoop Dogg Dollars promo code or no deposit bonus? Check verified offers, wagering, eligibility and withdrawal rules, and avoid fake codes.",
   alternates: { canonical: "/bonus/" },
 }
 
@@ -24,11 +24,11 @@ const checks = [
 export default function BonusPage() {
   return (
     <main className="bg-black text-white">
-      <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage",mainEntity:[{"@type":"Question",name:"Is there a Snoop Dogg Dollars no-deposit bonus?",acceptedAnswer:{"@type":"Answer",text:"We do not publish an unverified universal no-deposit code. Offers vary by operator, account and country, so availability must be confirmed in the live promotion terms."}},{"@type":"Question",name:"Do casino bonuses work on Snoop Dogg Dollars?",acceptedAnswer:{"@type":"Answer",text:"Only when the operator lists the game as eligible. Slots, bonus buys or individual features may contribute differently or be excluded."}},{"@type":"Question",name:"What should I check before claiming a bonus?",acceptedAnswer:{"@type":"Answer",text:"Check wagering, eligible games, maximum bet, expiry, withdrawal limits, payment restrictions and country availability."}}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage",mainEntity:[{"@type":"Question",name:"Is there a Snoop Dogg Dollars promo code or no-deposit bonus?",acceptedAnswer:{"@type":"Answer",text:"We do not publish an unverified universal promo code or no-deposit code. Offers vary by operator, account and country, so availability must be confirmed in the live promotion terms."}},{"@type":"Question",name:"Do casino bonuses work on Snoop Dogg Dollars?",acceptedAnswer:{"@type":"Answer",text:"Only when the operator lists the game as eligible. Slots, bonus buys or individual features may contribute differently or be excluded."}},{"@type":"Question",name:"What should I check before claiming a bonus?",acceptedAnswer:{"@type":"Answer",text:"Check wagering, eligible games, maximum bet, expiry, withdrawal limits, payment restrictions and country availability."}}]}} />
       <section className="mx-auto max-w-5xl px-5 py-16 sm:py-24">
         <p className="text-sm font-bold uppercase tracking-[.2em] text-emerald-400">Current offer guide</p>
         <h1 className="mt-4 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">
-          Snoop Dogg Dollars bonus terms: check before you deposit
+          Snoop Dogg Dollars promo code and no-deposit bonus: what is real?
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-300">
           Casino promotions change by account and country. We do not promise a fixed bonus.
@@ -37,7 +37,7 @@ export default function BonusPage() {
 
         <section className="mt-10 rounded-3xl border border-amber-300/25 bg-amber-300/10 p-7">
           <p className="text-sm font-black uppercase tracking-[.18em] text-amber-300">No-deposit answer</p>
-          <h2 className="mt-3 text-3xl font-black">Is there a verified Snoop Dogg Dollars no-deposit bonus?</h2>
+          <h2 className="mt-3 text-3xl font-black">Is there a verified Snoop Dogg Dollars promo code or no-deposit bonus?</h2>
           <p className="mt-4 max-w-3xl leading-8 text-neutral-300">
             There is no universal code we can honestly promise to every visitor. No-deposit offers are normally limited by country, account status and expiry, and the slot may be excluded from wagering. Treat pages claiming a permanent secret code without live terms as unverified.
           </p>
