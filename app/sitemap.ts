@@ -20,6 +20,7 @@ const routes = [
   "/vs-sugar-rush",
   "/play-in-india",
   "/play-in-japan",
+  "/crypto-casinos",
   "/crypto-casinos/snoop-dogg-dollars",
   "/bitcoin-casinos/snoop-dogg-dollars",
   "/usdt-casinos/snoop-dogg-dollars",
@@ -33,11 +34,13 @@ const routes = [
   "/crypto-casino-kyc",
   "/crypto-casino-bonuses",
   "/crypto-casino-security",
+  "/instant-withdrawal-crypto-casinos",
   "/privacy-policy",
   "/terms-of-service",
   "/responsible-gaming",
   "/editorial-policy",
   "/research/snoop-dogg-dollars-feature-costs",
+  "/research/crypto-casino-keyword-landscape",
   "/vs-aztec-clusters",
   "/best-cluster-pays-slots",
   "/bgaming-cluster-slots",
@@ -45,7 +48,7 @@ const routes = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const updated12September = new Set(["/bonus", "/casinos"])
+  const updated12September = new Set(["/bonus", "/casinos", "/crypto-casinos", "/crypto-casino-bonuses", "/crypto-casino-kyc", "/instant-withdrawal-crypto-casinos", "/research/crypto-casino-keyword-landscape"])
   const updated9September = new Set(["/mobile", "/crypto-casinos/snoop-dogg-dollars", "/bitcoin-casinos/snoop-dogg-dollars", "/usdt-casinos/snoop-dogg-dollars", "/crypto-casino-deposits", "/crypto-casino-withdrawals", "/dogecoin-casino-withdrawals", "/ethereum-casino-withdrawals", "/bitcoin-vs-usdt-casinos", "/crypto-casino-networks", "/crypto-casino-fees", "/crypto-casino-kyc", "/crypto-casino-bonuses", "/crypto-casino-security"])
   const updated8September = new Set(["/casinos", "/crypto-casinos/snoop-dogg-dollars"])
   const updated5September = new Set(["/crypto-casino-withdrawals"])

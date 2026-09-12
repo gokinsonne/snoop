@@ -15,7 +15,8 @@ type Props = {
 }
 
 const cluster = [
-  ["/crypto-casinos/snoop-dogg-dollars/", "Crypto casino hub"],
+  ["/crypto-casinos/", "Best crypto casinos"],
+  ["/crypto-casinos/snoop-dogg-dollars/", "Snoop crypto casinos"],
   ["/crypto-casino-deposits/", "Deposit guide"],
   ["/crypto-casino-withdrawals/", "Withdrawal guide"],
   ["/dogecoin-casino-withdrawals/", "Dogecoin withdrawals"],
@@ -26,6 +27,7 @@ const cluster = [
   ["/crypto-casino-kyc/", "KYC checks"],
   ["/crypto-casino-bonuses/", "Bonus terms"],
   ["/crypto-casino-security/", "Security"],
+  ["/instant-withdrawal-crypto-casinos/", "Instant withdrawals"],
 ]
 
 const paths: Record<string, string> = {
@@ -99,7 +101,7 @@ export function CryptoTopicPage({ eyebrow, title, intro, facts, sections, placem
       <ArticleSchema path={path} title={title} description={intro} section="Crypto casino guides" modified={modified} />
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://snoopdoggdollar.org/" },
-        { name: "Crypto casino guides", url: "https://snoopdoggdollar.org/crypto-casinos/snoop-dogg-dollars/" },
+        { name: "Crypto casino guides", url: "https://snoopdoggdollar.org/crypto-casinos/" },
         { name: title, url: `https://snoopdoggdollar.org${path}` },
       ]} />
       <main className="bg-[#080b09] text-neutral-100">

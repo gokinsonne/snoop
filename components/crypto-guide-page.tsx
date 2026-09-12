@@ -217,6 +217,7 @@ export function CryptoGuidePage({
 
         <h2 className="mt-12 text-3xl font-black text-white">Continue researching</h2>
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
+          <Link href="/crypto-casinos/" className="rounded-xl border border-emerald-300/25 bg-emerald-300/[.05] p-4 font-bold hover:border-emerald-400/50">Best crypto casino guide →</Link>
           <Link href="/crypto-casino-deposits/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Crypto deposit checklist →</Link>
           <Link href="/crypto-casino-withdrawals/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Crypto withdrawal guide →</Link>
           <Link href="/bitcoin-vs-usdt-casinos/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Bitcoin versus USDT →</Link>
@@ -225,6 +226,7 @@ export function CryptoGuidePage({
           <Link href="/crypto-casino-kyc/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">KYC and verification →</Link>
           <Link href="/crypto-casino-bonuses/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Crypto bonus terms →</Link>
           <Link href="/crypto-casino-security/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Account and wallet security →</Link>
+          <Link href="/instant-withdrawal-crypto-casinos/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Instant-withdrawal checks →</Link>
           <Link href="/review/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Read the complete slot review →</Link>
           <Link href="/demo/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Try the free demo first →</Link>
           <Link href="/rtp/" className="rounded-xl border border-white/10 p-4 font-bold hover:border-emerald-400/50">Understand RTP variants →</Link>

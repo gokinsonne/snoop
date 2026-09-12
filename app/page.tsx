@@ -203,6 +203,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="grid content-start gap-3">
+              <Link href="/crypto-casinos/" className="rounded-xl border border-emerald-300/30 bg-emerald-300/10 px-5 py-4 font-bold hover:border-emerald-300/60">Best crypto casinos: verification guide →</Link>
               <Link href="/crypto-casinos/snoop-dogg-dollars/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Snoop Dogg Dollars crypto casinos →</Link>
               <Link href="/bitcoin-casinos/snoop-dogg-dollars/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-amber-300/50">Bitcoin casino guide →</Link>
               <Link href="/usdt-casinos/snoop-dogg-dollars/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">USDT casino guide →</Link>
@@ -211,6 +212,8 @@ export default function HomePage() {
               <Link href="/bitcoin-vs-usdt-casinos/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-amber-300/50">Bitcoin vs USDT comparison →</Link>
               <Link href="/crypto-casino-networks/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Choose the correct network →</Link>
               <Link href="/crypto-casino-fees/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">Network and operator fees →</Link>
+              <Link href="/crypto-casino-bonuses/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">No-deposit bonus terms →</Link>
+              <Link href="/crypto-casino-kyc/" className="rounded-xl border border-white/15 bg-black/25 px-5 py-4 font-bold hover:border-emerald-400/50">No-KYC claims explained →</Link>
             </div>
           </div>
         </div>

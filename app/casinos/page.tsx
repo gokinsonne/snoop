@@ -61,7 +61,8 @@ export default function CasinosPage() {
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               <Link href="/play-in-india/" className="rounded-xl border border-neutral-800 p-5 hover:border-green-700">India availability and legal checks →</Link>
               <Link href="/play-in-japan/" className="rounded-xl border border-neutral-800 p-5 hover:border-green-700">日本向けの利用確認ガイド →</Link>
-              <Link href="/crypto-casinos/snoop-dogg-dollars/" className="rounded-xl border border-neutral-800 p-5 hover:border-green-700">Crypto casino checklist →</Link>
+              <Link href="/crypto-casinos/" className="rounded-xl border border-neutral-800 p-5 hover:border-green-700">Best crypto casino checklist →</Link>
+              <Link href="/crypto-casinos/snoop-dogg-dollars/" className="rounded-xl border border-neutral-800 p-5 hover:border-green-700">Snoop crypto casino guide →</Link>
               <Link href="/responsible-gaming/" className="rounded-xl border border-neutral-800 p-5 hover:border-green-700">Responsible gambling →</Link>
             </div>
           </section>

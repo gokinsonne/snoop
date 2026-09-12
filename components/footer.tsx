@@ -12,7 +12,11 @@ export function Footer() {
     { href: "/faq/", label: "FAQ" },
     { href: "/mobile/", label: "Snoop Dogg Dollars App" },
     { href: "/rtp/", label: "Snoop Dogg Dollars RTP" },
-    { href: "/crypto-casinos/snoop-dogg-dollars/", label: "Crypto Casinos" },
+    { href: "/crypto-casinos/", label: "Best Crypto Casinos" },
+    { href: "/crypto-casinos/snoop-dogg-dollars/", label: "Snoop Crypto Casinos" },
+    { href: "/crypto-casino-bonuses/", label: "No-Deposit Crypto Bonuses" },
+    { href: "/crypto-casino-kyc/", label: "No-KYC Casino Guide" },
+    { href: "/instant-withdrawal-crypto-casinos/", label: "Instant Withdrawals" },
     { href: "/crypto-casino-deposits/", label: "Crypto Deposits" },
     { href: "/crypto-casino-withdrawals/", label: "Crypto Withdrawals" },
     { href: "/bitcoin-vs-usdt-casinos/", label: "BTC vs USDT" },
@@ -26,6 +30,7 @@ export function Footer() {
     { href: "/responsible-gaming/", label: "Responsible Gaming" },
     { href: "/editorial-policy/", label: "Editorial Policy" },
     { href: "/research/snoop-dogg-dollars-feature-costs/", label: "Open Research" },
+    { href: "/research/crypto-casino-keyword-landscape/", label: "Keyword Dataset" },
     { href: "/sitemap.xml", label: "Sitemap" },
   ]
 

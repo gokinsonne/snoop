@@ -6,7 +6,7 @@ const primary = [
   ["/demo/", "Demo"],
   ["/how-to-play/", "How to Play"],
   ["/rtp/", "RTP"],
-  ["/crypto-casinos/snoop-dogg-dollars/", "Crypto Casinos"],
+  ["/crypto-casinos/", "Crypto Casinos"],
 ]
 
 const mobile = [

@@ -62,6 +62,7 @@ type ArticleSchemaProps = {
   section: string
   published?: string
   modified?: string
+  aboutGame?: boolean
 }
 
 export function ArticleSchema({
@@ -71,6 +72,7 @@ export function ArticleSchema({
   section,
   published = "2026-07-28",
   modified = "2026-08-22",
+  aboutGame = true,
 }: ArticleSchemaProps) {
   const url = new URL(path, SITE_URL).toString()
   const schema = {
@@ -91,7 +93,7 @@ export function ArticleSchema({
     inLanguage: "en",
     author: { "@id": PUBLISHER_ID },
     publisher: { "@id": PUBLISHER_ID },
-    about: { "@id": GAME_ID },
+    ...(aboutGame ? { about: { "@id": GAME_ID } } : {}),
   }
 
   return <JsonLd data={schema} />
