@@ -6,10 +6,10 @@ import { EditorialAttribution } from "@/components/editorial-attribution"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Snoop Dogg Dollars Demo | Play Free — No Sign-Up",
+    absolute: "Snoop Dogg Dollars Demo: Play Free Online (No Download)",
   },
   description:
-    "Play the free Snoop Dogg Dollars demo by BGaming in your browser. No sign-up, download or deposit. Check 96% RTP, Cluster Pays and bonus features.",
+    "Play Snoop Dogg Dollars demo free online with virtual credits. No download, sign-up or deposit. Test Cluster Pays, Snoop Spin and bonus features.",
   keywords: [
     "snoop dogg dollars demo",
     "snoop dogg dollars free play",
@@ -117,7 +117,7 @@ export default function DemoPage() {
           </nav>
 
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-6">
-            Snoop Dogg Dollars Demo — Play Free, No Sign-Up
+            Snoop Dogg Dollars Demo — Play Free Online
           </h1>
           <p className="text-xl text-neutral-400 mb-8">
             Launch the browser demo with virtual credits: no download, registration or deposit. Test the cluster-pays grid, Snoop Spin and bonus mechanics before deciding whether real-money play is for you.

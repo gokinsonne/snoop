@@ -5,8 +5,8 @@ import { JsonLd } from "@/components/json-ld"
 import { TrackedAffiliateLink } from "@/components/tracked-affiliate-link"
 
 export const metadata: Metadata = {
-  title: "Snoop Dogg Dollars Real Money Casinos | Where to Play",
-  description: "Find where to play the Snoop Dogg Dollars casino game for real money. Verify availability, licence, RTP, bonus, KYC, deposit and withdrawal terms.",
+  title: "Snoop Dogg Dollars Real Money: Where to Play in 2026",
+  description: "Find where to play Snoop Dogg Dollars for real money in your region. Check the live game, licence, RTP, bonus, KYC and withdrawal terms first.",
   robots: "index, follow",
   alternates: { canonical: "https://snoopdoggdollar.org/casinos/" },
   openGraph: {

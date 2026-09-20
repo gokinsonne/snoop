@@ -5,10 +5,10 @@ import { EditorialAttribution } from "@/components/editorial-attribution"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Snoop Dogg Dollars Review: RTP, Features & Verdict",
+    absolute: "Snoop Dogg Dollars Review: 96% RTP & 10,000× Max Win",
   },
   description:
-    "Independent Snoop Dogg Dollars review: RTP variants, volatility, cluster pays, Snoop Spin, bonus buy, max win and our evidence-based verdict.",
+    "Independent Snoop Dogg Dollars slot review covering BGaming's 96% RTP listing, 10,000× max win, volatility, Bonus Buy, Snoop Spin and free demo.",
   keywords: [
     "snoop dogg dollars slot review",
     "snoop dogg dollars rtp",
@@ -103,6 +103,9 @@ export default function ReviewPage() {
           </h1>
           <p className="text-xl text-neutral-400 mb-12">
             An independent breakdown of BGaming&apos;s hip-hop cluster-pays slot: RTP variants, volatility, max-win potential, bonus mechanics and the drawbacks you should know before playing.
+          </p>
+          <p className="-mt-8 mb-8 text-sm leading-6 text-neutral-500">
+            Need the main game page? Open the <a href="/" className="font-semibold text-emerald-400 hover:text-emerald-300">Snoop Dogg Dollars demo, RTP and game overview</a>.
           </p>
           <EditorialAttribution />
 

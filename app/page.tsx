@@ -8,15 +8,15 @@ import { EditorialAttribution } from "@/components/editorial-attribution"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Snoop Dogg Dollars Slot | BGaming Game Guide",
+    absolute: "Snoop Dogg Dollars Slot: Free Demo, RTP & Review",
   },
   description:
-    "Fact-checked Snoop Dogg Dollars slot guide: BGaming provider, 6×8 Cluster Pays grid, 10,000× maximum, features and player safety checks.",
+    "Play the Snoop Dogg Dollars free demo and check BGaming's 96% RTP, 10,000× max win, bonus features, independent review and real-money availability.",
   alternates: { canonical: "https://snoopdoggdollar.org/" },
   openGraph: {
-    title: "Snoop Dogg Dollars Slot | BGaming Game Guide",
+    title: "Snoop Dogg Dollars Slot: Free Demo, RTP & Review",
     description:
-      "Verified facts, mechanics and practical player checks for BGaming's Snoop Dogg Dollars slot.",
+      "Free demo, verified game facts, RTP, mechanics and an independent Snoop Dogg Dollars slot review.",
     url: "https://snoopdoggdollar.org/",
     type: "website",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Snoop Dogg Dollars slot guide" }],
@@ -91,16 +91,16 @@ export default function HomePage() {
         <div className="relative mx-auto grid min-h-[670px] max-w-6xl items-center gap-10 px-5 py-20 lg:grid-cols-[1.12fr_.88fr]">
           <div>
             <p className="mb-5 inline-flex rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[.2em] text-emerald-300">
-              Updated 27 August 2026 · Independent slot guide
+              Updated 20 September 2026 · Independent slot guide
             </p>
             <h1 className="max-w-4xl text-5xl font-black leading-[.95] tracking-tight sm:text-7xl">
-              Snoop Dogg Dollars slot
-              <span className="mt-3 block text-emerald-400">official facts, mechanics & player guide</span>
+              Snoop Dogg Dollars
+              <span className="mt-3 block text-emerald-400">free demo, RTP & slot review</span>
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-neutral-300">
-              A fact-checked guide to BGaming&apos;s hip-hop cluster slot. Learn the real
-              10,000× cap, inspect BGaming&apos;s 96% public RTP listing, try the demo, and compare
-              real-money and crypto payment options without fake win promises.
+              Play the free browser demo or read the independent review of BGaming&apos;s
+              hip-hop cluster slot. Check the 96% public RTP listing, 10,000× maximum,
+              bonus mechanics and real-money availability before choosing how to play.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link

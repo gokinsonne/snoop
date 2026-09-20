@@ -3,9 +3,9 @@ import { BreadcrumbSchema } from "@/components/breadcrumb-schema"
 import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
-  title: "How to Play Snoop Dogg Dollars | Rules, Demo & Bonus Guide",
+  title: "How to Play Snoop Dogg Dollars: Rules & Cluster Pays",
   description:
-    "Learn how to play Snoop Dogg Dollars slot. Step-by-step guide to cluster pays, symbols, bonus features, Snoop Spin, free spins and regional operator checks.",
+    "Learn the Snoop Dogg Dollars rules step by step: cluster wins, cascades, symbols, multipliers, Snoop Spin, free spins and Bonus Buy costs.",
   keywords: [
     "how to play snoop dogg dollars",
     "snoop dogg dollars guide",
@@ -89,6 +89,9 @@ export default function HowToPlayPage() {
           </h1>
           <p className="text-xl text-neutral-400 mb-12">
             A complete beginner's guide to BGaming's hip-hop cluster-pays slot. Learn the rules, symbols, and features in 5 minutes.
+          </p>
+          <p className="-mt-8 mb-12 text-sm leading-6 text-neutral-500">
+            Looking for the complete game overview? Start with the <a href="/" className="font-semibold text-green-400 hover:text-green-300">Snoop Dogg Dollars slot review, demo and RTP hub</a>.
           </p>
 
           {/* Quick Specs */}
