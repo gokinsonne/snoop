@@ -47,6 +47,7 @@ const guides = [
   ["/snoop-spin/", "Snoop Spin", "What the 20× enhanced spin guarantees"],
   ["/symbols-paytable/", "Symbols & paytable", "Clusters, Wilds, Scatters and multipliers"],
   ["/vs-aztec-clusters/", "Snoop vs Aztec", "Compare two BGaming cluster-pays designs"],
+  ["/vs-sugar-rush/", "Snoop vs Sugar Rush", "Compare cluster wins, modifiers and bonus mechanics"],
   ["/best-cluster-pays-slots/", "Best cluster slots", "A mechanics-first shortlist without fake rankings"],
   ["/bgaming-cluster-slots/", "BGaming cluster guide", "How cascades and modifiers differ by game"],
   ["/snoop-dogg-dollars-release-history/", "Release history", "Source, update and correction timeline"],

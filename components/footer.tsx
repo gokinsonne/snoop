@@ -31,7 +31,7 @@ export function Footer() {
     { href: "/editorial-policy/", label: "Editorial Policy" },
     { href: "/research/snoop-dogg-dollars-feature-costs/", label: "Open Research" },
     { href: "/research/crypto-casino-keyword-landscape/", label: "Keyword Dataset" },
-    { href: "/sitemap.xml", label: "Sitemap" },
+    { href: "/sitemap/", label: "Site Directory" },
   ]
 
   return (
